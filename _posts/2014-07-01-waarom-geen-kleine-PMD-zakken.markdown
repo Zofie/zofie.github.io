@@ -7,7 +7,7 @@ categories: Gent
 
 De PMD-zak. Die grote blauwe zak waar je met gemak een héle <a href="http://www.delhaize.be/">Delhaize</a> in kwijt kan, maar waar sommigen toch redelijk wat moeite voor moeten doen. Redelijk wat moeite is zacht uitgedrukt, want wij zetten deze gemiddeld maar eens om de 2 maand buiten. We krijgen deze nauwelijks gevuld, dus stelde ik de vraag aan <a href="https://twitter.com/stadgent">Stad Gent op Twitter</a> of er in de toekomst geen kleinere versie verkrijgbaar zou zijn. 
 
-Stad Gent ging op onderzoek en vandaag kreeg ik van hen het officiele antwoord dat dit niet snel zal gebeuren en dat daar wel een gegronde reden voor is. De zakken zijn momenteel zo groot omdat ze op deze manier zwaarder worden en dus niet bij de minste windstoot weg worden geblazen. Als ze een kleinere zak op de markt brengen bestaat wordt de kans groter dat de PMD-zakken wel wegwaaien en wat dus ook gevaarlijker wordt voor de weggebruiker.
+Stad Gent ging op onderzoek en vandaag kreeg ik van hen het officiële antwoord dat dit niet snel zal gebeuren en dat daar wel een gegronde reden voor is. De zakken zijn momenteel zo groot omdat ze op deze manier zwaarder worden en dus niet bij de minste windstoot worden weggeblazen. Als ze een kleinere zak op de markt brengen bestaat wordt de kans groter dat de PMD-zakken wel wegwaaien en wat dus ook gevaarlijker wordt voor de weggebruiker. Fair enough. 
 
 Het officiële antwoord van Stad Gent:
 <blockquote>
