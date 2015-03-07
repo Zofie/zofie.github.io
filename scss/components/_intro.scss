@@ -1,0 +1,23 @@
+.intro {
+  /* background-color: $beta-ui-color; */
+  color: $white;
+
+  position: relative;
+  width: 100%;
+  height: 600px;
+
+  background-color: $beta-ui-color;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+.intro--title {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+
+  opacity: 1;
+
+  width: 30%;
+}

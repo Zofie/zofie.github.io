@@ -30,8 +30,8 @@ var settings = {
 var source = {
   scss : 'scss/**/*.scss',
   js : [
-    'js/_scripts.js',
-    'js/_modules/*.js',
+    'js/theme.js',
+    'js/_components/*.js'
   ],
   jekyll : [
     // 'img/png/*.png',
@@ -46,6 +46,7 @@ var source = {
 
 var target = {
   css : 'css/',
+  js: 'js/',
   jekyllCSS : '_site/css/',
   jekyllJS : '_site/js/',
   site : '_site/'
@@ -105,11 +106,11 @@ gulp.task('scss', function () {
 // ---
 
 gulp.task('js', function () {
-  return gulp.src(source.js)
-    .pipe(plumber())
-    .pipe(concat('scripts.js'))
-    .pipe(gulp.dest(target.jekyllJS))
-    .pipe(gulp.dest(target.js));
+	return gulp.src(source.js)
+		.pipe(plumber())
+		.pipe(concat('theme.concat.js'))
+		.pipe(gulp.dest(target.jekyllJS))
+		.pipe(gulp.dest(target.js));
 });
 
 gulp.task('js--reload', ['js'], function () {

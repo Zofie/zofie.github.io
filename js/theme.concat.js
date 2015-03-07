@@ -6,7 +6,6 @@ var jsTheme =
 		jsTheme.mobileNav.init();
 		jsTheme.forms.init();
 		jsTheme.toggle.init();
-		console.log("javascript is locked and loaded!") // for testing purposes. Check your console. Delete after you finished reading this. :-)
 	}
 };
 
@@ -36,21 +35,23 @@ jsTheme.mobileNav =
 	//
 	enableMobileNav: function()
 	{
-		$("html").addClass("mobile-nav");
+		$("html").addClass("mobile");
 	},
 
 	// build mobile nav
 	buildMobileNav: function()
 	{
-		var navHolder = $('.header .inner');
+		var navHolder = $('.nav-mobile__holder');
+		// $('.nav-mobile').hide();
 
-		navHolder.prepend('<span class="main-nav-trigger">menu</span>');
+		navHolder.prepend('<span class="nav-mobile__trigger"> >> </span>');
 
-		var trigger = $('.main-nav-trigger');
-		var nav = $('.main-nav');
+		var trigger = $('.nav-mobile__trigger');
+		var nav = $('.nav-mobile');
 
 		trigger.on('click', function() {
-			nav.toggle();
+			navHolder.toggleClass('is-full');
+			nav.toggleClass();
 			$(this).toggleClass("trigger-active");
 		});
 	}

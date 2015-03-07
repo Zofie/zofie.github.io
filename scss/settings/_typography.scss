@@ -6,15 +6,15 @@ $show-baseline-grid			    : false; // toggle the visibility of the baseline (tru
 $baseline-holder 			      : holder; // set the classname of the element which will show the baseline
 $grid-color 				        : rgba(#000,.1); // set the baseline grid color and opacity
 
-$alpha-font-family			    : Arial;
+$alpha-font-family			    : 'open sans', sans-serif;
 $alpha-font-size			      : 16; // pixel-value
 $alpha-font-weight			    : 400;
 $alpha-line-height			    : 1.5; // em-value
 $alpha-baseline-grid		    : 7; // pixel-value
 $alpha-leading				      : 1; // multiplier
 
-$beta-font-family			      : sans-serif;
-$beta-font-weight			      : 700;
+$beta-font-family			      : 'Bree Serif', serif;
+$beta-font-weight			      : 400;
 
 // Modular scale settings
 

@@ -13,11 +13,11 @@
 // Tools
 //
 
+@import "tools/mixins";
 @import "tools/inputs";
 @import "tools/buttons";
 @import "tools/functions";
 @import "tools/grid";
-@import "tools/mixins";
 @import "tools/pagination";
 @import "tools/typography";
 @import "tools/alerts";
@@ -57,10 +57,20 @@
 // Components
 //
 
+@import "components/header";
+@import "components/navigation";
+@import "components/intro";
+
 
 //
 // Trumps
 //
 
 @import "trumps/base";
-@import "trumps/print";
+
+
+//
+// Print
+//
+
+@media print {@import "trumps/print";}

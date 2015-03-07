@@ -3,6 +3,7 @@ layout: post
 title:  "25 jaar Pixar"
 date:   2014-02-17 19:07:11
 categories: Vrije tijd
+intro-image: img/header.jpg
 ---
 <img src="/img/25-jaar-pixar.jpg" alt="25 jaar pixar">
 Wat kan je zoal doen op Valentijn? Wel, onder andere een dagje op en af naar Parijs voor de tentoonstelling van 25 jaar Pixar.
@@ -13,4 +14,3 @@ Het grote minpunt voor mij was wel de opstelling van de tentoonstelling. Het duu
 
 Een aanrader om naartoe te gaan, maar je zal je moeten haasten want de tentoonstelling loopt nog tot 2 maart.
 <a href="http://artludique.com/exposition2.html" target="_blank">Meer info</a>
-

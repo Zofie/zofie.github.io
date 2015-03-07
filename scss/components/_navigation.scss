@@ -1,0 +1,64 @@
+.nav--main {
+  display: none;
+
+  @include mq($bp3){
+    @include box-(8,1,1);
+    display: block;
+  }
+}
+
+.nav-mobile__holder {
+  @include mq($bp3){
+    display: none;
+  }
+}
+
+.nav--list {
+  all: initial;
+  display: table;
+  table-layout: fixed;
+  width: 100%;
+}
+
+.nav--list__item {
+  font-family: $alpha-font-family;
+  display: table-cell;
+  text-align: center;
+
+  @include padding-tb(.5,.5);
+}
+
+.nav--list__link {
+  color: $alpha-text-color;
+  text-decoration: none;
+
+  &:hover,
+  &:visited {
+    color: $alpha-text-color;
+    text-decoration: none;
+
+    border-bottom: 3px solid $alpha-link-color;
+  }
+
+
+
+  &.is-active {
+    color: $alpha-text-color;
+    text-decoration: none;
+
+    border-bottom: 3px solid $alpha-link-color;
+  }
+}
+
+
+.nav-mobile__holder {
+  position: fixed;
+  left: 0;
+  top: 0;
+  background-color: $beta-ui-color;
+  height: 100%;
+  color: white;
+  &.is-full {
+    width: 90%;
+  }
+}
