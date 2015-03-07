@@ -2,23 +2,65 @@
 // SETTINGS
 //
 
+@import "settings/ui";
 @import "settings/colors";
 @import "settings/typography";
 @import "settings/grid";
-@import "settings/ui";
+
 
 
 //
 // Tools
 //
 
-@import "tools/alerts";
+@import "tools/inputs";
 @import "tools/buttons";
 @import "tools/functions";
 @import "tools/grid";
 @import "tools/mixins";
+@import "tools/pagination";
 @import "tools/typography";
+@import "tools/alerts";
+@import "tools/ui";
+
 
 //
+// Generic
 //
+
+@import "generic/reset";
+
+
 //
+// Elements
+//
+
+@import "elements/forms";
+@import "elements/grid";
+@import "elements/helpers";
+@import "elements/media";
+@import "elements/tables";
+@import "elements/typography";
+
+
+//
+// Objects
+//
+
+@import "objects/buttons";
+@import "objects/alerts";
+@import "objects/pagination";
+@import "objects/icons";
+
+
+//
+// Components
+//
+
+
+//
+// Trumps
+//
+
+@import "trumps/base";
+@import "trumps/print";

@@ -1,0 +1,14 @@
+/*
+  Icons
+*/
+
+.icon {
+	@include hide-text;
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	position: relative;
+	top: 1px;
+	background-repeat: no-repeat;
+	background-position: center top;
+}
