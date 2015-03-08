@@ -2,6 +2,7 @@
 layout: post
 title:  "Tumult boekenclub"
 date:   2014-02-18 10:22:11
+intro: Ik lees graag en toch wel redelijk veel. Ik kan gemiddeld 2 boeken per maand uitlezen en moest ik meer tijd hebben dan zouden dat er nog meer zijn, want er zijn zovéél boeken die ik nog wil lezen.
 categories: Lectuur
 ---
 
@@ -16,8 +17,8 @@ De avond begon met een kleine kennismakingsronde voor de paar nieuwe gezichten e
 <strong>De stad der blinden</strong>
 
 <blockquote>"De stad der blinden (Ensaio sobre a Cegueira) is een roman van de Portugese schrijver en Nobelprijswinnaar José Saramago. Het verhaal beschrijft een massale reactie van de mensheid op een fenomeen waarin het plotseling het vermogen te zien wordt ontnomen en hoe beschaafde mensen in noodsituaties kunnen degenereren tot dierlijk gedrag. Het boek is in een afwijkende stijl geschreven, doordat komma's en hoofdletters op een niet-gangbare manier worden gebruikt. Eigennamen worden evenmin gebruikt. In plaats daarvan noemt de auteur de hoofdpersonages 'de oogarts', 'de vrouw van de oogarts', 'het meisje met de zonnebril' en zo verder."</blockquote>
- 
-Bron: <a href="http://nl.wikipedia.org/wiki/De_stad_der_blinden">Wikipedia</a>
+
+Bron: <a href="http://nl.wikipedia.org/wiki/De_stad_der_blinden" class="text-link">Wikipedia</a>
 
 Wat mij vooral intrigeerde in de gesprekken was hoe iedereen bepaalde aspecten uit het boek anders interpreteerde dan mezelf. Mede-lezers stelden zaken in vraag om zo te kunnen discusieren en dieper in te gaan op het onderwerp van het boek. Het fijnste vond ik dat de discussies mij aanzetten om toch een diepere betekenis te gaan zoeken in het verhaal en zelf ook zaken in vraag te stellen.
 

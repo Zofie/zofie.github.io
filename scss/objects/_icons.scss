@@ -5,10 +5,15 @@
 .icon {
 	@include hide-text;
 	display: inline-block;
-	width: 16px;
-	height: 16px;
+	width: 40px;
+	height: 40px;
 	position: relative;
 	top: 1px;
 	background-repeat: no-repeat;
-	background-position: center top;
+	background-position: center center;
+}
+
+.icon--menu {
+	@include image(nav);
+	background-size: 30px 30px;
 }

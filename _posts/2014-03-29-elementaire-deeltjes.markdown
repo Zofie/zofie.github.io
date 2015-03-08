@@ -2,7 +2,9 @@
 layout: post
 title:  "Elementaire deeltjes"
 date:   2014-03-29 10:22:11
+intro: Elementaire deeltjes vertelt het verhaal van de twee halfbroers Michel en Bruno die elkaar pas leren kennen als ze al ouder zijn en ontdekken dat ze op zowat elk vlak verschillen. Ze hebben dezelfde moeder maar deze vrouw wil vanaf hun geboorte niets met hen te maken heb en dropt hen bij de grootouders aan vaderskant en vertrekt daarna richting India om in een commune te gaan leven.
 categories: Lectuur
+intro-image: http://lepeuple.be/wp-content/uploads/2015/01/houellebecq1.jpg
 ---
 
 Elementaire deeltjes vertelt het verhaal van de twee halfbroers Michel en Bruno die elkaar pas leren kennen als ze al ouder zijn en ontdekken dat ze op zowat elk vlak verschillen. Ze hebben dezelfde moeder maar deze vrouw wil vanaf hun geboorte niets met hen te maken heb en dropt hen bij de grootouders aan vaderskant en vertrekt daarna richting India om in een commune te gaan leven.

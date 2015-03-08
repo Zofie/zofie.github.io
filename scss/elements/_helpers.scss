@@ -1,8 +1,3 @@
-/*
-  Helpers
-*/
+.is-hidden { display: none;}
 
-// Basis class to easily hide elements (for js toggle functionality, ...)
-.is-hidden {
-	display: none;
-}
+.pT { @include padding-tb(1,0) }

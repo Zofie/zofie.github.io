@@ -49,14 +49,19 @@ pre {
 	overflow: auto;
 }
 
-ul,
-ol,
 blockquote {
-	padding-left: 1em;
-}
-
-blockquote {
+	text-align: center;
 	font-style: italic;
+	color: darken($gray,25);
+
+	border-bottom: 3px solid lighten($gray,25%);
+	border-top: 3px solid lighten($gray,25%);
+
+	width: 75%;
+	margin: 0 auto;
+
+	padding: 1em;
+	@include margin-tb(1,1);
 }
 
 caption {

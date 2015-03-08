@@ -44,7 +44,7 @@ jsTheme.mobileNav =
 		var navHolder = $('.nav-mobile__holder');
 		// $('.nav-mobile').hide();
 
-		navHolder.prepend('<span class="nav-mobile__trigger"> >> </span>');
+		navHolder.prepend('<span class="nav-mobile__trigger"><span class="icon icon--menu"></span></span>');
 
 		var trigger = $('.nav-mobile__trigger');
 		var nav = $('.nav-mobile');

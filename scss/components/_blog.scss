@@ -1,0 +1,9 @@
+.blog--post {
+
+
+  @include padding-tb(1,1);
+}
+
+.blog--post__intro {
+  @include text-dimensions(19);
+}

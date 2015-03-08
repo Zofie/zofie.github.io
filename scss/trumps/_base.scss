@@ -55,8 +55,17 @@ img {
 }
 
 .holder {
-  padding: 0 1.5em;
+  padding: 0 1em 0 4em;
   @include mq($bp3) {
-    padding: 0 1.5em;  
+    padding: 0 1.5em;
+  }
+}
+
+.holder--content {
+  @include mq($bp3) {
+    width: 60%;
+    margin: 0 auto;
+
+    @include padding-tb(1,1);
   }
 }

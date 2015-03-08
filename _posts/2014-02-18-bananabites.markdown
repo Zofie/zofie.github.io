@@ -2,10 +2,12 @@
 layout: post
 title:  "Bananabites"
 date:   2014-02-18 19:22:11
+intro: Een klein, simpel en lekker receptje
+image: /img/bananabites.jpg
 categories: Lectuur
+intro-image: /img/bananabites.jpg
 ---
 
-<img src="/img/bananabites.jpg" alt="bananabites" />
 <p>
 	Een klein, simpel en lekker receptje:</p>
 <p>

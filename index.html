@@ -11,10 +11,10 @@ intro-image: img/header.jpg
 
   <h1>Posts</h1>
 
-  <ul class="posts">
+  <ul class="ui-list">
     {% for post in site.posts %}
       <li>
-        <span>{{ post.date | date: "%b %-d, %Y" }}</span>
+        <span>{{ post.date | date: "%b %-d, %Y" }}</span> - 
         <a class="text-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
       </li>
     {% endfor %}

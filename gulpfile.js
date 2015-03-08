@@ -34,13 +34,13 @@ var source = {
     'js/_components/*.js'
   ],
   jekyll : [
-    // 'img/png/*.png',
-    'img/jpg/*.jpg',
-    // 'img/svg/*.svg',
     '_includes/**/*.html',
     '_layouts/*.html',
     '_posts/*.md',
     '*.html'
+  ],
+  svg : [
+      'img/svg/*.svg'
   ]
 };
 
@@ -49,7 +49,8 @@ var target = {
   js: 'js/',
   jekyllCSS : '_site/css/',
   jekyllJS : '_site/js/',
-  site : '_site/'
+  site : '_site/',
+  png : 'img/png/'
 };
 
 
@@ -74,6 +75,9 @@ var cmq = require('gulp-combine-media-queries');
 // JAVASCRIPT
 var concat = require('gulp-concat');
 var uglify = require('gulp-uglify');
+
+// IMAGES
+var svg2png = require('gulp-svg2png');
 
 // MESSAGES
 var messages = {
@@ -111,6 +115,13 @@ gulp.task('js', function () {
 		.pipe(concat('theme.concat.js'))
 		.pipe(gulp.dest(target.jekyllJS))
 		.pipe(gulp.dest(target.js));
+});
+
+gulp.task('svg', function () {
+	return gulp.src(source.svg)
+		.pipe(plumber())
+		.pipe(svg2png())
+		.pipe(gulp.dest(target.png));
 });
 
 gulp.task('js--reload', ['js'], function () {

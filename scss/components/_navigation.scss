@@ -4,6 +4,7 @@
   @include mq($bp3){
     @include box-(8,1,1);
     display: block;
+    @include padding-tb(.5,.5);
   }
 }
 
@@ -24,6 +25,29 @@
   font-family: $alpha-font-family;
   display: table-cell;
   text-align: center;
+  vertical-align: middle;
+
+  @include padding-tb(.5,.5);
+}
+
+.nav-mobile__holder {
+  -webkit-box-shadow: 1px 0px 3px 0px rgba(26,35,126,1);
+     -moz-box-shadow: 1px 0px 3px 0px rgba(26,35,126,1);
+          box-shadow: 1px 0px 3px 0px rgba(26,35,126,1);
+}
+
+.nav-mobile--list__item {
+  font-family: $alpha-font-family;
+  list-style: none;
+  padding-left: .5em;
+
+  > a {
+    color: $white;
+  }
+
+  &:hover {
+    background-color: darken($beta-ui-color,10);
+  }
 
   @include padding-tb(.5,.5);
 }
