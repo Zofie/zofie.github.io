@@ -1,0 +1,20 @@
+.mask {
+	position: relative;
+	overflow: hidden;
+	border: 1px solid rgba($white, 0.8);
+	background-color: $white;
+}
+
+.mask > img {
+	position: absolute;
+	top: 0;
+	width: 100%;
+}
+
+img {
+	width: 100%;
+}
+
+.ratio--one-three {
+	padding-top: 25%; // 3/4 * 100
+}

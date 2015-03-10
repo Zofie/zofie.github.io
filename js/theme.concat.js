@@ -6,6 +6,7 @@ var jsTheme =
 		jsTheme.mobileNav.init();
 		jsTheme.forms.init();
 		jsTheme.toggle.init();
+		jsTheme.masonry.init();
 	}
 };
 
@@ -21,6 +22,26 @@ jsTheme.forms =
 			$(this).closest('.alert-box').fadeOut(300);
 		});
 	}
+};
+
+jsTheme.masonry =
+{
+	init: function() {
+		// $('.masonry--container').masonry({
+		// 	"columnWidth": 60,
+		// 	gutter: 10;
+		//   itemSelector: 'masonry--item',
+		// });
+
+		var container = document.querySelector('.masonry--container');
+		// initialize Masonry after all images have loaded
+		imagesLoaded( container, function() {
+		  msnry.layout();
+		});
+		var msnry = new Masonry( container, {
+		  itemSelector: '.masonry--item',
+		});
+  }
 };
 
 jsTheme.mobileNav =
@@ -41,16 +62,17 @@ jsTheme.mobileNav =
 	// build mobile nav
 	buildMobileNav: function()
 	{
-		var navHolder = $('.nav-mobile__holder');
-		// $('.nav-mobile').hide();
+		var navHolder = $('.nav-mobile__holder'),
+		icon = $('.js-toggle-icon');
 
-		navHolder.prepend('<span class="nav-mobile__trigger"><span class="icon icon--menu"></span></span>');
+		navHolder.prepend('<span class="nav-mobile__trigger"><span class="js-toggle-icon icon icon--menu"></span></span>');
 
 		var trigger = $('.nav-mobile__trigger');
 		var nav = $('.nav-mobile');
 
 		trigger.on('click', function() {
 			navHolder.toggleClass('is-full');
+			$('.js-toggle-icon').toggleClass('icon--close').toggleClass('icon--menu');
 			nav.toggleClass();
 			$(this).toggleClass("trigger-active");
 		});

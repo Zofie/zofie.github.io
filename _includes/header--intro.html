@@ -1,4 +1,9 @@
-<section class="intro" style="background-image: url('{{ page.intro-image}}')">
+<section class="intro intro--header">
+  {% if page.intro-image == null %}
+    <img src="/img/header.jpg" alt="/img/header.jpg">
+  {% else %}
+    <img src="{{ page.intro-image}}" alt="/{{ page.intro-image}}">
+  {% endif %}
   <h1 class="intro--title">
     {{ page.title }}
   </h1>

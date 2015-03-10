@@ -17,3 +17,8 @@
 	@include image(nav);
 	background-size: 30px 30px;
 }
+
+.icon--close {
+	@include image(close);
+	background-size: 30px 30px;
+}

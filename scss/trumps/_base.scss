@@ -49,11 +49,6 @@ hr {
 // Fix a > img problem
 //
 
-img {
-	vertical-align: top;
-	border: 0;
-}
-
 .holder {
   padding: 0 1em 0 4em;
   @include mq($bp3) {
@@ -65,7 +60,6 @@ img {
   @include mq($bp3) {
     width: 60%;
     margin: 0 auto;
-
-    @include padding-tb(1,1);
   }
+  @include padding-tb(1,1);
 }

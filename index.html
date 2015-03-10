@@ -9,16 +9,27 @@ intro-image: img/header.jpg
 
 <div class="home">
 
-  <h1>Posts</h1>
+  <h1>Recent blogposts</h1>
 
-  <ul class="ui-list">
-    {% for post in site.posts %}
-      <li>
-        <span>{{ post.date | date: "%b %-d, %Y" }}</span> - 
-        <a class="text-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-      </li>
-    {% endfor %}
-  </ul>
+  <section class="masonry--container">
+
+      {% for post in site.posts %}
+      <a href="{{ post.url | prepend: site.baseurl }}">
+        <div class="masonry--item">
+          <div class="masonry--item__inner">
+            <img src="{{ post.intro-image }}" alt="">
+            <h3 class="masonry--item__title">{{ post.title }}</h3>
+            <div class="masonry--item__meta">{{ post.date | date: "%b %-d, %Y" }}</div>
+            <p>
+              {{ post.intro }}
+            </p>
+            <span class="text-link">Lees meer...</span>
+          </div>
+        </div>
+      </a>
+      {% endfor %}
+
+  </section>
 
   <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
 

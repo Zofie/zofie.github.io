@@ -74,10 +74,6 @@ caption {
 	@include margin-bottom(.5);
 }
 
-img {
-	max-width: 100%;
-}
-
 //
 // Links
 //
@@ -95,6 +91,7 @@ a:focus {
 	color: $alpha-text-color;
 	border-bottom: 3px solid $alpha-link-color;
 	transition: color .22s ease-in-out;
+	cursor: pointer;
 
 	&:visited {
 		text-decoration: none;

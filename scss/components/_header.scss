@@ -8,6 +8,9 @@
   > h1 {
     @include text-dimensions(20,0.5,0);
     @include mq($bp3) {
+      @include text-dimensions(20,0.75,0);
+    }
+    @include mq($bp4) {
       @include text-dimensions(24,0.5,0);
     }
   }

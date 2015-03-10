@@ -146,7 +146,7 @@
 
 // Image
 @mixin image($filename) {
-	background-image: url('../img/png/' + $filename + '.png');
+	background-image: url('/img/png/' + $filename + '.png');
 
 	.svg & {
 		background-image: url('../img/svg/' + $filename + '.svg');

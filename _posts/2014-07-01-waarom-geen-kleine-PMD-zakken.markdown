@@ -4,7 +4,7 @@ title:  "Waarom geen kleine PMD-zakken?"
 date:   2014-07-01 20:02:00
 intro: De PMD-zak. Die grote blauwe zak waar je met gemak een héle <a href="http://www.delhaize.be/" class="text-link">Delhaize</a> in kwijt kan, maar waar sommigen toch redelijk wat moeite voor moeten doen.
 categories: Gent
-intro-image: img/header.jpg
+intro-image: http://4.bp.blogspot.com/-LX9aH2aoqTY/Ttwq3Rnmn-I/AAAAAAAAACc/YRL7SxpbmrA/s1600/filled.jpg
 ---
 
 <div class="blog--post__intro">
