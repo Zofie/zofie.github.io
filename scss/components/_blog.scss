@@ -1,9 +1,51 @@
 .blog--post {
-
-
-  @include padding-tb(1,1);
+  @include padding-tb(1,0);
+  @include margin-tb(0,1);
+  @include mq($bp3){
+    @include padding-tb(2,0);
+    @include margin-tb(0,2);
+    @include clearfix;
+  }
 }
 
-.blog--post__intro {
-  @include text-dimensions(19);
+.blog--post + .blog--post {
+  border-top: 1px solid $gamma-ui-color;
+}
+
+.blog--title-holder {
+  @include mq($bp3){
+    @include box-(5,0,1);
+  }
+  @include padding-tb(0,1);
+}
+
+  .blog--item__title {
+    padding: 0;
+  }
+
+  .blog--item__meta {
+    @include text-dimensions(14,0,0);
+  }
+
+.blog--content-holder {
+  text-align: justify;
+  @include mq($bp3) {
+    @include box-(6,1,0);
+    float: right;
+  }
+}
+
+.post--title {
+  position: relative;
+  background-color: $beta-ui-color;
+  @include margin-tb(1,1);
+}
+
+
+.post--title > h1 {
+	position: absolute;
+	bottom: 0;
+  left: 10px;
+	width: 30%;
+	overflow: hidden;
 }

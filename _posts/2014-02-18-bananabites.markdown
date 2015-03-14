@@ -5,7 +5,7 @@ date:   2014-02-18 19:22:11
 intro: Een klein, simpel en lekker receptje
 image: /img/bananabites.jpg
 categories: Lectuur
-intro-image: /img/bananabites.jpg
+intro-image: http://www.w3devcampus.com/wp-content/uploads/logoAndOther/logo_JavaScript.png
 ---
 
 <p>

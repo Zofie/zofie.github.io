@@ -16,19 +16,19 @@ jsTheme.mobileNav =
 	// build mobile nav
 	buildMobileNav: function()
 	{
-		var navHolder = $('.nav-mobile__holder'),
+		var navHolder = $('.nav--holder'),
 		icon = $('.js-toggle-icon');
 
-		navHolder.prepend('<span class="nav-mobile__trigger"><span class="js-toggle-icon icon icon--menu"></span></span>');
+		// hide for now
+		// navHolder.prepend('<span class="nav-mobile__trigger"><span class="js-toggle-icon icon icon--menu"></span></span>');
 
-		var trigger = $('.nav-mobile__trigger');
-		var nav = $('.nav-mobile');
+		var trigger = $('.js-toggle-icon');
+		var nav = $('.nav--main');
 
 		trigger.on('click', function() {
-			navHolder.toggleClass('is-full');
+			console.log('hi');
 			$('.js-toggle-icon').toggleClass('icon--close').toggleClass('icon--menu');
-			nav.toggleClass();
-			$(this).toggleClass("trigger-active");
+			nav.toggleClass('is-hidden');
 		});
 	}
 };

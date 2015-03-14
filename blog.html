@@ -2,7 +2,33 @@
 layout: default
 title: Blog
 permalink: /blog.html
-menu: main
+<!-- menu: main -->
 menu-name: Blog
 weight: 2
 ---
+
+<section class="blog">
+  {% for post in site.posts %}
+  <div class="row blog--item mB js-equal-container">
+    <div class="blog--item-image js-equal-item">
+      <div class="mask ratio--one-three">
+        <img src="{{ post.intro-image }}" alt="">
+      </div>
+    </div>
+    <div class="blog--item-content js-equal-item">
+      <h3 class="blog--item__title">
+        <a href="{{ post.url | prepend: site.baseurl }}">
+          {{ post.title }}
+        </a>
+      </h3>
+      <div class="blog--item__meta">{{ post.date | date: "%b %-d, %Y" }}</div>
+      <p>
+        {{ post.intro }}
+      </p>
+      <p class="blog--item__link">
+        <a href="{{ post.url | prepend: site.baseurl }}" class="text-link">Lees verder...</a>
+      </p>
+    </div>
+    </div>
+    {% endfor %}
+</section>

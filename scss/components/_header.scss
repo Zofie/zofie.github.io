@@ -1,5 +1,6 @@
-.header {
+/* .header {
   background-color: $white;
+  padding: 0 1em 0 4em;
 
   @include clearfix;
 }
@@ -31,4 +32,16 @@
     @include box-(4,1,1);
     @include padding-tb(.5,.5);
   }
+}
+ */
+
+
+ .header__logo {
+   text-align: center;
+   @include text-dimensions(20,0,0)
+ }
+
+.header__divider {
+  width: 100px;
+  margin: 0 auto;
 }

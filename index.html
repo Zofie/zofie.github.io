@@ -8,28 +8,28 @@ intro-image: img/header.jpg
 ---
 
 <div class="home">
-
-  <h1>Recent blogposts</h1>
-
-  <section class="masonry--container">
-
-      {% for post in site.posts %}
-      <a href="{{ post.url | prepend: site.baseurl }}">
-        <div class="masonry--item">
-          <div class="masonry--item__inner">
-            <img src="{{ post.intro-image }}" alt="">
-            <h3 class="masonry--item__title">{{ post.title }}</h3>
-            <div class="masonry--item__meta">{{ post.date | date: "%b %-d, %Y" }}</div>
+  <section class="holder">
+    <div class="holder--content">
+      <div class="blog">
+        {% for post in site.posts %}
+        <section class="blog--post">
+          <header class="blog--title-holder">
+            <a href="{{ post.url | prepend: site.baseurl }}">
+              <h1 class="h2 blog--item__title">{{ post.title }}</h1>
+              <p class="blog--item__meta">
+                {{ post.date | date: "%b %-d, %Y" }}
+              </p>
+            </a>
+          </header>
+          <div class="blog--content-holder">
+            {{ post.content | strip_html | truncate: 400 }}
             <p>
-              {{ post.intro }}
+              <a href="{{ post.url | prepend: site.baseurl }}" class="text-link">Lees meer...</a>
             </p>
           </div>
-        </div>
-      </a>
-      {% endfor %}
-
+        </section>
+        {% endfor %}
+      </div>
+    </div>
   </section>
-
-  <!-- <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p> -->
-
 </div>

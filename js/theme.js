@@ -6,7 +6,8 @@ var jsTheme =
 		jsTheme.mobileNav.init();
 		jsTheme.forms.init();
 		jsTheme.toggle.init();
-		jsTheme.masonry.init();
+		// jsTheme.masonry.init();
+		jsTheme.makeEqualHeight.init();
 	}
 };
 

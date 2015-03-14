@@ -9,6 +9,7 @@
 }
 
 html {
+  background-color: $alpha-ui-color;
 	box-sizing: border-box;
 	font: $alpha-font-weight $alpha-font-size/16*100%/#{$alpha-line-height} $alpha-font-family ;
 	-webkit-overflow-scrolling: touch;
@@ -50,15 +51,16 @@ hr {
 //
 
 .holder {
-  padding: 0 1em 0 4em;
+  padding: 0 1em 0 1em;
   @include mq($bp3) {
     padding: 0 1.5em;
   }
+  @extend clearfix;
 }
 
 .holder--content {
   @include mq($bp3) {
-    width: 60%;
+    width: 70%;
     margin: 0 auto;
   }
   @include padding-tb(1,1);

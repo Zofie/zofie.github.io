@@ -2,9 +2,9 @@
 layout: post
 title:  "Waarom geen kleine PMD-zakken?"
 date:   2014-07-01 20:02:00
-intro: De PMD-zak. Die grote blauwe zak waar je met gemak een héle Delhaize in kwijt kan, maar waar sommigen toch redelijk wat moeite voor moeten doen.
+intro: De PMD-zak. Die grote blauwe zak waar je met gemak een héle Delhaize in kwijt kan, maar waar sommigen toch redelijk wat moeite voor moeten doen. Redelijk wat moeite is zacht uitgedrukt, want wij zetten deze gemiddeld maar eens om de 2 maand buiten. We krijgen deze nauwelijks gevuld, dus stelde ik de vraag aan Stad Gent op Twitter of er in de toekomst geen kleinere versie verkrijgbaar zou zijn.
 categories: Gent
-intro-image: http://4.bp.blogspot.com/-LX9aH2aoqTY/Ttwq3Rnmn-I/AAAAAAAAACc/YRL7SxpbmrA/s1600/filled.jpg
+intro-image: http://www.w3devcampus.com/wp-content/uploads/logoAndOther/logo_JavaScript.png
 ---
 
 <div class="blog--post__intro">

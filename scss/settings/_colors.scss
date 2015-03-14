@@ -4,24 +4,24 @@
 // Cool
 
 $aqua						               : #00BCD4;
-$blue						               : #2196F3;
-$navy						               : #1A237E;
+$blue						               : #506175;
+$navy						               : #2e3a4a;
 $teal						               : #009688;
-$green						             : #4CAF50;
+$green						             : #69a193;
 $lime						               : #CDDC39;
 
 // Warm
 
-$yellow						             : #FFEB3B;
+$yellow						             : #d79f3d;
 $orange						             : #FF9800;
-$red						               : #F44336;
+$red						               : #bb5547;
 $purple						             : #9C27B0;
 
 // Gray Scale
 
 $white						             : #ffffff;
 $silver						             : #607D8B;
-$gray						               : #9E9E9E;
+$gray						               : #506075;
 $black						             : #111111;
 
 // Semantic classes
@@ -29,7 +29,7 @@ $black						             : #111111;
 $alpha-neutral				         : $white;
 $beta-neutral				           : $black;
 
-$alpha-text-color			         : $black;
+$alpha-text-color			         : $white;
 $alpha-text-color-light	  	   : mix($alpha-text-color, $alpha-neutral, 50%);
 $alpha-text-color-dark		     : mix($alpha-text-color, $beta-neutral, 50%);
 
@@ -38,17 +38,17 @@ $beta-text-color-light		     : mix($beta-text-color, $alpha-neutral, 50%);
 $beta-text-color-dark		       : mix($beta-text-color, $beta-neutral, 50%);
 
 // Primary elements
-$alpha-ui-color				         : $blue;
+$alpha-ui-color				         : $navy;
 $alpha-ui-color-light		       : mix($alpha-ui-color, $alpha-neutral, 50%);
 $alpha-ui-color-dark  		     : mix($alpha-ui-color, $beta-neutral, 50%);
 
 // Secondary elements
-$beta-ui-color				         : $navy;
+$beta-ui-color				         : $red;
 $beta-ui-color-light		       : mix($beta-ui-color, $alpha-neutral, 50%);
 $beta-ui-color-dark			       : mix($beta-ui-color, $beta-neutral, 50%);
 
 // Used for borders
-$gamma-ui-color				         : $red;
+$gamma-ui-color				         : $blue;
 $gamma-ui-color-light		       : mix($gamma-ui-color, $alpha-neutral, 50%);
 $gamma-ui-color-dark		       : mix($gamma-ui-color, $beta-neutral, 50%);
 
@@ -76,7 +76,7 @@ $grey-05                       : hsl(hue($alpha-ui-color),25,95);
 
 // Links
 
-$alpha-link-color			         : $alpha-ui-color;
+$alpha-link-color			         : $beta-ui-color;
 $alpha-link-colorhover		     : darken($alpha-link-color, 10);
 $alpha-link-colorfocus		     : darken($alpha-link-color, 10);
 $alpha-link-coloractive		     : darken($alpha-link-color, 10);

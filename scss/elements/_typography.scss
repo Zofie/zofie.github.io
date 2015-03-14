@@ -16,21 +16,21 @@ h6 {
 	text-rendering: optimizelegibility;
 }
 
-h1 {
+.h1, h1 {
 	@include baseline-dimensions(3,3,3);
 }
 
-h2 {
+.h2, h2 {
 	@include baseline-dimensions(2,2,2);
 }
 
-h3 {
+.h3, h3 {
 	@include baseline-dimensions(1,1,1);
 }
 
-h4,
-h5,
-h6 {
+.h4, h4,
+.h5, h5,
+.h6, h6 {
 	font-weight: $beta-font-weight;
 	@include baseline-dimensions(0,3,1);
 }
@@ -52,10 +52,9 @@ pre {
 blockquote {
 	text-align: center;
 	font-style: italic;
-	color: darken($gray,25);
 
-	border-bottom: 3px solid lighten($gray,25%);
-	border-top: 3px solid lighten($gray,25%);
+	border-bottom: 2px solid $grey-03;
+	border-top: 2px solid $grey-03;
 
 	width: 75%;
 	margin: 0 auto;

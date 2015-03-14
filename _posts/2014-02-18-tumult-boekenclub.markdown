@@ -4,7 +4,7 @@ title:  "Tumult boekenclub"
 date:   2014-02-18 10:22:11
 intro: Ik lees graag en toch wel redelijk veel. Ik kan gemiddeld 2 boeken per maand uitlezen en moest ik meer tijd hebben dan zouden dat er nog meer zijn, want er zijn zovéél boeken die ik nog wil lezen.
 categories: Lectuur
-intro-image: http://www.blossominghealth.com/wp-content/uploads/2014/11/books.png
+intro-image: http://1.bp.blogspot.com/-r5a4QKPBx44/VBzZghlglmI/AAAAAAAAADA/rZ4SFIeUSkw/s1600/56-apple-512.png
 ---
 
 Ik lees graag en toch wel redelijk veel. Ik kan gemiddeld 2 boeken per maand uitlezen en moest ik meer tijd hebben dan zouden dat er nog meer zijn, want er zijn zovéél boeken die ik nog wil lezen.

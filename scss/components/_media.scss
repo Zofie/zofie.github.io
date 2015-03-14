@@ -9,12 +9,25 @@
 	position: absolute;
 	top: 0;
 	width: 100%;
+	overflow: hidden;
 }
 
 img {
 	width: 100%;
 }
 
-.ratio--one-three {
+.ratio--one-quarter {
 	padding-top: 25%; // 3/4 * 100
+}
+
+.ratio--one-three {
+	padding-top: 33%; // 3/4 * 100
+}
+
+.ratio--two-three {
+	padding-top: 66%; // 3/4 * 100
+}
+
+.ratio--square {
+	padding-top: 100%; // 3/4 * 100
 }

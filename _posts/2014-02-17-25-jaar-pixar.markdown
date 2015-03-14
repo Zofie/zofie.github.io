@@ -4,8 +4,8 @@ title:  "25 jaar Pixar"
 date:   2014-02-17 19:07:11
 categories: Vrije tijd
 image: /img/25-jaar-pixar.jpg
-intro: Wat kan je zoal doen op Valentijn? Wel, onder andere een dagje op en af naar Parijs voor de tentoonstelling van 25 jaar Pixar.
-intro-image: http://www.aerogrammestudio.com/wp-content/uploads/2013/03/pixars-22-rules-for-storytelling.jpg
+intro: Wat kan je zoal doen op Valentijn? Wel, onder andere een dagje op en af naar Parijs voor de tentoonstelling van 25 jaar Pixar. Een redelijk indrukwekkende tentoonstelling, zeker als je fan bent van kunst, animatiefilms en tekenen. Je kreeg te zien hoe de personages van de films tot stand kwamen en hoe de eerste schetsen van onder andere Woody van Toy Story er uit zagen. Ook werd je ondergedompeld in de fantasie van alle tekenaars en hoe zij, aan de hand van het scenario, het personage zagen.
+intro-image: https://lh3.googleusercontent.com/-3U6hWPzGvms/AAAAAAAAAAI/AAAAAAAAAA4/MmQimxNUuAk/photo.jpg
 ---
 <img src="/img/25-jaar-pixar.jpg" alt="25 jaar pixar">
 Wat kan je zoal doen op Valentijn? Wel, onder andere een dagje op en af naar Parijs voor de tentoonstelling van 25 jaar Pixar.

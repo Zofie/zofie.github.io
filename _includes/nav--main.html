@@ -1,14 +1,18 @@
-<nav class="nav nav--main">
-
-  <ul class= "nav--list">
-    {% for weight in (1..10) %}
-      {% for page in site.pages %}
-        {% if page.weight == weight && page.menu == 'main'%}
-          <li class="nav--list__item">
-            <a class="nav--list__link" href="{{ page.url }}">{{ page.menu-name }}</a>
-          </li>
-        {% endif %}
+<section class="nav--holder">
+  <nav class="nav nav--main is-hidden">
+    <span class="js-toggle-icon icon icon--menu"></span>
+    <ul class= "nav--list">
+      {% for weight in (1..10) %}
+        {% for page in site.pages %}
+          {% if page.menu == 'main'%}
+          {% if page.weight == weight' %}
+            <li class="nav--list__item">
+              <a class="nav--list__link" href="{{ page.url }}">{{ page.menu-name }}</a>
+            </li>
+          {% endif %}
+          {% endif %}
+        {% endfor %}
       {% endfor %}
-    {% endfor %}
-  </ul>
-</nav>
+    </ul>
+  </nav>
+</section>

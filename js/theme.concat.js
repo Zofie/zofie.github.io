@@ -6,7 +6,8 @@ var jsTheme =
 		jsTheme.mobileNav.init();
 		jsTheme.forms.init();
 		jsTheme.toggle.init();
-		jsTheme.masonry.init();
+		// jsTheme.masonry.init();
+		jsTheme.makeEqualHeight.init();
 	}
 };
 
@@ -23,6 +24,24 @@ jsTheme.forms =
 		});
 	}
 };
+
+jsTheme.makeEqualHeight =
+{
+	init: function() {
+        if ($(window).width() > 679) {
+			$(window).load(function() {
+				var $indexBlock = $('.js-equal-container .js-equal-item'),
+				indexBlockHeight = 0;
+				$indexBlock.each(function()
+				{
+					if($(this).height() > indexBlockHeight)
+						{indexBlockHeight = $(this).height();}
+				});
+				$indexBlock.height(indexBlockHeight);
+			});
+		}
+    }
+}
 
 jsTheme.masonry =
 {
@@ -62,19 +81,19 @@ jsTheme.mobileNav =
 	// build mobile nav
 	buildMobileNav: function()
 	{
-		var navHolder = $('.nav-mobile__holder'),
+		var navHolder = $('.nav--holder'),
 		icon = $('.js-toggle-icon');
 
-		navHolder.prepend('<span class="nav-mobile__trigger"><span class="js-toggle-icon icon icon--menu"></span></span>');
+		// hide for now
+		// navHolder.prepend('<span class="nav-mobile__trigger"><span class="js-toggle-icon icon icon--menu"></span></span>');
 
-		var trigger = $('.nav-mobile__trigger');
-		var nav = $('.nav-mobile');
+		var trigger = $('.js-toggle-icon');
+		var nav = $('.nav--main');
 
 		trigger.on('click', function() {
-			navHolder.toggleClass('is-full');
+			console.log('hi');
 			$('.js-toggle-icon').toggleClass('icon--close').toggleClass('icon--menu');
-			nav.toggleClass();
-			$(this).toggleClass("trigger-active");
+			nav.toggleClass('is-hidden');
 		});
 	}
 };
