@@ -22,3 +22,18 @@
 	@include image(close);
 	background-size: 40px 40px;
 }
+
+.icon--twitter {
+	@include image(twitter);
+	background-size: 20px 20px;
+}
+
+.icon--facebook {
+	@include image(facebook);
+	background-size: 20px 20px;
+}
+
+.icon--linkedin {
+	@include image(linkedin);
+	background-size: 20px 20px;
+}

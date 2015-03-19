@@ -2,10 +2,11 @@
 
 @mixin alert {
 	position: relative;
-	padding: em($alpha-baseline-grid*2) em($alpha-baseline-grid*3);
-	margin-bottom: em($alpha-baseline-grid*2);
 	cursor: pointer;
-	/* @include block-skin; */
+	background-color: $yellow;
+	text-align: center;
+
+	padding: 1em 4em;;
 
 	a {
 		text-decoration: underline;
@@ -28,6 +29,12 @@
 
 	p {
 		@include baseline-dimensions(0,1,1);
+	}
+
+	.icon--close {
+		position: absolute;
+		right: 10px;
+		top: 5px;
 	}
 }
 
@@ -54,12 +61,11 @@
 }
 
 @mixin alert-notice {
-	@include alert;
-	/* @include block-skin($notice-color); */
-
-	strong {@include text-color($notice-color);}
+	background-color: $yellow;
 
 	a {
 		@include text-color($notice-color);
 	}
+
+	@include clearfix;
 }

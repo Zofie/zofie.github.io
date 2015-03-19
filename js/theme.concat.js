@@ -3,21 +3,23 @@ var jsTheme =
 	// init, something like a constructor
 	init: function()
 	{
+		jsTheme.socialShareButtons.init();
 		jsTheme.mobileNav.init();
-		jsTheme.forms.init();
+		jsTheme.alerts.init();
 		jsTheme.toggle.init();
-		// jsTheme.masonry.init();
+		jsTheme.masonry.init();
 		jsTheme.makeEqualHeight.init();
+
 	}
 };
 
 $(jsTheme.init);
 
-jsTheme.forms =
+jsTheme.alerts =
 {
 	init: function()
 	{
-		$('.alert-box').on('click', function(e)
+		$('.js-close-alert').on('click', function(e)
 		{
 			e.preventDefault();
 			$(this).closest('.alert-box').fadeOut(300);
@@ -84,8 +86,7 @@ jsTheme.mobileNav =
 		var navHolder = $('.nav--holder'),
 		icon = $('.js-toggle-icon');
 
-		// hide for now
-		// navHolder.prepend('<span class="nav-mobile__trigger"><span class="js-toggle-icon icon icon--menu"></span></span>');
+		navHolder.prepend('<span class="nav-mobile__trigger"><span class="js-toggle-icon icon icon--menu"></span></span>');
 
 		var trigger = $('.js-toggle-icon');
 		var nav = $('.nav--main');
@@ -97,6 +98,24 @@ jsTheme.mobileNav =
 		});
 	}
 };
+
+jsTheme.socialShareButtons =
+{
+	init: function() {
+		var title = $(document).prop('title');
+
+		$(".js-facebook").click(function(e){
+			e.preventDefault();
+			window.open("https://www.facebook.com/sharer/sharer.php?u='+encodeURIComponent("+location.href+"?v=1)" , 'facebook-share-dialog', 'width=626,height=436');
+		});
+
+		$(".js-twitter").click(function(e){
+			e.preventDefault();
+			window.open("http://twitter.com/intent/tweet?text=" + title + " " + location.href, 'twitter', 'width=626,height=436');
+		});
+    }
+
+}
 
 jsTheme.toggle =
 {

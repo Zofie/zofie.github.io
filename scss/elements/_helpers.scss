@@ -1,7 +1,10 @@
 .is-hidden { display: none;}
-/* 
+
 .pB { @include padding-tb(0,1) }
 .pT { @include padding-tb(1,0) }
 .mT { @include margin-tb(1,0) }
 .mB { @include margin-tb(0,1) }
- */
+
+.l-right { float: right }
+
+.clearfix { @include clearfix;}

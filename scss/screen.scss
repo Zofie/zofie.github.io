@@ -30,6 +30,15 @@
 
 @import "generic/reset";
 
+//
+// Objects
+//
+
+@import "objects/buttons";
+@import "objects/alerts";
+/* @import "objects/pagination"; */
+@import "objects/icons";
+
 
 //
 // Elements
@@ -43,17 +52,6 @@
 @import "elements/typography";
 @import "elements/lists";
 
-
-//
-// Objects
-//
-
-/* @import "objects/buttons"; */
-/* @import "objects/alerts"; */
-/* @import "objects/pagination"; */
-@import "objects/icons";
-
-
 //
 // Components
 //
@@ -65,6 +63,7 @@
 @import "components/media";
 /* @import "components/masonry"; */
 @import "components/footer";
+@import "components/work";
 
 
 //

@@ -1,7 +1,6 @@
 // Buttons
 
 @mixin btn {
-	border-radius: $radius;
 	position: relative;
 	display: block;
 	width: 100%;
@@ -28,18 +27,18 @@
 // Button sizes
 
 @mixin btn-l {
-	@include em-padding-lr(1);
-	@include baseline-dimensions-form(1,2,2,0);
+	@include em-padding-lr(2);
+	@include padding-tb(.5,.5);
 }
 
 @mixin btn-m {
-	@include em-padding-lr(.75);
-	@include baseline-dimensions-form(0,2,2,0);
+	@include em-padding-lr(2);
+	@include padding-tb(.5,.5);
 }
 
 @mixin btn-s {
-	@include em-padding-lr(.5);
-	@include baseline-dimensions-form(0,1,1,0);
+	@include em-padding-lr(2);
+	@include padding-tb(.5,.5);
 }
 
 // Button display
@@ -69,7 +68,7 @@
 
 	&:hover,
 	&:focus {
-		border: $border-width $border-style lighten($c1, 100-$contrast);
+		border: 2px solid lighten($beta-ui-color,1%);
 		background-color: lighten($c1, 100-$contrast);
 		@if $depth > 0 {
 			background-image: linear-gradient(lighten($c1, 100-$contrast), lighten($c2, 100-$contrast));

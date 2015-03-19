@@ -17,6 +17,7 @@ img {
 }
 
 .ratio--one-quarter {
+	min-height: 135px;
 	padding-top: 25%; // 3/4 * 100
 }
 
@@ -30,4 +31,9 @@ img {
 
 .ratio--square {
 	padding-top: 100%; // 3/4 * 100
+}
+
+.ratio--one-fifth {
+	min-height: 135px;
+	padding-top: 20%; // 3/4 * 100
 }

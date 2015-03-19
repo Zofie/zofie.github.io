@@ -76,7 +76,7 @@ $grey-05                       : hsl(hue($alpha-ui-color),25,95);
 
 // Links
 
-$alpha-link-color			         : $beta-ui-color;
+$alpha-link-color			         : $green;
 $alpha-link-colorhover		     : darken($alpha-link-color, 10);
 $alpha-link-colorfocus		     : darken($alpha-link-color, 10);
 $alpha-link-coloractive		     : darken($alpha-link-color, 10);

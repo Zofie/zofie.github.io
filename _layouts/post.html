@@ -4,26 +4,63 @@
   {% include head.html %}
 
     <body>
+
+        {% include browser-message.html %}
+
         <header class="header holder">
           {% include header.html %}
           {% include nav--main.html %}
         </header>
 
-        <!-- {% include header--intro.html %} -->
-        <section class="post--title ratio--one-quarter">
-          <h1>{{ page.title }}</h1>
+        <!-- {% include headerintro.html %} -->
+        <section class="post--title ratio--one-fifth">
+          <header>
+            <h1>{{ page.title }}</h1>
+          </header>
         </section>
+
         <section class="holder">
           <div class="holder--content">
 
-            {{ content }}
+            <div class="pB">
+              {{ content }}
+
+              <div class="post--share-buttons">
+                <a href="" class="js-facebook share-facebook"><span class="icon icon--facebook"></span></a> &nbsp;
+                <a href="" class="js-twitter share-twitter"><span class="icon icon--twitter"></span></a>
+              </div>
+            </div>
+
+            <div class="comments Mb">
+              <div id="disqus_thread"></div>
+                <script type="text/javascript">
+                    /* * * CONFIGURATION VARIABLES * * */
+                    var disqus_shortname = 'sophiedebrabander';
+
+                    /* * * DON'T EDIT BELOW THIS LINE * * */
+                    (function() {
+                        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+                        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+                        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+                    })();
+                </script>
+                <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+            </div>
+
+            <div class="clearfix">
+              {% if page.previous %}
+              <a href="{{ page.previous.url }}" class="btn btn--primary l-half">&larr; Previous article</a>
+              {% endif %}
+
+              {% if page.next %}
+              <a href="{{ page.next.url }}" class="btn btn--primary l-right">Next article &rarr;</a>
+              {% endif %}
+            </div>
           </div>
         </section>
 
         {% include footer.html %}
+        {% include scripts.html %}
 
-      <div class="nav nav-mobile__holder">
-        {% include nav--mobile.html %}
-      </div>
     </body>
 </html>

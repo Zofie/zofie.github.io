@@ -6,8 +6,8 @@
 a.btn,
 input.btn,
 input[type="submit"].btn,
-.btn-secondary,
-input.btn-secondary,
+.btn--primary,
+input.btn--primary,
 input[type="submit"].btn-secondary,
 a.btn-secondary {
 	@include btn;
@@ -28,9 +28,9 @@ a.btn {
 	@include btn-color;
 }
 
-.btn-secondary,
-input.btn-secondary,
-input[type="submit"].btn-secondary,
-a.btn-secondary {
-	@include btn-color($beta-ui-color);
+.btn--primary,
+input.btn--primary,
+input[type="submit"].btn--primary,
+a.btn--primary {
+	border: 2px solid $beta-ui-color
 }

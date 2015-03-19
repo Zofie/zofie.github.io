@@ -1,0 +1,15 @@
+.work--item {
+  padding: 0 1em;
+  @include margin-tb(0,2);
+  &.left {
+    @include box-(6,0,2);
+    text-align: right;
+    border-right: 3px solid $green;
+  }
+  &.right {
+    @include box-(6,2,0);
+    float: right;
+    text-align: left;
+    border-left: 3px solid $green;
+  }
+}

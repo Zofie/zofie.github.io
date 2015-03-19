@@ -1,8 +1,8 @@
-jsTheme.forms =
+jsTheme.alerts =
 {
 	init: function()
 	{
-		$('.alert-box').on('click', function(e)
+		$('.js-close-alert').on('click', function(e)
 		{
 			e.preventDefault();
 			$(this).closest('.alert-box').fadeOut(300);

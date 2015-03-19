@@ -19,8 +19,7 @@ jsTheme.mobileNav =
 		var navHolder = $('.nav--holder'),
 		icon = $('.js-toggle-icon');
 
-		// hide for now
-		// navHolder.prepend('<span class="nav-mobile__trigger"><span class="js-toggle-icon icon icon--menu"></span></span>');
+		navHolder.prepend('<span class="nav-mobile__trigger"><span class="js-toggle-icon icon icon--menu"></span></span>');
 
 		var trigger = $('.js-toggle-icon');
 		var nav = $('.nav--main');

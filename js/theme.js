@@ -3,11 +3,13 @@ var jsTheme =
 	// init, something like a constructor
 	init: function()
 	{
+		jsTheme.socialShareButtons.init();
 		jsTheme.mobileNav.init();
-		jsTheme.forms.init();
+		jsTheme.alerts.init();
 		jsTheme.toggle.init();
-		// jsTheme.masonry.init();
+		jsTheme.masonry.init();
 		jsTheme.makeEqualHeight.init();
+
 	}
 };
 
