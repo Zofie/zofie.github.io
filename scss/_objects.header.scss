@@ -1,0 +1,114 @@
+/*
+    Object: Header
+    ---
+    Header
+*/
+
+.o-header {
+  background-color: $alpha-ui-color;
+  position: fixed;
+  transition: .5s;
+  right: -25em;
+  height: 100%;
+
+  @include mq($bp3) {
+    right: 0;
+    width: 21em;
+  }
+  @include mq($bp4) {
+    right: 0;
+    width: 22em;
+  }
+  @include mq($bp5) {
+    right: 0;
+    width: 25em;
+  }
+
+  &.active {
+    transition: .5s;
+    right: 0;
+    width: 80%;
+  }
+
+}
+
+
+.o-header--image-holder {
+
+  text-align: center;
+
+  @include padding-tb(2,0);
+}
+
+.o-header--image {
+  border-radius: 5em;
+  width: 5em;
+
+  @include mq(bp3) {
+    border-radius: 10em;
+    width: 10em;
+  }
+}
+
+.o-header--title-holder {
+  text-align: center;
+
+  padding-left: .5em;
+  padding-right: .5em;
+
+  @include padding-tb(.5);
+
+  @include mq($bp3) {
+    @include padding-tb(1);
+  }
+}
+
+.o-header--title {
+  margin: 0;
+  color: white;
+
+  > a {
+    color: white;
+    &:hover {
+      color: white;
+      text-decoration: none;
+    }
+  }
+
+  font-size: 1.5rem;
+
+  @include mq($bp3) {
+    font-size: 2.3125rem;
+  }
+}
+
+.o-header--meta {
+  color: white;
+  font-style: italic;
+}
+
+
+.o-header--mobile {
+  @include mq($bp3) {
+    display: none;
+  }
+}
+
+.o-header--mobile__title {
+  color: white;
+  margin: 0;
+
+  @include padding-tb(0,.5);
+}
+
+.c-header--footer-text {
+  display: none;
+
+  @include mq($bp3) {
+    display: block;
+    position: absolute;
+    bottom: 1em;
+    right: 1em;
+    color: white;
+  }
+}

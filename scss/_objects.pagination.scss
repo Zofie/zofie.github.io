@@ -1,0 +1,24 @@
+/*
+    Object: Pagination
+    ---
+    Pagination
+*/
+
+.o-pagination {
+    a,
+    span {
+        padding: 0 10px;
+        border: 1px solid $gamma-ui-color;
+        margin-left: -1px;
+    }
+
+    span {
+        color: $beta-text-color;
+    }
+
+    @include pagination;
+}
+
+.o-pagination--centered {
+    @include pagination-centered;
+}

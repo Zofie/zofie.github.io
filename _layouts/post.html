@@ -1,66 +1,58 @@
 <!DOCTYPE html>
 <html>
-
   {% include head.html %}
 
     <body>
 
         {% include browser-message.html %}
 
-        <header class="header holder">
-          {% include header.html %}
-          {% include nav--main.html %}
-        </header>
 
-        <!-- {% include headerintro.html %} -->
-        <section class="post--title ratio--one-fifth">
-          <header>
-            <h1>{{ page.title }}</h1>
-          </header>
-        </section>
+        {% include header.html %}
 
-        <section class="holder">
-          <div class="holder--content">
+        <main class="main main--holder">
+          <!-- <section class="main--holder__image">
+            <img src="/img/header.jpg" width="100%">
+          </section> -->
 
-            <div class="pB">
+          <section class="main--holder__content" itemType="http://schema.org/BlogPosting">
+
+            <h1 class="e-title" itemprop="headline">
+              {{ page.title }}
+            </h1>
+
+            <div itemprop="articleBody">
               {{ content }}
-
-              <div class="post--share-buttons">
-                <a href="" class="js-facebook share-facebook"><span class="icon icon--facebook"></span></a> &nbsp;
-                <a href="" class="js-twitter share-twitter"><span class="icon icon--twitter"></span></a>
-              </div>
             </div>
 
-            <div class="comments Mb">
-              <div id="disqus_thread"></div>
-                <script type="text/javascript">
-                    /* * * CONFIGURATION VARIABLES * * */
-                    var disqus_shortname = 'sophiedebrabander';
+            <div class="comments">
+            <div id="disqus_thread"></div>
+              <script type="text/javascript">
+              /* * * CONFIGURATION VARIABLES * * */
+              var disqus_shortname = 'sophiedebrabander';
 
-                    /* * * DON'T EDIT BELOW THIS LINE * * */
-                    (function() {
-                        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-                        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-                        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-                    })();
-                </script>
-                <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+              /* * * DON'T EDIT BELOW THIS LINE * * */
+              (function() {
+                  var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+                  dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+                  (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+              })();
+              </script>
+            <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
             </div>
 
-            <div class="clearfix">
+            <div class="clearfix o-blog--controls">
               {% if page.previous %}
-              <a href="{{ page.previous.url }}" class="btn btn--primary l-half">&larr; Previous article</a>
+              <a href="{{ page.previous.url }}" class="o-btn o-btn--alpha-ui o-btn--lg o-btn--fll">&larr; Previous article</a>
               {% endif %}
 
               {% if page.next %}
-              <a href="{{ page.next.url }}" class="btn btn--primary l-right">Next article &rarr;</a>
+              <a href="{{ page.next.url }}" class="o-btn o-btn--alpha-ui o-btn--lg o-btn--flr">Next article &rarr;</a>
               {% endif %}
             </div>
-          </div>
-        </section>
+          </section>
+        </main>
 
         {% include footer.html %}
         {% include scripts.html %}
-
     </body>
 </html>

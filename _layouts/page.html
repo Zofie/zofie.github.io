@@ -1,18 +1,23 @@
 <!DOCTYPE html>
 <html>
-
   {% include head.html %}
 
     <body>
 
         {% include browser-message.html %}
 
-        <header class="header">
-          {% include header.html %}
-          {% include nav--main.html %}
-        </header>
 
-        {{ content }}
+        {% include header.html %}
+
+        <main class="main main--holder">
+          <!-- <section class="main--holder__image">
+            <img src="/img/header.jpg" width="100%">
+          </section> -->
+
+          <section class="main--holder__content">
+            {{ content }}
+          </section>
+        </main>
 
         {% include footer.html %}
         {% include scripts.html %}

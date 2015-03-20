@@ -1,33 +1,31 @@
 jsTheme.mobileNav =
 {
-	init: function()
-	{
-		jsTheme.mobileNav.enableMobileNav();
-		jsTheme.mobileNav.buildMobileNav();
-	},
+    init: function()
+    {
+        jsTheme.mobileNav.enableMobileNav();
+        jsTheme.mobileNav.buildMobileNav();
+    },
 
-	// CSS is based on the class .mobile-nav
-	//
-	enableMobileNav: function()
-	{
-		$("html").addClass("mobile");
-	},
+    // CSS is based on the class .mobile-nav
+    //
+    enableMobileNav: function()
+    {
+        $("html").addClass("c-mobile-nav");
+    },
 
-	// build mobile nav
-	buildMobileNav: function()
-	{
-		var navHolder = $('.nav--holder'),
-		icon = $('.js-toggle-icon');
+    // build mobile nav
+    buildMobileNav: function()
+    {
+        var navHolder = $('.o-header--mobile');
 
-		navHolder.prepend('<span class="nav-mobile__trigger"><span class="js-toggle-icon icon icon--menu"></span></span>');
 
-		var trigger = $('.js-toggle-icon');
-		var nav = $('.nav--main');
+        navHolder.prepend('<span class="c-main-nav-trigger c-icon c-icon--menu"></span>');
 
-		trigger.on('click', function() {
-			console.log('hi');
-			$('.js-toggle-icon').toggleClass('icon--close').toggleClass('icon--menu');
-			nav.toggleClass('is-hidden');
-		});
-	}
+        var trigger = $('.c-main-nav-trigger');
+        var nav = $('.c-main-nav');
+
+        $('.c-main-nav-trigger').on('click', function() {
+            $('.o-header').toggleClass('active');
+        });
+    }
 };

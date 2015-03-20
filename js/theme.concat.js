@@ -1,150 +1,88 @@
 var jsTheme =
 {
-	// init, something like a constructor
-	init: function()
-	{
-		jsTheme.socialShareButtons.init();
-		jsTheme.mobileNav.init();
-		jsTheme.alerts.init();
-		jsTheme.toggle.init();
-		jsTheme.masonry.init();
-		jsTheme.makeEqualHeight.init();
-
-	}
+    // init, something like a constructor
+    init: function()
+    {
+        jsTheme.mobileNav.init();
+        jsTheme.forms.init();
+        jsTheme.toggle.init();
+    }
 };
 
 $(jsTheme.init);
 
-jsTheme.alerts =
+jsTheme.forms =
 {
-	init: function()
-	{
-		$('.js-close-alert').on('click', function(e)
-		{
-			e.preventDefault();
-			$(this).closest('.alert-box').fadeOut(300);
-		});
-	}
-};
-
-jsTheme.makeEqualHeight =
-{
-	init: function() {
-        if ($(window).width() > 679) {
-			$(window).load(function() {
-				var $indexBlock = $('.js-equal-container .js-equal-item'),
-				indexBlockHeight = 0;
-				$indexBlock.each(function()
-				{
-					if($(this).height() > indexBlockHeight)
-						{indexBlockHeight = $(this).height();}
-				});
-				$indexBlock.height(indexBlockHeight);
-			});
-		}
+    init: function()
+    {
+        $('.c-alert-box').on('click', function(e)
+        {
+            e.preventDefault();
+            $(this).closest('.c-alert-box').fadeOut(300);
+        });
     }
-}
-
-jsTheme.masonry =
-{
-	init: function() {
-		// $('.masonry--container').masonry({
-		// 	"columnWidth": 60,
-		// 	gutter: 10;
-		//   itemSelector: 'masonry--item',
-		// });
-
-		var container = document.querySelector('.masonry--container');
-		// initialize Masonry after all images have loaded
-		imagesLoaded( container, function() {
-		  msnry.layout();
-		});
-		var msnry = new Masonry( container, {
-		  itemSelector: '.masonry--item',
-		});
-  }
 };
 
 jsTheme.mobileNav =
 {
-	init: function()
-	{
-		jsTheme.mobileNav.enableMobileNav();
-		jsTheme.mobileNav.buildMobileNav();
-	},
+    init: function()
+    {
+        jsTheme.mobileNav.enableMobileNav();
+        jsTheme.mobileNav.buildMobileNav();
+    },
 
-	// CSS is based on the class .mobile-nav
-	//
-	enableMobileNav: function()
-	{
-		$("html").addClass("mobile");
-	},
+    // CSS is based on the class .mobile-nav
+    //
+    enableMobileNav: function()
+    {
+        $("html").addClass("c-mobile-nav");
+    },
 
-	// build mobile nav
-	buildMobileNav: function()
-	{
-		var navHolder = $('.nav--holder'),
-		icon = $('.js-toggle-icon');
+    // build mobile nav
+    buildMobileNav: function()
+    {
+        var navHolder = $('.o-header--mobile');
 
-		navHolder.prepend('<span class="nav-mobile__trigger"><span class="js-toggle-icon icon icon--menu"></span></span>');
 
-		var trigger = $('.js-toggle-icon');
-		var nav = $('.nav--main');
+        navHolder.prepend('<span class="c-main-nav-trigger c-icon c-icon--menu"></span>');
 
-		trigger.on('click', function() {
-			console.log('hi');
-			$('.js-toggle-icon').toggleClass('icon--close').toggleClass('icon--menu');
-			nav.toggleClass('is-hidden');
-		});
-	}
-};
+        var trigger = $('.c-main-nav-trigger');
+        var nav = $('.c-main-nav');
 
-jsTheme.socialShareButtons =
-{
-	init: function() {
-		var title = $(document).prop('title');
-
-		$(".js-facebook").click(function(e){
-			e.preventDefault();
-			window.open("https://www.facebook.com/sharer/sharer.php?u='+encodeURIComponent("+location.href+"?v=1)" , 'facebook-share-dialog', 'width=626,height=436');
-		});
-
-		$(".js-twitter").click(function(e){
-			e.preventDefault();
-			window.open("http://twitter.com/intent/tweet?text=" + title + " " + location.href, 'twitter', 'width=626,height=436');
-		});
+        $('.c-main-nav-trigger').on('click', function() {
+            $('.o-header').toggleClass('active');
+        });
     }
-
-}
+};
 
 jsTheme.toggle =
 {
-	init: function() {
-		// The toggle is called with the '.js-toggle' class and one or more data-targets
-		// Use the 'is-hidden' class to hide your elements"
-		var toggle = $('.js-toggle');
+    init: function() {
+        // The toggle is called with the '.js-toggle' class and one or more data-targets
+        // Use the 'is-hidden' class to hide your elements"
+        var toggle = $('.js-toggle');
 
-		// Toggle functionality
-		toggle.on('touchstart click', function(e){
-			// Prevent the default action on links
-			e.preventDefault();
+        // Toggle functionality
+        toggle.on('touchstart click', function(e){
+            // Prevent the default action on links
+            e.preventDefault();
 
-			// Split the targets if multiple
-			var targets = $(this).data("target").replace(" ", "").split(",");
+            // Split the targets if multiple
+            var targets = $(this).data("target").replace(" ", "").split(",");
 
-			// Loop trough targets and toggle the 'is-hidden' class
-			for (var i = targets.length - 1; i >= 0; i--) {
-				if(targets[i]){
-					// Toggle the 'is-hidden' class
-					$(targets[i]).toggleClass('is-hidden');
-				}
-			}
+            // Loop trough targets and toggle the 'is-hidden' class
+            for (var i = targets.length - 1; i >= 0; i--) {
+                if(targets[i]){
+                    // Toggle the 'is-hidden' class
+                    $(targets[i]).toggleClass('is-hidden');
+                }
+            }
 
-			// Add an 'is-toggled' class to the trigger.
-			// Use this class to style your icons, active states, etc.
-			$(this).toggleClass('is-toggled');
+            // Add an 'is-toggled' class to the trigger.
+            // Use this class to style your icons, active states, etc.
+            $(this).toggleClass('is-toggled');
 
-			return false;
-		});
-	}
+            return false;
+        });
+    }
 };

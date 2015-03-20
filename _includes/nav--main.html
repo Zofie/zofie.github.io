@@ -1,18 +1,33 @@
-<section class="nav--holder">
-  <nav class="nav nav--main is-hidden">
-    <span class="js-toggle-icon icon icon--menu"></span>
-    <ul class= "nav--list">
-      {% for weight in (1..10) %}
-        {% for page in site.pages %}
+<nav class="o-nav o-nav--main">
+  <ul class="o-nav--main__list">
+  {% for weight in (1..10) %}
+      {% for page in site.pages %}
           {% if page.menu == 'main'%}
           {% if page.weight == weight' %}
-            <li class="nav--list__item">
-              <a class="nav--list__link" href="{{ page.url }}">{{ page.menu-name }}</a>
-            </li>
+      <li class="o-nav--main__list-item">
+        <a class="o-nav--main__list-item-link" href="{{ page.url }}">{{ page.title }}</a>
+
           {% endif %}
           {% endif %}
-        {% endfor %}
+      </li>
       {% endfor %}
-    </ul>
-  </nav>
-</section>
+      {% endfor %}
+      <li class="o-nav--main__social-media">
+        <a href="https://twitter.com/zofie" target="_blank">
+          <span class="c-icon c-icon--twitter"></span>
+        </a>
+        <a href="https://www.facebook.com/sophiedebrabander" target="_blank">
+          <span class="c-icon c-icon--facebook"></span>
+        </a>
+        <a href="https://github.com/Zofie" target="_blank">
+          <span class="c-icon c-icon--github"></span>
+        </a>
+        <a href="https://instagram.com/zofie/" target="_blank">
+          <span class="c-icon c-icon--instagram"></span>
+        </a>
+        <a href="http://linkedin.com/in/sophiedebrabander" target="_blank">
+          <span class="c-icon c-icon--linkedin"></span>
+        </a>
+      </li>
+  </ul>
+</nav>

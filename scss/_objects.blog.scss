@@ -1,0 +1,33 @@
+/*
+    Object: Blog
+    ---
+*/
+
+.o-blog {
+
+}
+
+.o-blog--post {
+  border-bottom: 2px solid #eee;
+}
+
+.o-blog--item__title {
+  margin: 0;
+}
+
+.o-blog--post {
+  @include padding-tb(0,1);
+}
+
+.o-blog--post + .o-blog--post {
+  @include padding-tb(1,1);
+}
+
+.o-blog--item__meta {
+  font-family: $beta-font-family;
+  font-size: 14px;
+}
+
+.o-blog--controls {
+  @include padding-tb(2,2);
+}

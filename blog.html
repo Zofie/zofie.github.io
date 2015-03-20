@@ -2,33 +2,39 @@
 layout: default
 title: Blog
 permalink: /blog.html
-<!-- menu: main -->
+menu: main
 menu-name: Blog
 weight: 2
 ---
 
-<section class="blog">
-  {% for post in site.posts %}
-  <div class="row blog--item mB js-equal-container">
-    <div class="blog--item-image js-equal-item">
-      <div class="mask ratio--one-three">
-        <img src="{{ post.intro-image }}" alt="">
+<div class="home">
+  <section class="holder">
+    <div class="holder--content">
+      <h1 class="e-title">
+        Blog
+      </h1>
+      <div class="blog">
+        {% for post in site.posts %}
+        <section class="o-blog--post">
+          <header class="o-blog--title-holder">
+            <a href="{{ post.url | prepend: site.baseurl }}">
+              <h1 class="h2 o-blog--item__title">{{ post.title }}</h1>
+              <p class="o-blog--item__meta">
+                {{ post.date | date: "%b %-d, %Y" }}
+              </p>
+            </a>
+          </header>
+          <div class="o-blog--content-holder">
+            <p>
+            {{ post.content | strip_html | truncate: 300 }}
+            </p>
+            <p class="pT">
+              <a href="{{ post.url | prepend: site.baseurl }}" class="text-link">Lees meer...</a>
+            </p>
+          </div>
+        </section>
+        {% endfor %}
       </div>
     </div>
-    <div class="blog--item-content js-equal-item">
-      <h3 class="blog--item__title">
-        <a href="{{ post.url | prepend: site.baseurl }}">
-          {{ post.title }}
-        </a>
-      </h3>
-      <div class="blog--item__meta">{{ post.date | date: "%b %-d, %Y" }}</div>
-      <p>
-        {{ post.intro }}
-      </p>
-      <p class="blog--item__link">
-        <a href="{{ post.url | prepend: site.baseurl }}" class="text-link">Lees verder...</a>
-      </p>
-    </div>
-    </div>
-    {% endfor %}
-</section>
+  </section>
+</div>

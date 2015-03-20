@@ -1,8 +1,29 @@
-<section class="header__logo">
-  <h1>
+<section class="o-header o-header--holder">
+  <div class="o-header--image-holder">
+    <a href="{{ site.baseurl }}/">
+      <img src="/img/sophie.jpeg" class="o-header--image" />
+    </a>
+  </div>
+  <header class="o-header--title-holder">
+    <h1 class="o-header--title">
     <a href="{{ site.baseurl }}/">
       {{ site.title }}
     </a>
+    </h1>
+    <p class="o-header--meta">
+      Front-end developer
+    </p>
+  </header>
+
+  {% include nav--main.html %}
+
+  <div class="c-header--footer-text">
+    © Sophie de Brabander - {{ site.time | date: '%Y' }}
+  </div>
+</section>
+
+<section class="o-header--mobile">
+  <h1 class="h3 o-header--mobile__title">
+    {{ site.title }}
   </h1>
-  <hr class="header__divider">
 </section>
