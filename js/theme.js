@@ -6,6 +6,7 @@ var jsTheme =
         jsTheme.mobileNav.init();
         jsTheme.forms.init();
         jsTheme.toggle.init();
+        jsTheme.disqus.init();
     }
 };
 
