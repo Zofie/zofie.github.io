@@ -1,73 +1,3 @@
-/*
- *  Chopstick index
- *  ---
- *  Chopstick is a framework based on the [ITCSS](http://itcss.io/)
- *  architecture and a series of principles. It creates a structure
- *  to easily set-up and build bespoke web projects.
- *  ---
- *  The settings and tools layer don't compile any code.
- *  Therefore they get the number 0 and are put in single line comments.
- *  ---
- *
- *  0. Settings
- *      - settings.global
- *      - settings.grid
- *      - settings.colors
- *      - settings.typography
- *      - settings.ms
- *      - settings.ui
- *
- *  0. Tools
- *      - tools.functions
- *      - tools.mixins
- *      - tools.grid
- *      - tools.typography
- *      - tools.ui
- *      - tools.buttons
- *      - tools.inputs
- *      - tools.pagination
- *      - tools.alerts
- *
- *  1. Generic
- *      - generic.normalize
- *      - generic.reset
- *      - generic.box-sizing
- *
- *  2. Elements
- *      - elements.page
- *      - elements.typography
- *      - elements.images
- *      - elements.forms
- *      - elements.tables
- *
- *  3. Objects
- *      - objects.grid
- *      - objects.holder
- *      - objects.alerts
- *      - objects.buttons
- *      - objects.media
- *      - objects.media-embed
- *      - objects.pagination
- *
- *  4. Components
- *      - components.frame
- *      - components.grid
- *      - components.home
- *      - components.forms
- *      - components.icons
- *      - components.styleguide
- *      - components.styleguide-syntax
- *
- *  5. Trumps
- *      - trumps.widths
- *      - trumps.colors
- *      - trumps.states
- *      - trumps.shame
- *      - trumps.debug
- *      - trumps.baseline-grid
- *      - trumps.print
- */
-
     // 0. Settings
     @import "settings.global";
     @import "settings.grid";
@@ -108,8 +38,10 @@
     @import "objects.media-embed";
     @import "objects.pagination";
     @import "objects.header";
+    @import "objects.footer";
     @import "objects.navigation";
     @import "objects.blog";
+    @import "objects.portfolio";
 
     /* 4. Components */
     @import "components.frame";

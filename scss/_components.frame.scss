@@ -9,13 +9,13 @@
 .main {
 
   @include mq($bp3) {
-    margin-right: 21em;
+    margin-left: 21em;
   }
   @include mq($bp4) {
-    margin-right: 22em;
+    margin-left: 22em;
   }
   @include mq($bp5) {
-    margin-right: 25em;
+    margin-left: 25em;
   }
 }
 
@@ -36,10 +36,12 @@
 }
 
 .main--holder__content {
-
   padding: 1em;
 
-  @include mq($bp3) {
+  @include mq($bp4) {
     padding: 8em;
+    /* max-width: 60em;
+    margin: 0 auto; */
+
   }
 }

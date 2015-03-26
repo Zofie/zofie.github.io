@@ -1,0 +1,16 @@
+.portfolio {
+
+}
+
+.portfolio--image {
+  @include box-(4,0,0);
+
+  > img {
+    border-radius: $radius*2;
+    -webkit-filter: sepia(0.3);
+  }
+}
+
+.portfolio--content {
+  @include box-(8,1,0)
+}
