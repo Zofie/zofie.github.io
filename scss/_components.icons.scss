@@ -19,12 +19,27 @@
 .c-icon--menu {
 
     top: 5px;
-    width: 30px;
+    width: 50px;
     height: 30px;
     background-image: url('../img/png/c-icon--menu.png');
 
     .svg & {
         background-image: url('../img/svg/c-icon--menu.svg');
+    }
+    background-size: 30px auto;
+
+    @include icon;
+}
+
+.c-icon--close {
+
+    top: 5px;
+    width: 50px;
+    height: 30px;
+    background-image: url('../img/png/c-icon--close.png');
+
+    .svg & {
+        background-image: url('../img/svg/c-icon--close.svg');
     }
     background-size: 30px auto;
 

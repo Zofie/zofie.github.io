@@ -17,7 +17,7 @@ h6 {
 }
 
 .h1, h1 {
-    @include text-dimensions($ms6,2);
+    @include text-dimensions($ms5,1.5);
 }
 
 .h2, h2 {
@@ -25,7 +25,7 @@ h6 {
 }
 
 .h3, h3 {
-    @include text-dimensions($ms2,1.25);
+    @include text-dimensions($ms2,1);
 }
 
 .h4, h4,
@@ -56,13 +56,20 @@ pre {
 }
 
 ul,
-ol,
-blockquote {
+ol {
     padding-left: 2em;
 }
 
+.ui-list {
+  list-style: none;
+  padding-left: 0;
+}
+
 blockquote {
-    font-style: italic;
+  padding-left: 2em;
+  border-left: 2px solid $alpha-ui-color;
+
+  @include margin-tb(1,1)
 }
 
 caption {
@@ -113,9 +120,13 @@ a {
 
 }
 
-.text-link {
+@mixin text-link {
   border-bottom: 1px solid $alpha-text-color-light;
   &:hover {
     border-bottom: 1px solid $alpha-ui-color;
   }
+}
+
+.text-link {
+  @include text-link;
 }

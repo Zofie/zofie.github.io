@@ -235,7 +235,12 @@ kbd,
 pre,
 samp {
   font-family: monospace, monospace;
-  font-size: 1em;
+  background-color: $alpha-text-color-dark !important;
+  color: $alpha-ui-color;
+  padding: 0.3em 0.5em !important;
+  border-radius: $radius;
+  display: block;
+  width: 100% !important;
 }
 
 /* Forms

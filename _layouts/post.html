@@ -6,7 +6,6 @@
 
         {% include browser-message.html %}
 
-
         {% include header.html %}
 
         <main class="main main--holder">
@@ -16,31 +15,34 @@
 
           <section class="main--holder__content" itemType="http://schema.org/BlogPosting">
 
-            <h1 class="e-title" itemprop="headline">
-              {{ page.title }}
-            </h1>
+            <div class="o-blog--content">
 
-            <div itemprop="articleBody">
-              {{ content }}
-            </div>
+              <h1 class="e-title" itemprop="headline">
+                {{ page.title }}
+              </h1>
 
-            <div class="comments">
-            <div id="disqus_thread"></div>
+              <div itemprop="articleBody">
+                {{ content }}
+              </div>
 
-              <script type="text/javascript">
-              </script>
+              <div class="comments">
+              <div id="disqus_thread"></div>
 
-            <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
-            </div>
+                <script type="text/javascript">
+                </script>
 
-            <div class="clearfix o-blog--controls">
-              {% if page.previous %}
-              <a href="{{ page.previous.url }}" class="o-btn o-btn--alpha-ui o-btn--lg o-btn--fll">&larr; Previous article</a>
-              {% endif %}
+              <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+              </div>
 
-              {% if page.next %}
-              <a href="{{ page.next.url }}" class="o-btn o-btn--alpha-ui o-btn--lg o-btn--flr">Next article &rarr;</a>
-              {% endif %}
+              <div class="clearfix o-blog--controls">
+                {% if page.previous %}
+                <a href="{{ page.previous.url }}" class="o-btn o-btn--alpha-ui o-btn--lg o-btn--fll">&larr; Previous article</a>
+                {% endif %}
+
+                {% if page.next %}
+                <a href="{{ page.next.url }}" class="o-btn o-btn--alpha-ui o-btn--lg o-btn--flr">Next article &rarr;</a>
+                {% endif %}
+              </div>
             </div>
           </section>
         </main>

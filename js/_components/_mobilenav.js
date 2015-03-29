@@ -26,6 +26,7 @@ jsTheme.mobileNav =
 
         $('.c-main-nav-trigger').on('click', function() {
             $('.o-header').toggleClass('active');
+            $('.c-main-nav-trigger').toggleClass('c-icon--close').toggleClass('c-icon--menu');
         });
     }
 };

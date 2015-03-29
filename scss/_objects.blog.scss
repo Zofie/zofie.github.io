@@ -30,4 +30,25 @@
 
 .o-blog--controls {
   @include padding-tb(2,2);
+  @extend clearfix;
+}
+
+.o-container {
+  max-width: 50em;
+  margin: 0 auto;
+}
+
+.o-blog--content-holder {
+  > p > a {
+    @include text-link;
+  }
+}
+
+.o-blog__list {
+
+  @include padding-tb(2,2);
+}
+
+.o-blog__list + .o-blog__list {
+  border-top: 2px solid #eee;
 }

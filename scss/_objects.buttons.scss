@@ -86,4 +86,22 @@
 
 }
 
+.o-btn--beta-ui {
+    border-color: $delta-ui-color;
+    color:  $delta-ui-color;
+    &,
+    &:visited {
+        color:  $delta-ui-color;
+    }
 
+    &:hover,
+    &:focus {
+        border-color: darken($delta-ui-color,10);
+        color:  darken($delta-ui-color,10);
+    }
+
+    &:active {
+        border-color: $delta-ui-color;
+    }
+
+}
