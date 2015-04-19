@@ -1,20 +1,40 @@
 ---
 layout: default
+title:
+menu-name: Home
+weight : 1
+intro-image: img/header.jpg
 ---
 
 <div class="home">
-
-  <h1>Posts</h1>
-
-  <ul class="posts">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span>
-        <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-      </li>
-    {% endfor %}
-  </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
+  <section class="holder">
+    <div class="holder--content">
+      <h1 class="e-title">
+        Recent blogposts
+      </h1>
+      <div class="blog">
+        {% for post in site.posts | limit : 3 %}
+        <section class="o-blog--post">
+          <header class="o-blog--title-holder">
+            <a href="{{ post.url | prepend: site.baseurl }}">
+              <h1 class="h2 o-blog--item__title">{{ post.title }}</h1>
+              <p class="o-blog--item__meta">
+                {{ post.date | date: "%b %-d, %Y" }}
+              </p>
+            </a>
+          </header>
+          <div class="o-blog--content-holder">
+            <p>
+            {{ post.content | strip_html | truncate: 300 }}
+            </p>
+            <p class="pT">
+              <a href="{{ post.url | prepend: site.baseurl }}" class="text-link">Lees meer...</a>
+            </p>
+          </div>
+        </section>
+        {% endfor %}
+      </div>
+    </div>
+  </section>
 </div>
+

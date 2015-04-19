@@ -1,15 +1,53 @@
----
-layout: default
----
-<div class="post">
+<!DOCTYPE html>
+<html>
+  {% include head.html %}
 
-  <header class="post-header">
-    <h1>{{ page.title }}</h1>
-    <p class="meta">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
-  </header>
+    <body>
 
-  <article class="post-content">
-  {{ content }}
-  </article>
+        {% include browser-message.html %}
 
-</div>
+        {% include header.html %}
+
+        <main class="main main--holder">
+          <!-- <section class="main--holder__image">
+            <img src="/img/header.jpg" width="100%">
+          </section> -->
+
+          <section class="main--holder__content" itemType="http://schema.org/BlogPosting">
+
+            <div class="o-blog--content">
+
+              <h1 class="e-title" itemprop="headline">
+                {{ page.title }}
+              </h1>
+
+              <div itemprop="articleBody">
+                {{ content }}
+              </div>
+
+              <div class="comments">
+              <div id="disqus_thread"></div>
+
+                <script type="text/javascript">
+                </script>
+
+              <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+              </div>
+
+              <div class="clearfix o-blog--controls">
+                {% if page.previous %}
+                <a href="{{ page.previous.url }}" class="o-btn o-btn--alpha-ui o-btn--lg o-btn--fll">&larr; Previous article</a>
+                {% endif %}
+
+                {% if page.next %}
+                <a href="{{ page.next.url }}" class="o-btn o-btn--alpha-ui o-btn--lg o-btn--flr">Next article &rarr;</a>
+                {% endif %}
+              </div>
+            </div>
+          </section>
+        </main>
+
+        {% include footer.html %}
+        {% include scripts.html %}
+    </body>
+</html>

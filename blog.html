@@ -1,0 +1,45 @@
+---
+layout: default
+title: Blog
+permalink: /blog.html
+menu: main
+menu-name: Blog
+weight: 2
+---
+
+<div class="home">
+  <section class="holder">
+    <div class="holder--content">
+      <h1 class="e-title">
+        Blog
+      </h1>
+      <div class="blog">
+        <ul class="ui-list">
+        {% for post in site.posts %}
+
+          <li class="o-blog__list">
+            <a href="{{ post.url | prepend: site.baseurl }}" class="o-btn o-btn-primary o-btn--flr">Read article</a>
+            <span class="h2 o-blog--item__title">{{ post.title }}</span><br>
+            <span class="o-blog--item__meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+          </li>
+        <!-- <section class="o-blog--post">
+          <header class="o-blog--title-holder">
+            <a href="{{ post.url | prepend: site.baseurl }}">
+              <h1 class="h2 o-blog--item__title">{{ post.title }}</h1>
+              <p class="o-blog--item__meta">
+                {{ post.date | date: "%b %-d, %Y" }}
+              </p>
+            </a>
+          </header>
+          <div class="o-blog--content-holder">
+            <div class="pT">
+              <a href="{{ post.url | prepend: site.baseurl }}" class="o-btn o-btn-primary">Read article</a>
+            </div>
+          </div>
+        </section> -->
+        {% endfor %}
+        </ul>
+      </div>
+    </div>
+  </section>
+</div>

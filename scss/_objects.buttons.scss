@@ -1,0 +1,107 @@
+/*
+    Objects: buttons
+    ---
+    Button styling
+*/
+
+.o-btn {
+    display: inline-block;
+    margin: 0;
+    text-align: center;
+    vertical-align: middle;
+    touch-action: manipulation;
+    cursor: pointer;
+    background-image: none; // Reset unusual Firefox-on-Android default style; see https://github.com/necolas/normalize.css/issues/214
+    border: 2px solid $alpha-ui-color;
+    white-space: nowrap;
+    font-family: $beta-font-family;
+    font-weight: $beta-font-weight;
+    transition: all .1s ease-in-out;
+    transition-property: background, color, border;
+    outline: none;
+    line-height: normal;
+    -webkit-appearance: none;
+    -moz-appearance:    none;
+    appearance:         none;
+    -webkit-font-smoothing: antialiased;
+
+    &:hover,
+    &:focus {
+        text-decoration: none;
+    }
+
+    &:active {
+        outline: 0;
+        background-image: none;
+    }
+
+    @include btn-md;
+
+}
+
+// btn display
+
+.o-btn--block {
+    display: block;
+    width: 100%;
+}
+
+.o-btn--fll {
+    @include btn-float(left);
+}
+
+.o-btn--flr {
+    @include btn-float(right);
+}
+
+// btn sizes
+
+.o-btn--sm {
+    @include btn-sm;
+}
+
+.o-btn--lg {
+    @include btn-lg;
+}
+
+// colors
+
+.o-btn--alpha-ui {
+    border-color: $alpha-ui-color;
+    color:  $alpha-ui-color;
+    &,
+    &:visited {
+        color:  $alpha-ui-color;
+    }
+
+    &:hover,
+    &:focus {
+        border-color: lighten($alpha-ui-color,10);
+        color:  lighten($alpha-ui-color,10);
+    }
+
+    &:active {
+        border-color: $alpha-ui-color;
+    }
+
+}
+
+.o-btn--beta-ui {
+    border-color: $delta-ui-color;
+    color:  $delta-ui-color;
+    &,
+    &:visited {
+        color:  $delta-ui-color;
+    }
+
+    &:hover,
+    &:focus {
+        border-color: darken($delta-ui-color,10);
+        color:  darken($delta-ui-color,10);
+    }
+
+    &:active {
+        border-color: $delta-ui-color;
+    }
+
+}

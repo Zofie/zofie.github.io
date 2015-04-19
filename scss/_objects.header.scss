@@ -1,0 +1,107 @@
+/*
+    Object: Header
+    ---
+    Header
+*/
+
+.o-header {
+  background-color: $alpha-ui-color;
+  position: fixed;
+  transition: .5s;
+  left: -25em;
+  height: 100%;
+
+  @include mq($bp3) {
+    left: 0;
+    width: 15em;
+  }
+  @include mq($bp4) {
+    left: 0;
+    width: 22em;
+  }
+  @include mq($bp5) {
+    left: 0;
+    width: 20em;
+  }
+
+  &.active {
+    transition: .5s;
+    left: 0;
+    width: 80%;
+    z-index: 99;
+  }
+
+}
+
+
+.o-header--image-holder {
+
+  text-align: center;
+
+  @include padding-tb(2,0);
+}
+
+.o-header--image {
+  border-radius: 5em;
+  width: 5em;
+
+  @include mq(bp3) {
+    border-radius: 10em;
+  }
+}
+
+.o-header--title-holder {
+  text-align: center;
+
+  padding-left: .5em;
+  padding-right: .5em;
+
+  @include padding-tb(.5);
+
+  @include mq($bp3) {
+    @include padding-tb(1);
+  }
+}
+
+.o-header--title {
+  margin: 0;
+  color: white;
+
+  > a {
+    color: white;
+    &:hover {
+      color: white;
+      text-decoration: none;
+    }
+  }
+}
+
+.o-header--meta {
+  color: white;
+  font-style: italic;
+}
+
+
+.o-header--mobile {
+  @include mq($bp3) {
+    display: none;
+  }
+  @include padding-tb(.5,.5);
+}
+
+.o-header--mobile__title {
+  color: white;
+  margin: 0;
+}
+
+.c-header--footer-text {
+  display: none;
+
+  @include mq($bp3) {
+    display: block;
+    position: absolute;
+    bottom: 1em;
+    right: 1em;
+    color: white;
+  }
+}

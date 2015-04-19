@@ -1,0 +1,47 @@
+/*
+    Component: Frame
+    ---
+    Scaffolding
+*/
+
+//
+
+.main {
+
+  @include mq($bp3) {
+    margin-left: 15em;
+  }
+  @include mq($bp4) {
+    margin-left: 22em;
+  }
+  @include mq($bp5) {
+    margin-left: 25em;
+  }
+}
+
+.o-header--mobile {
+  background-color: $alpha-text-color;
+  @include clearfix;
+}
+
+.c-main-nav-trigger {
+  float: left;
+}
+
+.main--holder__image {
+  display: none;
+  @include mq($bp3) {
+    display: block;
+  }
+}
+
+.main--holder__content {
+  padding: 1em;
+
+  @include mq($bp5) {
+    padding: 8em 4em 0 0;
+    max-width: 60em;
+    margin: 0em auto;
+
+  }
+}
