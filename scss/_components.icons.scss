@@ -21,12 +21,8 @@
     top: 5px;
     width: 50px;
     height: 30px;
-    background-image: url('../img/png/c-icon--menu.png');
-
-    .svg & {
-        background-image: url('../img/svg/c-icon--menu.svg');
-    }
-    background-size: 30px auto;
+    background-image: url('../img/svg/c-icon--menu.svg');
+    background-size: 20px auto;
 
     @include icon;
 }
@@ -36,12 +32,8 @@
     top: 5px;
     width: 50px;
     height: 30px;
-    background-image: url('../img/png/c-icon--close.png');
-
-    .svg & {
-        background-image: url('../img/svg/c-icon--close.svg');
-    }
-    background-size: 30px auto;
+    background-image: url('../img/svg/c-icon--close.svg');
+    background-size: 20px auto;
 
     @include icon;
 }
@@ -55,11 +47,17 @@
     top: 5px;
     width: 30px;
     height: 30px;
-    background-image: url('../img/png/c-icon--twitter.png');
+    background-image: url('../img/svg/c-icon--twitter.svg');
+    background-size: 20px auto;
 
-    .svg & {
-        background-image: url('../img/svg/c-icon--twitter.svg');
-    }
+    @include icon;
+}
+
+.c-icon--twitter--dark {
+    top: 5px;
+    width: 30px;
+    height: 30px;
+    background-image: url('../img/svg/c-icon--twitter--dark.svg');
     background-size: 30px auto;
 
     @include icon;
@@ -74,12 +72,8 @@
     top: 5px;
     width: 30px;
     height: 30px;
-    background-image: url('../img/png/c-icon--facebook.png');
-
-    .svg & {
-        background-image: url('../img/svg/c-icon--facebook.svg');
-    }
-    background-size: 30px auto;
+    background-image: url('../img/svg/c-icon--facebook.svg');
+    background-size: 20px auto;
 
     @include icon;
 }
@@ -93,12 +87,8 @@
     top: 5px;
     width: 30px;
     height: 30px;
-    background-image: url('../img/png/c-icon--github.png');
-
-    .svg & {
-        background-image: url('../img/svg/c-icon--github.svg');
-    }
-    background-size: 30px auto;
+    background-image: url('../img/svg/c-icon--github.svg');
+    background-size: 20px auto;
 
     @include icon;
 }
@@ -112,12 +102,8 @@
     top: 5px;
     width: 30px;
     height: 30px;
-    background-image: url('../img/png/c-icon--instagram.png');
-
-    .svg & {
-        background-image: url('../img/svg/c-icon--instagram.svg');
-    }
-    background-size: 30px auto;
+    background-image: url('../img/svg/c-icon--instagram.svg');
+    background-size: 20px auto;
 
     @include icon;
 }
@@ -131,12 +117,8 @@
     top: 5px;
     width: 30px;
     height: 30px;
-    background-image: url('../img/png/c-icon--linkedin.png');
-
-    .svg & {
-        background-image: url('../img/svg/c-icon--linkedin.svg');
-    }
-    background-size: 30px auto;
+    background-image: url('../img/svg/c-icon--linkedin.svg');
+    background-size: 20px auto;
 
     @include icon;
 }
