@@ -1,28 +1,9 @@
 {
-  "name": "zofie.github.io",
+  "name": "chopstick-boilerplate",
   "dependencies": {
+    "jquery": "~1.11.1",
     "html5shiv": "~3.7.0",
     "respond": "~1.4.1",
-    "infinite-scroll":"2.0.2"
-  },
-  "version": "2.0.0",
-  "homepage": "http://zofie.github.io",
-  "authors": [
-    "Sophie de Brabander <sophie.debrabander@wijs.be>"
-  ],
-  "description": "Rebranding zofie.github.io",
-  "main": "index.html",
-  "keywords": [
-    "blog",
-    "portfolio"
-  ],
-  "license": "MIT",
-  "private": true,
-  "ignore": [
-    "**/.*",
-    "node_modules",
-    "bower_components",
-    "test",
-    "tests"
-  ]
+    "modernizr": "~2.8.3"
+  }
 }

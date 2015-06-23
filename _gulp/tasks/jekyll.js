@@ -3,9 +3,9 @@
 // ---
 
 // plugins
-var gulp = require('gulp');
-var browserSync = require('browser-sync');
-var cp = require('child_process');
+var gulp = require('gulp'),
+    browserSync = require('browser-sync'),
+    cp = require('child_process');
 
 
 // configfile
@@ -15,7 +15,7 @@ var config = require('../config').jekyll;
 gulp.task('jekyll--build', function (done) {
     browserSync.notify(config.buildMessage);
     return cp
-        .spawn('jekyll', ['build'], {
+        .spawn('bundle', ['exec', 'jekyll', 'build', '--config=_config.yml'], {
             stdio: 'inherit'
         })
         .on('close', done);
