@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Error: EMFILE, too many open files
+title:  Error EMFILE, too many open files
 date:   2015-05-08 14:25:00
 categories: Gulp
 ---
