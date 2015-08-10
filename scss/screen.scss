@@ -1,5 +1,6 @@
 // 0. Settings
 @import "settings.global";
+@import "settings.breakpoints";
 @import "settings.grid";
 @import "settings.colors";
 @import "settings.typography";
@@ -10,12 +11,10 @@
 @import "tools.functions";
 @import "tools.mixins";
 @import "tools.grid";
+@import "tools.spacing";
 @import "tools.typography";
-@import "tools.ui";
 @import "tools.buttons";
 @import "tools.inputs";
-@import "tools.pagination";
-@import "tools.alerts";
 
 /* 1. Generic */
 @import "generic.normalize";
@@ -31,30 +30,26 @@
 
 /* 3. Objects */
 @import "objects.grid";
-@import "objects.holder";
-@import "objects.alerts";
-@import "objects.buttons";
 @import "objects.media";
 @import "objects.media-embed";
-@import "objects.pagination";
-@import "objects.header";
-@import "objects.footer";
-@import "objects.navigation";
-@import "objects.blog";
-@import "objects.portfolio";
+@import "objects.inline-list";
 
 /* 4. Components */
-@import "components.frame";
-@import "components.grid";
-@import "components.home";
+@import "components.navigation";
+@import "components.brand";
 @import "components.forms";
+@import "components.holder";
 @import "components.icons";
-@import "components.styleguide";
-@import "components.styleguide-syntax";
+@import "components.alerts";
+@import "components.buttons";
+@import "components.pagination";
+@import "components.panels";
 
 /* 5. Trumps */
 @import "trumps.widths";
-@import "trumps.colors";
+@import "trumps.push";
+@import "trumps.spacing";
+@import "trumps.borders";
 @import "trumps.states";
 @import "trumps.shame";
 @import "trumps.debug";

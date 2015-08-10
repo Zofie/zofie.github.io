@@ -6,35 +6,24 @@ weight : 1
 intro-image: img/header.jpg
 ---
 
-<div class="home">
-  <section class="holder">
-    <div class="holder--content">
-      <h1 class="e-title">
-        Recent blogposts
-      </h1>
-      <div class="blog">
-        {% for post in site.posts | limit : 3 %}
-        <section class="o-blog--post">
-          <header class="o-blog--title-holder">
-            <a href="{{ post.url | prepend: site.baseurl }}">
-              <h1 class="h2 o-blog--item__title">{{ post.title }}</h1>
-              <p class="o-blog--item__meta">
-                {{ post.date | date: "%b %-d, %Y" }}
-              </p>
-            </a>
-          </header>
-          <div class="o-blog--content-holder">
-            <p>
-            {{ post.content | strip_html | truncate: 300 }}
-            </p>
-            <p class="pT">
-              <a href="{{ post.url | prepend: site.baseurl }}" class="text-link">Read more...</a>
-            </p>
-          </div>
-        </section>
-        {% endfor %}
-      </div>
+<div id="fullpage">
+    <div class="section" data-anchor="home" id="home">
+    {% include header.html %}
     </div>
-  </section>
-</div>
 
+    <div class="section" data-anchor="blog" id="blog">
+    {% include blog.html %}
+    </div>
+
+    <div class="section" data-anchor="projects" id="projects">
+    {% include projects.html %}
+    </div>
+
+    <div class="section" data-anchor="timeline" id="timeline">
+    {% include timeline.html %}
+    </div>
+
+    <div class="section" data-anchor="contact" id="contact">
+    {% include contact.html %}
+    </div>
+</div>

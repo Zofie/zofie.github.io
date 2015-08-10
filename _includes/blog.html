@@ -1,0 +1,17 @@
+<section class="c-blog">
+    <h1>Blog</h1>
+
+
+    {% for post in site.posts | limit : 3 %}
+
+    {{ post.title }}
+
+    {{ post.date | date: "%b %-d, %Y" }}
+
+    {{ post.content | strip_html | truncate: 300 }}
+
+
+    <a href="{{ post.url | prepend: site.baseurl }}">Read more...</a>
+
+    {% endfor %}
+</section>

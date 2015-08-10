@@ -1,124 +1,69 @@
 /*
-    Component: Icons
+    Component: icons
     ---
-    Icon styling
+    Icons
 */
 
-@mixin icon {
+.c-icon {
     display: inline-block;
+    width: 16px;
+    height: 16px;
     position: relative;
+    top: 1px;
     background-repeat: no-repeat;
-    background-position: center top;
+    background-position: center center;
 
     @include hide-text;
 }
 
-// ---
-// Modifiers
-// ---
-.c-icon--menu {
+.c-icon--toggle {
+    background-image: url('../img/png/toggle--sprite.png');
 
-    top: 5px;
-    width: 50px;
-    height: 30px;
-    background-image: url('../img/svg/c-icon--menu.svg');
-    background-size: 20px auto;
-
-    @include icon;
-}
-
-.c-icon--close {
-
-    top: 5px;
-    width: 50px;
-    height: 30px;
-    background-image: url('../img/svg/c-icon--close.svg');
-    background-size: 20px auto;
-
-    @include icon;
-}
-
-.c-icon--twitter {
-    opacity: .7;
-    &:hover {
-      opacity: 1;
+    .svg & {
+        background-image: url('../img/svg/toggle--sprite.svg');
     }
 
-    top: 5px;
-    width: 30px;
-    height: 30px;
-    background-image: url('../img/svg/c-icon--twitter.svg');
-    background-size: 20px auto;
-
-    @include icon;
-}
-
-.c-icon--twitter--dark {
-    top: 5px;
-    width: 30px;
-    height: 30px;
-    background-image: url('../img/svg/c-icon--twitter--dark.svg');
-    background-size: 30px auto;
-
-    @include icon;
-}
-
-.c-icon--facebook {
-    opacity: .7;
-    &:hover {
-      opacity: 1;
+    .is-toggled & {
+        background-position: center -16px;
     }
-
-    top: 5px;
-    width: 30px;
-    height: 30px;
-    background-image: url('../img/svg/c-icon--facebook.svg');
-    background-size: 20px auto;
-
-    @include icon;
 }
 
-.c-icon--github {
-    opacity: .7;
-    &:hover {
-      opacity: 1;
-    }
-
-    top: 5px;
-    width: 30px;
-    height: 30px;
-    background-image: url('../img/svg/c-icon--github.svg');
-    background-size: 20px auto;
-
-    @include icon;
+.c-icon--home {
+    background-image: url('../img/svg/c-nav--home.svg');
+    -webkit-background-size: 20px 20px;
+    background-size: 20px 20px;
+    width: 55px;
+    height: 50px;
 }
 
-.c-icon--instagram {
-    opacity: .7;
-    &:hover {
-      opacity: 1;
-    }
-
-    top: 5px;
-    width: 30px;
-    height: 30px;
-    background-image: url('../img/svg/c-icon--instagram.svg');
-    background-size: 20px auto;
-
-    @include icon;
+.c-icon--blog {
+    background-image: url('../img/svg/c-nav--blog.svg');
+    -webkit-background-size: 20px 20px;
+    background-size: 20px 20px;
+    width: 55px;
+    height: 50px;
 }
 
-.c-icon--linkedin {
-    opacity: .7;
-    &:hover {
-      opacity: 1;
-    }
+.c-icon--projects {
+    background-image: url('../img/svg/c-nav--projects.svg');
+    -webkit-background-size: 20px 20px;
+    background-size: 20px 20px;
+    width: 55px;
+    height: 50px;
+}
 
-    top: 5px;
-    width: 30px;
-    height: 30px;
-    background-image: url('../img/svg/c-icon--linkedin.svg');
-    background-size: 20px auto;
+.c-icon--timeline {
+    background-image: url('../img/svg/c-nav--timeline.svg');
+    -webkit-background-size: 20px 20px;
+    background-size: 20px 20px;
+    width: 55px;
+    height: 50px;
+}
 
-    @include icon;
+.c-icon--contact {
+    background-image: url('../img/svg/c-nav--contact.svg');
+    -webkit-background-size: 20px 20px;
+    background-size: 20px 20px;
+    width: 55px;
+    height: 50px;
 }

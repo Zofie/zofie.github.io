@@ -1,25 +1,17 @@
 <!DOCTYPE html>
 <html>
-  {% include head.html %}
+{% include head.html %}
 
-    <body>
+<body>
 
-        {% include browser-message.html %}
+{% include browser-message.html %}
 
 
-        {% include header.html %}
+{% include header.html %}
 
-        <main class="main main--holder">
-          <!-- <section class="main--holder__image">
-            <img src="/img/header.jpg" width="100%">
-          </section> -->
+{{ content }}
 
-          <section class="main--holder__content">
-            {{ content }}
-          </section>
-        </main>
-
-        {% include footer.html %}
-        {% include scripts.html %}
-    </body>
+{% include footer.html %}
+{% include scripts.html %}
+</body>
 </html>

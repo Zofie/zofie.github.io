@@ -7,3 +7,17 @@
 .is-hidden {
     display: none !important;
 }
+
+.hide-on-mobile {
+    display: none;
+
+    @include mq($bp3){
+        display: block;
+    }
+}
+
+.hide-on-desktop {
+    @include mq($bp3){
+        display: none;
+    }
+}

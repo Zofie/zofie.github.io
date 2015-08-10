@@ -1,4 +1,4 @@
-jsTheme.toggle =
+chopstick.toggle =
 {
     init: function() {
         // The toggle is called with the '.js-toggle' class and one or more data-targets
@@ -11,7 +11,7 @@ jsTheme.toggle =
             e.preventDefault();
 
             // Split the targets if multiple
-            var targets = $(this).data("target").replace(" ", "").split(",");
+            var targets = $(this).data('target').replace(' ', '').split(',');
 
             // Loop trough targets and toggle the 'is-hidden' class
             for (var i = targets.length - 1; i >= 0; i--) {

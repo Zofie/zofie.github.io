@@ -1,7 +1,7 @@
 /*
     Elements: forms
     ---
-    Default markup for the most common HTML elements
+    Default markup for page level elements
 */
 
 html {
@@ -11,6 +11,8 @@ html {
     @include mq($bp5) {
         font-size: $alpha-font-size/16*112.5%;
     }
+
+    background-color: $white;
 }
 
 body {

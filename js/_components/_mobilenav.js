@@ -1,32 +1,30 @@
-jsTheme.mobileNav =
+chopstick.mobileNav =
 {
-    init: function()
+    settings:
     {
-        jsTheme.mobileNav.enableMobileNav();
-        jsTheme.mobileNav.buildMobileNav();
+        navHolder: $('.js-nav-holder'),
+        trigger: $('.js-nav-trigger'),
     },
 
-    // CSS is based on the class .mobile-nav
-    //
+    init: function()
+    {
+        settings = this.settings;
+
+        chopstick.mobileNav.enableMobileNav();
+        chopstick.mobileNav.buildMobileNav();
+    },
+
     enableMobileNav: function()
     {
-        $("html").addClass("c-mobile-nav");
+        $('html').addClass('has-mobile-nav');
     },
 
     // build mobile nav
     buildMobileNav: function()
     {
-        var navHolder = $('.o-header--mobile');
-
-
-        navHolder.prepend('<span class="c-main-nav-trigger c-icon c-icon--menu"></span>');
-
-        var trigger = $('.c-main-nav-trigger');
-        var nav = $('.c-main-nav');
-
-        $('.c-main-nav-trigger').on('click', function() {
-            $('.o-header').toggleClass('active');
-            $('.c-main-nav-trigger').toggleClass('c-icon--close').toggleClass('c-icon--menu');
+        settings.trigger.on('click', function() {
+            $('.js-nav').toggleClass('is-visible');
+            $(this).toggleClass('is-active');
         });
     }
 };

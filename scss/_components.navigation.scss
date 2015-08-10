@@ -1,0 +1,38 @@
+.c-nav {
+    list-style: none;
+    padding: 0;
+    position: fixed;
+    top: 0em;
+    left: 0;
+    z-index: 90;
+
+    display: inline-block;
+
+    @include mq($bp4){
+        left: 50%;
+        margin-left: -175px;
+
+        font-size: 0;
+    }
+}
+
+    .c-nav__item {
+        background-color: $alpha-ui-color-dark;
+
+        /*@include padding-tb(1,1);
+        @include padding-lr(1.5,1.5);*/
+
+        @include mq($bp4){
+            display: inline-block;
+            background-color: $alpha-ui-color-dark;
+            text-align: center;
+            margin: 0;
+        }
+
+
+
+        &.active,
+        &:hover {
+            background-color: $alpha-ui-color-light;
+        }
+    }
