@@ -537,9 +537,9 @@ a.o-nav--main__list-item-link:hover, a.o-nav--main__list-item-link:visited, a.o-
 .o-blog__list + .o-blog__list { border-top: 2px solid #eee; }
 
 .o-portfolio__holder { -webkit-transition: .2s; transition: .2s; position: relative; bottom: 0; width: 100%; float: left; position: relative; padding-left: 0px; padding-right: 16px; margin-top: 16px; margin-top: 1rem; margin-bottom: 16px; margin-bottom: 1rem; cursor: pointer; }
-@media (min-width: 60em) { .o-portfolio__holder { width: 50%; float: left; position: relative; padding-left: 0px; padding-right: 16px; } }
-@media (min-width: 71.25em) { .o-portfolio__holder { width: 50%; float: left; position: relative; padding-left: 0px; padding-right: 32px; }
+@media (min-width: 60em) { .o-portfolio__holder { width: 50%; float: left; position: relative; padding-left: 0px; padding-right: 16px; }
   .o-portfolio__holder:hover .o-portfolio__image { -webkit-transform: translate(0, -4em); -ms-transform: translate(0, -4em); transform: translate(0, -4em); } }
+@media (min-width: 71.25em) { .o-portfolio__holder { width: 50%; float: left; position: relative; padding-left: 0px; padding-right: 32px; } }
 
 .o-portfolio__inner { position: relative; }
 
