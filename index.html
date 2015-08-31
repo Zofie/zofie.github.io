@@ -6,35 +6,39 @@ weight : 1
 intro-image: img/header.jpg
 ---
 
-<div class="home">
-  <section class="holder">
-    <div class="holder--content">
-      <h1 class="e-title">
-        Recente blogposts
-      </h1>
-      <div class="blog">
-        {% for post in site.posts | limit : 3 %}
-        <section class="o-blog--post">
-          <header class="o-blog--title-holder">
-            <a href="{{ post.url | prepend: site.baseurl }}">
-              <h1 class="h2 o-blog--item__title">{{ post.title }}</h1>
-              <p class="o-blog--item__meta">
-                {{ post.date | date: "%b %-d, %Y" }}
-              </p>
-            </a>
-          </header>
-          <div class="o-blog--content-holder">
-            <p>
-            {{ post.content | strip_html | truncate: 300 }}
-            </p>
-            <p class="pT">
-              <a href="{{ post.url | prepend: site.baseurl }}" class="text-link">Read more...</a>
-            </p>
-          </div>
-        </section>
-        {% endfor %}
+<section class="c-holder">
+  <div class="c-article u-pb-2">
+    <h1>Recente schrijfsels</h1>
+    <ul class="c-article-list u-mb-1">
+    {% for post in site.posts | limit : 3 %}
+    <li class="c-article-list_item">
+        <p class="u-meta-data u-np u-nm">{{ post.date | date: "%b %-d, %Y" }}</p>
+        <h3 class="c-article-list__title u-np u-nm"><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h3>
+    </li>
+    {% endfor %}
+    </ul>
+    <a href="/blog.html" class="c-button c-button--md c-button--alpha">Alle blogposts</a>
+  </div>
+
+  <div class="c-latest-project">
+    <h1>Laatste project</h1>
+
+    <div class="o-grid o-grid--gutter u-pb-2">
+      <div class="c-latest-project__image o-grid__item u-1-of-3">
+        <img src="/img/projecten/vormingsfondsdienstencheques.png" alt="Vormingsfonds Dienstencheques">
+      </div>
+      <div class="o-grid__item u-2-of-3">
+        <h1 class="u-h3 u-nm u-bold">Vormingsfonds Dienstencheques</h1>
+        <h3 class="u-h6 u-meta-data">Wijs</h3>
+
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus odio sunt, culpa, sequi in illum mollitia. Sunt sapiente, sit, officiis esse eaque amet, sed rem explicabo inventore aspernatur quaerat nemo.
+        </p>
+
+        <a href="http://starters.vormingdienstencheques.be/login" target="_blank">Website</a>
       </div>
     </div>
-  </section>
-</div>
 
+    <a href="/projecten.html" class="c-button c-button--md c-button--alpha">Alle projecten bekijken</a>
+  </div>
+</section>

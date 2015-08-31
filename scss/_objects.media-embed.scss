@@ -1,7 +1,7 @@
 /*
-    Object: Media embed
+    Objects: Media embed
     ---
-    Responsive media embedding, like an iframe
+    Responsive media embedding object, for use with iframes
 */
 
 .o-media-embed {
@@ -12,7 +12,7 @@
     overflow: hidden;
     @include margin-bottom(1.5);
 
-    iframe {
+    > iframe {
         width: 100%;
         height: 100%;
         position: absolute;

@@ -1,0 +1,19 @@
+/*
+    Utilities: States
+    ---
+    Component states
+*/
+
+.is-hidden {
+    display: none !important;
+}
+
+.u-meta-data {
+  text-transform: uppercase;
+  color: $color-neutral;
+  font-weight: $beta-font-weight;
+}
+
+.u-bold {
+  font-weight: $beta-font-weight;
+}

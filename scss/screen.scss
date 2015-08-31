@@ -1,62 +1,86 @@
-// 0. Settings
-@import "settings.global";
-@import "settings.grid";
-@import "settings.colors";
-@import "settings.typography";
-@import "settings.ms";
-@import "settings.ui";
+/*
+ *  Chopstick index
+ *  ---
+ *  Chopstick is a framework based on the [ITCSS](http://itcss.io/)
+ *  architecture and a series of principles. It creates a structure
+ *  to easily set-up and build bespoke web projects.
+ *  ---
+ *
+ *  Settings: contains global variables and config switches
+ *  Tools: contains default mixins and functions
+ *  Generic: contains ground-zero styles (Normalize.css, resets, box-sizing)
+ *  Elements: contains unclassed HTML elements (type selectors)
+ *  Objects: contains cosmetic-free design patterns
+ *  Components: contains designed components, chunks of UI
+ *  Plugins: contains third-party plugin styles
+ *  Utilities: contains helpers and overrides
+ */
 
-// 0. Tools
-@import "tools.functions";
-@import "tools.mixins";
-@import "tools.grid";
-@import "tools.typography";
-@import "tools.ui";
-@import "tools.buttons";
-@import "tools.inputs";
-@import "tools.pagination";
-@import "tools.alerts";
+// Settings
+@import 'settings.global';
+@import 'settings.breakpoints';
+@import 'settings.grid';
+@import 'settings.colors';
+@import 'settings.ms';
+@import 'settings.typography';
+@import 'settings.ui';
 
-/* 1. Generic */
-@import "generic.normalize";
-@import "generic.reset";
-@import "generic.box-sizing";
+// Tools
+@import 'tools.functions';
+@import 'tools.mixins';
+@import 'tools.grid';
+@import 'tools.spacing';
+@import 'tools.typography';
 
-/* 2. Elements */
-@import "elements.page";
-@import "elements.typography";
-@import "elements.images";
-@import "elements.forms";
-@import "elements.tables";
+/* Generic */
+@import 'generic.normalize';
+@import 'generic.reset';
+@import 'generic.box-sizing';
 
-/* 3. Objects */
-@import "objects.grid";
-@import "objects.holder";
-@import "objects.alerts";
-@import "objects.buttons";
-@import "objects.media";
-@import "objects.media-embed";
-@import "objects.pagination";
-@import "objects.header";
-@import "objects.footer";
-@import "objects.navigation";
-@import "objects.blog";
-@import "objects.portfolio";
+/* Elements */
+@import 'elements.page';
+@import 'elements.typography';
+@import 'elements.images';
+@import 'elements.forms';
+@import 'elements.tables';
 
-/* 4. Components */
-@import "components.frame";
-@import "components.grid";
-@import "components.home";
-@import "components.forms";
-@import "components.icons";
-@import "components.styleguide";
-@import "components.styleguide-syntax";
+/* Objects */
+@import 'objects.grid';
+@import 'objects.flexbox';
+@import 'objects.media';
+@import 'objects.media-embed';
+@import 'objects.list';
+@import 'objects.tables';
 
-/* 5. Trumps */
-@import "trumps.widths";
-@import "trumps.colors";
-@import "trumps.states";
-@import "trumps.shame";
-@import "trumps.debug";
-@import "trumps.baseline-grid";
-@import "trumps.print";
+/* Components */
+@import 'components.articles';
+@import 'components.navigation';
+@import 'components.brand';
+@import 'components.row';
+@import 'components.icons';
+@import 'components.alerts';
+@import 'components.buttons';
+@import 'components.header';
+@import 'components.holders';
+@import 'components.input';
+@import 'components.label';
+@import 'components.lists';
+@import 'components.pagination';
+@import 'components.cards';
+@import 'components.styleguide';
+
+/* Plugins */
+@import 'plugins.syntax';
+@import 'plugins.googlemaps';
+
+/* Utilities */
+@import 'utilities.widths';
+@import 'utilities.push';
+@import 'utilities.pull';
+@import 'utilities.spacing';
+@import 'utilities.colors';
+@import 'utilities.layers';
+@import 'utilities.states';
+@import 'utilities.print';
+@import 'utilities.shame';
+@import 'utilities.debug';

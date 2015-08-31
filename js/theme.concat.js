@@ -1,110 +1,65 @@
-var jsTheme =
+var chopstick =
 {
     // init, something like a constructor
     init: function()
     {
-        jsTheme.mobileNav.init();
-        jsTheme.forms.init();
-        jsTheme.toggle.init();
-        jsTheme.disqus.init();
-    }
-};
-
-$(jsTheme.init);
-
-jsTheme.disqus =
-{
-    init: function()
-    {
-          /* * * CONFIGURATION VARIABLES * * */
-          var disqus_shortname = 'sophiedebrabander';
-
-          /* * * DON'T EDIT BELOW THIS LINE * * */
-          (function() {
-              var disqus = document.createElement('script');
-              disqus.type = 'text/javascript';
-              disqus.async = true;
-
-              disqus.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-
-              (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(disqus);
-          })();
-    }
-};
-
-jsTheme.forms =
-{
-    init: function()
-    {
-        $('.c-alert-box').on('click', function(e)
-        {
-            e.preventDefault();
-            $(this).closest('.c-alert-box').fadeOut(300);
-        });
-    }
-};
-
-jsTheme.mobileNav =
-{
-    init: function()
-    {
-        jsTheme.mobileNav.enableMobileNav();
-        jsTheme.mobileNav.buildMobileNav();
+        chopstick.loadObject(chopstick.mobileNav, 'chopstick.mobileNav');
     },
 
-    // CSS is based on the class .mobile-nav
-    //
-    enableMobileNav: function()
+    /**
+     * This function will load an object by a given name
+     *
+     * If the object doesn't exist no error will be thrown
+     * But if object exists but doesn't have an init method it will throw an error
+     *
+     * If everything is ok we'll initiate the given object
+     */
+    loadObject: function(obj, name)
     {
-        $("html").addClass("c-mobile-nav");
-    },
+        // create object based on a name
+        // var objName = window[objName];
 
-    // build mobile nav
-    buildMobileNav: function()
-    {
-        var navHolder = $('.o-header--mobile');
+        // check if object exists
+        if(typeof obj != 'undefined') {
 
+            // check if object has a method init
+            if (typeof obj.init == 'undefined') {
+                // we will throw an error so the designer / developer know there's a problem
+                throw new Error('ERROR: "' + name + '" does not have an init function');
 
-        navHolder.prepend('<span class="c-main-nav-trigger c-icon c-icon--menu"></span>');
-
-        var trigger = $('.c-main-nav-trigger');
-        var nav = $('.c-main-nav');
-
-        $('.c-main-nav-trigger').on('click', function() {
-            $('.o-header').toggleClass('active');
-            $('.c-main-nav-trigger').toggleClass('c-icon--close').toggleClass('c-icon--menu');
-        });
-    }
-};
-
-jsTheme.toggle =
-{
-    init: function() {
-        // The toggle is called with the '.js-toggle' class and one or more data-targets
-        // Use the 'is-hidden' class to hide your elements"
-        var toggle = $('.js-toggle');
-
-        // Toggle functionality
-        toggle.on('touchstart click', function(e){
-            // Prevent the default action on links
-            e.preventDefault();
-
-            // Split the targets if multiple
-            var targets = $(this).data("target").replace(" ", "").split(",");
-
-            // Loop trough targets and toggle the 'is-hidden' class
-            for (var i = targets.length - 1; i >= 0; i--) {
-                if(targets[i]){
-                    // Toggle the 'is-hidden' class
-                    $(targets[i]).toggleClass('is-hidden');
-                }
+            } else {
+                // everything is fine so initiate
+                obj.init();
             }
-
-            // Add an 'is-toggled' class to the trigger.
-            // Use this class to style your icons, active states, etc.
-            $(this).toggleClass('is-toggled');
-
-            return false;
-        });
+        }
     }
 };
+
+var mobileNavSettings
+chopstick.mobileNav =
+{
+    settings:
+    {
+      header: $('.js-header'),
+      trigger: $('.js-trigger-header'),
+    },
+
+    init: function()
+    {
+        mobileNavSettings = chopstick.mobileNav.settings;
+        chopstick.mobileNav.navigation();
+    },
+
+    navigation: function()
+    {
+      var header = $('.js-header');
+      var trigger = $('.js-trigger-header');
+
+      trigger.on('click', function(){
+          header.toggleClass('is-active', 'in-inactive');
+          $(this).toggleClass('is-open').toggleClass('is-closed')
+      })
+    }
+};
+
+$(chopstick.init);

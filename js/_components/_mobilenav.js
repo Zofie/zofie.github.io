@@ -1,32 +1,26 @@
-jsTheme.mobileNav =
+var mobileNavSettings
+chopstick.mobileNav =
 {
+    settings:
+    {
+      header: $('.js-header'),
+      trigger: $('.js-trigger-header'),
+    },
+
     init: function()
     {
-        jsTheme.mobileNav.enableMobileNav();
-        jsTheme.mobileNav.buildMobileNav();
+        mobileNavSettings = chopstick.mobileNav.settings;
+        chopstick.mobileNav.navigation();
     },
 
-    // CSS is based on the class .mobile-nav
-    //
-    enableMobileNav: function()
+    navigation: function()
     {
-        $("html").addClass("c-mobile-nav");
-    },
+      var header = $('.js-header');
+      var trigger = $('.js-trigger-header');
 
-    // build mobile nav
-    buildMobileNav: function()
-    {
-        var navHolder = $('.o-header--mobile');
-
-
-        navHolder.prepend('<span class="c-main-nav-trigger c-icon c-icon--menu"></span>');
-
-        var trigger = $('.c-main-nav-trigger');
-        var nav = $('.c-main-nav');
-
-        $('.c-main-nav-trigger').on('click', function() {
-            $('.o-header').toggleClass('active');
-            $('.c-main-nav-trigger').toggleClass('c-icon--close').toggleClass('c-icon--menu');
-        });
+      trigger.on('click', function(){
+          header.toggleClass('is-active', 'in-inactive');
+          $(this).toggleClass('is-open').toggleClass('is-closed')
+      })
     }
 };

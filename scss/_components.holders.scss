@@ -1,0 +1,17 @@
+.c-holder {
+  // Holder visible on mobile and desktop
+  @include margin-left(3);
+  @include padding-lr(1,1);
+  @include padding-tb(2,2);
+
+  @include mq($bp3) {
+    @include margin-left(22);
+    @include padding-lr(5,5);
+    @include padding-tb(4,4);
+  }
+}
+
+.c-holder--main  {
+
+
+}

@@ -1,30 +1,13 @@
-<section class="o-header o-header--holder">
-  <div class="o-header--image-holder">
-    <a href="{{ site.baseurl }}/">
-      <img src="/img/sophie.jpeg" class="o-header--image" />
-    </a>
+<header class="c-header c-header-main js-header">
+  <a href="{{ site.baseurl }}/">
+    <img src="/img/sophie.jpeg" class="c-header__image" />
+  </a>
+  <h1 class="c-header__title u-nm">Sophie de Brabander</h1>
+  <h3 class="c-header__subtitle u-nm">Front-end Developer</h3>
+
+  {% include nav.html %}
+
+  <div class="c-header__trigger is-closed js-trigger-header">
+    &nbsp;
   </div>
-  <header class="o-header--title-holder">
-    <h1 class="o-header--title">
-    <a href="{{ site.baseurl }}/">
-      {{ site.title }}
-    </a>
-    </h1>
-    <p class="o-header--meta">
-      Front-end developer
-      <br>
-    </p>
-  </header>
-
-  {% include nav--main.html %}
-
-  <div class="c-header--footer-text">
-    © Sophie de Brabander - {{ site.time | date: '%Y' }}
-  </div>
-</section>
-
-<section class="o-header--mobile">
-  <h1 class="h3 o-header--mobile__title">
-    {{ site.title }}
-  </h1>
-</section>
+</header>
