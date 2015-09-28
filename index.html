@@ -7,38 +7,43 @@ intro-image: img/header.jpg
 ---
 
 <section class="c-holder">
-  <div class="c-article u-pb-2">
-    <h1>Recente schrijfsels</h1>
-    <ul class="c-article-list u-mb-1">
-    {% for post in site.posts | limit : 3 %}
-    <li class="c-article-list_item">
-        <p class="u-meta-data u-np u-nm">{{ post.date | date: "%b %-d, %Y" }}</p>
-        <h3 class="c-article-list__title u-np u-nm"><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h3>
-    </li>
-    {% endfor %}
-    </ul>
-    <a href="/blog.html" class="c-button c-button--md c-button--alpha">Alle blogposts</a>
-  </div>
+  <div class="c-holder__inner">
+
 
   <div class="c-latest-project">
-    <h1>Laatste project</h1>
+    <h1 class="u-page-title"><span>Laatste projecten</span></h1>
 
     <div class="o-grid o-grid--gutter u-pb-2">
-      <div class="c-latest-project__image o-grid__item u-1-of-3">
-        <img src="/img/projecten/vormingsfondsdienstencheques.png" alt="Vormingsfonds Dienstencheques">
+
+      <div class="c-project__item o-grid__item u-1-of-3-bp5 u-mb-1">
+        <a href="http://trainworld.be" target="_blank">
+          <div class="c-project__image-holder">
+            <img src="/img/projecten/trainworld.jpg" alt="Trainworld">
+          </div>
+          <h1 class="u-h4 u-color-alpha">Trainworld</h1>
+        </a>
       </div>
-      <div class="o-grid__item u-2-of-3">
-        <h1 class="u-h3 u-nm u-bold">Vormingsfonds Dienstencheques</h1>
-        <h3 class="u-h6 u-meta-data">Wijs</h3>
 
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus odio sunt, culpa, sequi in illum mollitia. Sunt sapiente, sit, officiis esse eaque amet, sed rem explicabo inventore aspernatur quaerat nemo.
-        </p>
+      <div class="c-project__item o-grid__item u-1-of-3-bp5 u-mb-1">
+        <a href="http://madamvelo.be" target="_blank">
+          <div class="c-project__image-holder">
+            <img src="/img/projecten/madamvelo.jpg" alt="Madam Vélo">
+          </div>
+          <h1 class="u-h4 u-color-alpha">Madam Vélo</h1>
+        </a>
+      </div>
 
-        <a href="http://starters.vormingdienstencheques.be/login" target="_blank">Website</a>
+      <div class="c-project__item o-grid__item u-1-of-3-bp5 u-mb-1">
+        <a href="http://fret.wijs.be" target="_blank">
+          <div class="c-project__image-holder">
+            <img src="/img/projecten/fret.jpg" alt="Fret">
+          </div>
+          <h1 class="u-h4 u-color-alpha">Wijs: Fret</h1>
+        </a>
       </div>
     </div>
 
-    <a href="/projecten.html" class="c-button c-button--md c-button--alpha">Alle projecten bekijken</a>
+    <a href="/projecten.html">Alle projecten bekijken</a>
+  </div>
   </div>
 </section>

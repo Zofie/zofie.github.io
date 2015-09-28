@@ -15,3 +15,25 @@
 
 
 }
+
+
+.c-holder__inner {
+  @include mq($bp4) {
+    max-width: 60em;
+    margin: 0 auto;
+  }
+}
+
+.c-holder__post-inner {
+  @include mq($bp4) {
+    max-width: 40em;
+    margin: 0 auto;
+  }
+}
+
+.c-holder--alpha {
+  background-color: #ddd;
+
+  @include padding-lr(2,2);
+  @include padding-tb(2,2);
+}

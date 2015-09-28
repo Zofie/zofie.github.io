@@ -30,6 +30,11 @@
     @include margin-bottom(2);
 }
 
+
+.u-mb-3 {
+    @include margin-bottom(3);
+}
+
 // padding-bottom
 
 .u-pb-0 {
@@ -46,6 +51,10 @@
 
 .u-pb-2 {
     @include padding-bottom(2);
+}
+
+.u-pb-3 {
+    @include padding-bottom(3);
 }
 
 // padding-top

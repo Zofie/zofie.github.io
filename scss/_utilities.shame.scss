@@ -3,3 +3,15 @@
     ---
     Hacks and quick fixes
 */
+
+
+code {
+  background-color: #232323;
+  display: block;
+  color: white;
+
+  padding: 0.5em 1em;
+  @include margin-tb(1,1);
+
+  border-radius: $radius;
+}

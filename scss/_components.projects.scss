@@ -2,9 +2,19 @@
 
 }
 
-.c-latest-project__image {
+.c-project__image-holder {
 
+}
 
+.c-project__item {
 
-  @include box-(3,0,1);
+  &:hover {
+    img {
+
+      border: 5px solid white;
+      outline: 1px solid palette(color-neutral, dark);
+    }
+  }
+
+  @include padding-tb(1,1);
 }

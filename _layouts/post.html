@@ -7,38 +7,20 @@
         {% include browser-message.html %}
 
         {% include header.html %}
-
-        <main class="main main--holder">
-          <!-- <section class="main--holder__image">
-            <img src="/img/header.jpg" width="100%">
-          </section> -->
-
-          <section class="main--holder__content" itemType="http://schema.org/BlogPosting">
-
-            <div class="o-blog--content">
-
-              <h1 class="e-title" itemprop="headline">
-                {{ page.title }}
-              </h1>
-
+        <main class="c-holder">
+          <section class="c-holder__post-inner" itemType="http://schema.org/BlogPosting">
+              <h1 itemprop="headline" class="u-page-title"><span>{{ page.title }}</span></h1>
               <div itemprop="articleBody">
                 {{ content }}
               </div>
 
-              <div class="comments">
-
-                <script type="text/javascript">
-                </script>
-
-              </div>
-
-              <div class="clearfix o-blog--controls">
+              <div class="c-pagination-articles u-pt-2 u-pb-2">
                 {% if page.previous %}
-                <a href="{{ page.previous.url }}" class="o-btn o-btn--alpha-ui o-btn--lg o-btn--fll">&larr; Previous article</a>
+                <a href="{{ page.previous.url }}" class="c-button--float-left c-button c-button--alpha c-button--md">&larr; Vorige artikel</a>
                 {% endif %}
 
                 {% if page.next %}
-                <a href="{{ page.next.url }}" class="o-btn o-btn--alpha-ui o-btn--lg o-btn--flr">Next article &rarr;</a>
+                <a href="{{ page.next.url }}" class="c-button--float-right c-button c-button--alpha c-button--md">Volgende artikel &rarr;</a>
                 {% endif %}
               </div>
             </div>
