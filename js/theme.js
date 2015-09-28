@@ -4,6 +4,7 @@ var chopstick =
     init: function()
     {
         chopstick.loadObject(chopstick.mobileNav, 'chopstick.mobileNav');
+        chopstick.loadObject(chopstick.heights, 'chopstick.heights');
     },
 
     /**
