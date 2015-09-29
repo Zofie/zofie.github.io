@@ -24,6 +24,7 @@
   }
 }
 
+.c-holder__inner-small,
 .c-holder__post-inner {
   @include mq($bp4) {
     max-width: 40em;

@@ -425,7 +425,7 @@ caption { font-family: "Open Sans", sans-serif; font-weight: 700; text-align: ce
 
 @media (min-width: 60em) { .c-holder__inner { max-width: 60em; margin: 0 auto; } }
 
-@media (min-width: 60em) { .c-holder__post-inner { max-width: 40em; margin: 0 auto; } }
+@media (min-width: 60em) { .c-holder__inner-small, .c-holder__post-inner { max-width: 40em; margin: 0 auto; } }
 
 .c-holder--alpha { background-color: #ddd; padding-left: 2rem; padding-right: 2rem; padding-top: 2rem; padding-bottom: 2rem; }
 
@@ -1262,8 +1262,9 @@ li > .c-list-number { margin: 0; padding-left: 1rem; padding-right: 0rem; }
 
 .u-bold { font-weight: 700; }
 
-.u-page-title { text-align: center; padding-bottom: 2rem; }
+.u-page-title { text-align: center; padding-bottom: 1rem; }
 .u-page-title > span { border-bottom: 1px solid #ff682a; font-size: 1.75rem; line-height: 1.28571em; }
+@media (min-width: 60em) { .u-page-title { padding-bottom: 2rem; } }
 
 .u-color-alpha { color: #ff682a; }
 
@@ -1273,6 +1274,8 @@ li > .c-list-number { margin: 0; padding-left: 1rem; padding-right: 0rem; }
 
 .u-no-border { border: none; text-decoration: none; }
 .u-no-border:hover { border: none; text-decoration: none; }
+
+@media (min-width: 60em) { .u-align-left-bp4 { text-align: left; } }
 
 /* Utilities: Print --- Print stylesheet
 */
