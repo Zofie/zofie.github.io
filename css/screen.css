@@ -505,8 +505,9 @@ li > .c-list-number { margin: 0; padding-left: 1rem; padding-right: 0rem; }
 
 .c-swatch-caption { color: #aaa; min-height: 55px; font-size: 0.875rem; line-height: 1.37143em; padding-top: 0.5rem; padding-bottom: 0.3rem; }
 
-.c-project__item { padding-top: 1rem; padding-bottom: 1rem; }
 .c-project__item:hover img { border: 5px solid white; outline: 1px solid #4d4d4d; }
+
+.c-project__title { min-height: 55px; }
 
 /* Plugins */
 /* Plugins: Syntax --- Solarized Dark For use with Jekyll and Pygments http://ethanschoonover.com/solarized

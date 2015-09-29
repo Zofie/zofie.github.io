@@ -1,13 +1,4 @@
-.c-latest-project {
-
-}
-
-.c-project__image-holder {
-
-}
-
 .c-project__item {
-
   &:hover {
     img {
 
@@ -15,6 +6,8 @@
       outline: 1px solid palette(color-neutral, dark);
     }
   }
+}
 
-  @include padding-tb(1,1);
+.c-project__title {
+  min-height: 55px;
 }
