@@ -100,17 +100,18 @@
 
     &,
     &:visited {
-        color: palette(color-neutral,x-light);
+        color: white;
     }
 
     &:hover,
     &:focus {
         background-color: lighten($color-beta, 10);
-        color: palette(color-neutral,x-light);
+        color: white;
     }
 
     &:active {
         background-color: palette(color-beta);
+        color: white;
     }
 }
 
@@ -120,13 +121,13 @@
 
     &,
     &:visited {
-        color: palette(color-neutral,x-light);
+        color: white;
     }
 
     &:hover,
     &:focus {
         background-color: palette(color-alpha,light);
-        color: palette(color-neutral,x-light);
+        color: white;
     }
 
     &:active {

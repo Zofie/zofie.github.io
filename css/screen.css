@@ -153,11 +153,11 @@ html { box-sizing: border-box; }
 html { font: 400 100%/1.5 "Open Sans", sans-serif; -webkit-overflow-scrolling: touch; }
 @media (min-width: 71.25em) { html { font-size: 112.5%; } }
 
-body { -webkit-font-smoothing: antialiased; color: #4d4d4d; }
+body { -webkit-font-smoothing: antialiased; color: #919191; }
 
-::-moz-selection { background-color: #4d4d4d; color: #e6e6e6; text-shadow: none; }
+::-moz-selection { background-color: #919191; color: #c4c4c4; text-shadow: none; }
 
-::selection { background-color: #4d4d4d; color: #e6e6e6; text-shadow: none; }
+::selection { background-color: #919191; color: #c4c4c4; text-shadow: none; }
 
 /* Elements: Typography --- Default markup for typographic elements
 */
@@ -185,12 +185,12 @@ blockquote { font-style: italic; }
 
 small { font-size: 0.875rem; line-height: 1.71429em; margin-bottom: 1.5rem; }
 
-hr { border: 1px solid #e6e6e6; border-width: 1px 0 0; clear: both; margin-top: 0; margin-bottom: 1rem; }
+hr { border: 1px solid #c4c4c4; border-width: 1px 0 0; clear: both; margin-top: 0; margin-bottom: 1rem; }
 
 a { text-decoration: none; color: #ff682a; -webkit-transition: color .22s ease-in-out; transition: color .22s ease-in-out; }
 a:visited { color: #ff682a; }
-a:hover { text-decoration: underline; color: #e07b52; }
-a:focus { outline: thin dotted; color: #e07b52; }
+a:hover { text-decoration: underline; color: #ff8c5d; }
+a:focus { outline: thin dotted; color: #ff8c5d; }
 a:hover, a:active { outline: 0; }
 
 /* Elements: Images --- Default markup for images
@@ -328,9 +328,9 @@ caption { font-family: "Open Sans", sans-serif; font-weight: 700; text-align: ce
 */
 .c-row { padding-top: 1rem; padding-bottom: 0rem; padding-left: 1rem; padding-right: 1rem; }
 
-.c-row--alpha { background-color: white; }
+.c-row--alpha { background-color: #d0d0d0; }
 
-.c-row--beta { color: #e6e6e6; background-color: #4d4d4d; }
+.c-row--beta { color: #c4c4c4; background-color: #919191; }
 
 /* Components: Icons --- UI icons
 */
@@ -348,18 +348,18 @@ caption { font-family: "Open Sans", sans-serif; font-weight: 700; text-align: ce
 
 .c-alert-box__link { text-decoration: underline; }
 .c-alert-box__link:hover, .c-alert-box__link:focus { text-decoration: none; }
-.c-alert-box .c-alert-box__link { color: #4d4d4d; }
-.c-alert-box--error .c-alert-box__link { color: white; }
-.c-alert-box--success .c-alert-box__link { color: white; }
-.c-alert-box--notice .c-alert-box__link { color: white; }
+.c-alert-box .c-alert-box__link { color: #919191; }
+.c-alert-box--error .c-alert-box__link { color: #d0d0d0; }
+.c-alert-box--success .c-alert-box__link { color: #d0d0d0; }
+.c-alert-box--notice .c-alert-box__link { color: #d0d0d0; }
 
 .c-alert-box__close { cursor: pointer; position: absolute; top: 0.25em; right: 0.5em; line-height: 1; text-decoration: none; }
 
-.c-alert-box--error { color: white; background-color: #FF4136; border: 1px solid #b30a00; }
+.c-alert-box--error { color: #d0d0d0; background-color: #FF4136; border: 1px solid #ff1103; }
 
-.c-alert-box--success { color: white; background-color: #2ECC40; border: 1px solid #00b314; }
+.c-alert-box--success { color: #d0d0d0; background-color: #2ECC40; border: 1px solid #25a233; }
 
-.c-alert-box--notice { color: white; background-color: #FF851B; border: 1px solid #b35300; }
+.c-alert-box--notice { color: #d0d0d0; background-color: #FF851B; border: 1px solid #e76b00; }
 
 .c-alert-inline { display: block; text-align: right; font-size: 0.75rem; line-height: 2em; }
 
@@ -389,11 +389,11 @@ caption { font-family: "Open Sans", sans-serif; font-weight: 700; text-align: ce
 .c-button--alpha { background-color: #4d4d4d; border-color: #4d4d4d; }
 .c-button--alpha, .c-button--alpha:visited { color: white; }
 .c-button--alpha:hover, .c-button--alpha:focus { background-color: #676767; color: white; }
-.c-button--alpha:active { background-color: #4d4d4d; }
+.c-button--alpha:active { background-color: #4d4d4d; color: white; }
 
 .c-button--beta { background-color: #ff682a; border-color: #ff682a; }
 .c-button--beta, .c-button--beta:visited { color: white; }
-.c-button--beta:hover, .c-button--beta:focus { background-color: #e07b52; color: white; }
+.c-button--beta:hover, .c-button--beta:focus { background-color: #ff8c5d; color: white; }
 .c-button--beta:active { background-color: #ff682a; }
 
 .c-button--postfix { border-radius: 0 5px 5px 0; }
@@ -432,10 +432,10 @@ caption { font-family: "Open Sans", sans-serif; font-weight: 700; text-align: ce
 /* Components: Input --- Input styles & sizes.
 */
 /** 1. The appearance property defines how elements appear by default. By setting the value to none the default appearance can be entirely redefined using other CSS properties.  2. Controls the application of anti-aliasing when fonts are rendered. Both Webkit & Firefox implements. Works only on Mac OS X platform. */
-.c-input-text { -webkit-appearance: none; -moz-appearance: none; appearance: none; /* [1] */ -webkit-font-smoothing: antialiased; /* [2] */ -moz-osx-font-smoothing: grayscale; /* [2] */ background-color: white; border-radius: 5px; border: 1px solid #aaa; color: #4d4d4d; font-family: "Open Sans", sans-serif; margin: 0; width: 100%; display: block; outline: none; line-height: normal; }
-.c-input-text:focus { color: #4d4d4d; border-color: #ff682a; box-shadow: 0 0 2px; }
+.c-input-text { -webkit-appearance: none; -moz-appearance: none; appearance: none; /* [1] */ -webkit-font-smoothing: antialiased; /* [2] */ -moz-osx-font-smoothing: grayscale; /* [2] */ background-color: #d0d0d0; border-radius: 5px; border: 1px solid #aaa; color: #919191; font-family: "Open Sans", sans-serif; margin: 0; width: 100%; display: block; outline: none; line-height: normal; }
+.c-input-text:focus { color: #919191; border-color: #ff682a; box-shadow: 0 0 2px #ff9e77; }
 .c-input-text.has-error { border: 1px solid #FF4136; }
-.c-input-text.has-error:focus { border-color: #FF4136; box-shadow: 0 0 2px; }
+.c-input-text.has-error:focus { border-color: #FF4136; box-shadow: 0 0 2px #ff8983; }
 
 .c-input-text--sm { padding-left: 0.5rem; padding-right: 0.5rem; font-size: 0.75rem; padding-top: 0.5rem; padding-bottom: 0.5rem; }
 
@@ -491,30 +491,30 @@ li > .c-list-number { margin: 0; padding-left: 1rem; padding-right: 0rem; }
 
 .c-card > *:last-child, .c-card > *:last-child > *:last-child, .c-card > *:last-child > *:last-child > *:last-child { margin-bottom: 0; }
 
-.c-card--alpha { color: #4d4d4d; background-color: #e6e6e6; border: 1px solid #aaa; border-radius: 5px; }
+.c-card--alpha { color: #919191; background-color: #c4c4c4; border: 1px solid #aaa; border-radius: 5px; }
 
 /* Components: Styleguide --- Styleguide specific scaffolding and demo styles
 */
 .c-section-title { color: #aaa; border-bottom: 1px solid #aaa; padding-bottom: 1rem; padding-top: 1rem; font-size: 1rem; line-height: 1.5em; margin-bottom: 2rem; }
 
-.c-scss { display: block; color: #4d4d4d; background-color: #e6e6e6; border: 1px solid #aaa; border-radius: 5px; margin-top: 0rem; margin-bottom: 1rem; padding-top: 0.5rem; padding-bottom: 0.5rem; padding-left: 1rem; padding-right: 1rem; }
+.c-scss { display: block; color: #919191; background-color: #c4c4c4; border: 1px solid #aaa; border-radius: 5px; margin-top: 0rem; margin-bottom: 1rem; padding-top: 0.5rem; padding-bottom: 0.5rem; padding-left: 1rem; padding-right: 1rem; }
 
 .c-toggle { background: white; border: 0; outline: 0; color: #ff682a; }
 
-.c-swatch { width: 100%; height: 60px; box-shadow: 0 0 1px 3px white, 0 0 2px 4px #e6e6e6; }
+.c-swatch { width: 100%; height: 60px; box-shadow: 0 0 1px 3px #d0d0d0, 0 0 2px 4px #c4c4c4; }
 
 .c-swatch-caption { color: #aaa; min-height: 55px; font-size: 0.875rem; line-height: 1.37143em; padding-top: 0.5rem; padding-bottom: 0.3rem; }
 
-.c-project__item:hover img { border: 5px solid white; outline: 1px solid #4d4d4d; }
+.c-project__item:hover img { border: 5px solid white; outline: 1px solid #919191; }
 
 .c-project__title { min-height: 55px; }
 
 /* Plugins */
 /* Plugins: Syntax --- Solarized Dark For use with Jekyll and Pygments http://ethanschoonover.com/solarized
 */
-.highlighttable { padding-top: 0rem; padding-bottom: 0rem; margin-top: 0.5rem; margin-bottom: 0.5rem; display: block; overflow: auto; font-size: 90%; width: 100%; color: #4d4d4d; border: 1px solid #aaa; border-radius: 5px; }
+.highlighttable { padding-top: 0rem; padding-bottom: 0rem; margin-top: 0.5rem; margin-bottom: 0.5rem; display: block; overflow: auto; font-size: 90%; width: 100%; color: #919191; border: 1px solid #aaa; border-radius: 5px; }
 
-.linenos { padding-left: 0.5rem; padding-right: 0.5rem; color: #4d4d4d; background-color: #e6e6e6; border-right: 1px solid #aaa; }
+.linenos { padding-left: 0.5rem; padding-right: 0.5rem; color: #919191; background-color: #c4c4c4; border-right: 1px solid #aaa; }
 
 .code { padding-left: 1rem; padding-right: 0rem; }
 
@@ -1190,57 +1190,57 @@ li > .c-list-number { margin: 0; padding-left: 1rem; padding-right: 0rem; }
 
 /* Utilities: Colors --- Foreground & background color utilities
 */
-.u-color-neutral-x-light { color: white; }
+.u-color-neutral-x-light { color: #d0d0d0; }
 
-.u-color-neutral-light { color: #e6e6e6; }
+.u-color-neutral-light { color: #c4c4c4; }
 
 .u-color-neutral { color: #aaa; }
 
-.u-color-neutral-dark { color: #4d4d4d; }
+.u-color-neutral-dark { color: #919191; }
 
-.u-color-neutral-x-dark { color: #1a1a1a; }
+.u-color-neutral-x-dark { color: #848484; }
 
-.u-color-alpha-light { color: #e07b52; }
+.u-color-alpha-light { color: #ff8c5d; }
 
 .u-color-alpha { color: #ff682a; }
 
-.u-color-alpha-dark { color: #802500; }
+.u-color-alpha-dark { color: #f64800; }
 
-.u-color-alpha-x-dark { color: #4d1600; }
+.u-color-alpha-x-dark { color: #dd4000; }
 
-.u-color-beta-light { color: #e05252; }
+.u-color-beta-light { color: #676767; }
 
 .u-color-beta { color: #4d4d4d; }
 
-.u-color-beta-dark { color: maroon; }
+.u-color-beta-dark { color: #343434; }
 
-.u-color-beta-x-dark { color: #4d0000; }
+.u-color-beta-x-dark { color: #272727; }
 
-.u-bgcolor-neutral-x-light { background-color: white; }
+.u-bgcolor-neutral-x-light { background-color: #d0d0d0; }
 
-.u-bgcolor-neutral-light { background-color: #e6e6e6; }
+.u-bgcolor-neutral-light { background-color: #c4c4c4; }
 
 .u-bgcolor-neutral { background-color: #aaa; }
 
-.u-bgcolor-neutral-dark { background-color: #4d4d4d; }
+.u-bgcolor-neutral-dark { background-color: #919191; }
 
-.u-bgcolor-neutral-x-dark { background-color: #1a1a1a; }
+.u-bgcolor-neutral-x-dark { background-color: #848484; }
 
-.u-bgcolor-alpha-light { background-color: #e07b52; }
+.u-bgcolor-alpha-light { background-color: #ff8c5d; }
 
 .u-bgcolor-alpha { background-color: #ff682a; }
 
-.u-bgcolor-alpha-dark { background-color: #802500; }
+.u-bgcolor-alpha-dark { background-color: #f64800; }
 
-.u-bgcolor-alpha-x-dark { background-color: #4d1600; }
+.u-bgcolor-alpha-x-dark { background-color: #dd4000; }
 
-.u-bgcolor-beta-light { background-color: #e05252; }
+.u-bgcolor-beta-light { background-color: #676767; }
 
 .u-bgcolor-beta { background-color: #4d4d4d; }
 
-.u-bgcolor-beta-dark { background-color: maroon; }
+.u-bgcolor-beta-dark { background-color: #343434; }
 
-.u-bgcolor-beta-x-dark { background-color: #4d0000; }
+.u-bgcolor-beta-x-dark { background-color: #272727; }
 
 /* Utilities: Layers ---
 */
@@ -1277,12 +1277,14 @@ li > .c-list-number { margin: 0; padding-left: 1rem; padding-right: 0rem; }
 
 @media (min-width: 60em) { .u-align-left-bp4 { text-align: left; } }
 
+.u-align-center { text-align: center; }
+
 /* Utilities: Print --- Print stylesheet
 */
-@media print { * { background: transparent !important; color: #1a1a1a !important; box-shadow: none !important; text-shadow: none !important; -webkit-filter: none !important; filter: none !important; }
+@media print { * { background: transparent !important; color: #848484 !important; box-shadow: none !important; text-shadow: none !important; -webkit-filter: none !important; filter: none !important; }
   h2, h3 { orphans: 3; widows: 3; page-break-after: avoid; }
   p { orphans: 3; widows: 3; }
-  pre, blockquote { border: 1px solid #e6e6e6; page-break-inside: avoid; }
+  pre, blockquote { border: 1px solid #c4c4c4; page-break-inside: avoid; }
   abbr[title]:after { content: " (" attr(title) ")"; }
   a, a:visited { text-decoration: underline; }
   a[href]:after { content: " (" attr(href) ")"; }

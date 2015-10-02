@@ -22,37 +22,45 @@ $color-notice               : #FF851B !default;
 // Palettes
 $palettes: (
     color-neutral: (
-        x-light             : hsl(hue($color-neutral),0,100),
-        light               : hsl(hue($color-neutral),0,90),
+        x-light             : lighten($color-neutral, 15),
+        light               : lighten($color-neutral, 10),
         base                : $color-neutral,
-        dark                : hsl(hue($color-neutral),0,30),
-        x-dark              : hsl(hue($color-neutral),0,10)
+        dark                : darken($color-neutral, 10),
+        x-dark              : darken($color-neutral, 15)
     ),
     color-alpha: (
-        light               : hsl(hue($color-alpha),70,60),
+        x-light             : lighten($color-alpha, 15),
+        light               : lighten($color-alpha, 10),
         base                : $color-alpha,
-        dark                : hsl(hue($color-alpha),100,25),
-        x-dark              : hsl(hue($color-alpha),100,15)
+        dark                : darken($color-alpha, 10),
+        x-dark              : darken($color-alpha, 15)
     ),
     color-beta: (
-        light               : hsl(hue($color-beta),70,60),
+        x-light             : lighten($color-beta, 15),
+        light               : lighten($color-beta, 10),
         base                : $color-beta,
-        dark                : hsl(hue($color-beta),100,25),
-        x-dark              : hsl(hue($color-beta),100,15)
+        dark                : darken($color-beta, 10),
+        x-dark              : darken($color-beta, 15)
     ),
     color-error: (
-        light               : hsl(hue($color-error),70,60),
+        x-light             : lighten($color-error, 15),
+        light               : lighten($color-error, 10),
         base                : $color-error,
-        dark                : hsl(hue($color-error),100,35),
+        dark                : darken($color-error, 10),
+        x-dark              : darken($color-error, 15)
     ),
     color-success: (
-        light               : hsl(hue($color-success),70,60),
+        x-light             : lighten($color-success, 15),
+        light               : lighten($color-success, 10),
         base                : $color-success,
-        dark                : hsl(hue($color-success),100,35),
+        dark                : darken($color-success, 10),
+        x-dark              : darken($color-success, 15)
     ),
     color-notice: (
-        light               : hsl(hue($color-notice),70,60),
+        x-light             : lighten($color-notice, 15),
+        light               : lighten($color-notice, 10),
         base                : $color-notice,
-        dark                : hsl(hue($color-notice),100,35),
+        dark                : darken($color-notice, 10),
+        x-dark              : darken($color-notice, 15)
     )
 );
