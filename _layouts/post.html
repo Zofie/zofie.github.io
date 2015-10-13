@@ -13,16 +13,6 @@
               <div itemprop="articleBody">
                 {{ content }}
               </div>
-
-              <div class="c-pagination-articles u-pt-2 u-pb-2">
-                {% if page.previous %}
-                <a href="{{ page.previous.url }}" class="c-button--float-left c-button c-button--alpha c-button--md">&larr; Vorige artikel</a>
-                {% endif %}
-
-                {% if page.next %}
-                <a href="{{ page.next.url }}" class="c-button--float-right c-button c-button--alpha c-button--md">Volgende artikel &rarr;</a>
-                {% endif %}
-              </div>
             </div>
           </section>
         </main>
