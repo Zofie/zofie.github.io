@@ -408,8 +408,11 @@ caption { font-family: "Open Sans", sans-serif; font-weight: 700; text-align: ce
 .c-header__title { font-size: 1.3125rem; line-height: 2.28571em; font-weight: 700; }
 @media (min-width: 42.5em) { .c-header__title { font-size: 1.75rem; line-height: 1.71429em; } }
 
-.c-header__subtitle { font-size: 1.125rem; line-height: 1.33333em; }
+.c-header__subtitle { color: white; font-size: 1.125rem; line-height: 1.33333em; }
 @media (min-width: 42.5em) { .c-header__subtitle { font-size: 1.3125rem; line-height: 1.14286em; } }
+
+.c-header__link .c-header__title, .c-header__link .c-header__subtitle { color: white; }
+.c-header__link:hover { color: white; text-decoration: none; border-bottom: none; }
 
 .c-header__trigger { font-size: 0; position: absolute; top: 50%; right: 1em; margin-right: 1em; height: 30px; width: 50px; z-index: 90; }
 @media (min-width: 42.5em) { .c-header__trigger { display: none; } }

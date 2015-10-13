@@ -46,10 +46,24 @@
   }
 
   .c-header__subtitle {
+    color: white;
     @include text-dimensions($ms1,1);
 
     @include mq($bp3) {
       @include text-dimensions($ms2,1);
+    }
+  }
+
+  .c-header__link {
+    .c-header__title,
+    .c-header__subtitle {
+      color: white;
+    }
+
+    &:hover {
+        color: white;
+        text-decoration: none;
+        border-bottom: none;
     }
   }
 
