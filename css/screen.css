@@ -297,13 +297,9 @@ caption { font-family: "Open Sans", sans-serif; font-weight: 700; text-align: ce
   .o-table-responsive > tbody > tr > td:before { display: none; } }
 
 /* Components */
-.c-article + .c-article { padding-top: 1rem; padding-bottom: 1rem; }
+.c-journal-list__item + .c-journal-list__item { border-top: 1px solid #c4c4c4; }
 
-.c-article__header { padding-bottom: 1rem; }
-
-.c-article-list { list-style: none; padding: 0; }
-
-.c-article-list_item { padding-top: 0rem; padding-bottom: 0rem; }
+.c-holder__post-inner ul { margin-bottom: 1em; }
 
 /* Components: Navigation --- Site navigation, breadcrumbs, etc.
 */

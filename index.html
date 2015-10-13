@@ -6,9 +6,29 @@ weight : 1
 intro-image: img/header.jpg
 ---
 
-<section class="c-holder">
+<div class="c-holder">
   <div class="c-holder__inner">
 
+    <!-- BEGIN JOURNAL
+    <section>
+      <header>
+        <h1 class="u-page-title"><span>Journal</span></h1>
+      </header>
+
+      <ul class="u-pb-1 o-list c-journal-list">
+        {% for post in site.posts %}
+        <li class="u-pb-1 u-pt-1 c-journal-list__item">
+          <span class="u-meta-data">{{ post.date | date: "%b %-d, %Y" }}</span>
+          <a href="{{ post.url | prepend: site.baseurl }}" class="u-no-border u-color-alpha">
+            {{ post.title }}
+          </a>
+        </li>
+        {% endfor %}
+      </ul>
+    </section>
+    END JOURNAL -->
+
+    <!-- BEGIN PROJECTS -->
     <section class="c-latest-project">
       <header>
         <h1 class="u-page-title"><span>Recent projects</span></h1>
@@ -43,8 +63,8 @@ intro-image: img/header.jpg
           </a>
         </div>
       </div>
-
       <a href="/projects.html">View all projects</a>
     </section>
+    <!-- END PROJECTS -->
   </div>
-</section>
+</div>

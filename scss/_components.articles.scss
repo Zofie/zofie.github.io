@@ -1,25 +1,9 @@
-.c-article {
-
+.c-journal-list__item + .c-journal-list__item {
+  border-top: 1px solid palette(color-neutral, light);
 }
 
-.c-article + .c-article {
-  @include padding-tb(1,1);
-}
-
-.c-article__header {
-  @include padding-bottom(1);
-}
-
-
-.c-article-list {
-  list-style: none;
-  padding: 0;
-}
-
-.c-article-list_item {
-  @include padding-tb(0,0);
-}
-
-.c-article-list_item + .c-article-list_item {
-  // border-top: 1px dotted tomato;
+.c-holder__post-inner {
+  ul {
+    margin-bottom: 1em;
+  }
 }
