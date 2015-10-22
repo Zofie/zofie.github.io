@@ -1,0 +1,15 @@
+.c-experience {
+  @include padding-bottom(1);
+}
+
+.c-experience__item {
+  @include padding-tb(0,1);
+}
+
+.c-experience__item + .c-experience__item {
+  @include padding-tb(1,1);
+}
+
+.c-experience__item-header {
+  @include padding-bottom(.5);
+}
