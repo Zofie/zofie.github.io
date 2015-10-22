@@ -96,3 +96,15 @@
     }
   }
 
+  .c-header__contact {
+    position: absolute;
+    bottom: 0;
+
+    width: 100%;
+
+    @include padding-tb(.5,.5);
+
+    a {
+      color: white;
+    }
+  }
