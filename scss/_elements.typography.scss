@@ -49,7 +49,11 @@ ul + ul,
 dl + dl,
 table + table,
 address + address {
-    @include margin-bottom($beta-leading);
+    display: block;
+}
+
+p {
+    @include margin-bottom($alpha-leading);
 }
 
 pre {
@@ -78,7 +82,7 @@ small {
 }
 
 hr {
-    border: 1px solid palette(color-neutral,light);
+    border: 1px dotted palette(color-alpha,x-light);
     border-width: 1px 0 0;
     clear: both;
     margin-top: 0;

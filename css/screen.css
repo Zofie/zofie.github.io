@@ -173,7 +173,9 @@ body { -webkit-font-smoothing: antialiased; color: #6f6f6f; }
 
 p + h1, p + h2, p + h3, p + h4, p + h5, p + h6 { margin-top: 1em; }
 
-p + p, ol + ol, ul + ul, dl + dl, table + table, address + address { margin-bottom: 2rem; }
+p + p, ol + ol, ul + ul, dl + dl, table + table, address + address { display: block; }
+
+p { margin-bottom: 1rem; }
 
 pre { -moz-tab-size: 2; -o-tab-size: 2; tab-size: 2; }
 
@@ -185,7 +187,7 @@ blockquote { font-style: italic; }
 
 small { font-size: 0.875rem; line-height: 1.71429em; margin-bottom: 1.5rem; }
 
-hr { border: 1px solid #a2a2a2; border-width: 1px 0 0; clear: both; margin-top: 0; margin-bottom: 1rem; }
+hr { border: 1px dotted #ff9e77; border-width: 1px 0 0; clear: both; margin-top: 0; margin-bottom: 1rem; }
 
 a { text-decoration: none; color: #ff682a; -webkit-transition: color .22s ease-in-out; transition: color .22s ease-in-out; }
 a:visited { color: #ff682a; }
