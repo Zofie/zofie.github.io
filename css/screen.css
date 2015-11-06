@@ -187,12 +187,12 @@ blockquote { font-style: italic; }
 
 small { font-size: 0.875rem; line-height: 1.71429em; margin-bottom: 1.5rem; }
 
-hr { border: 1px dotted #ff9e77; border-width: 1px 0 0; clear: both; margin-top: 0; margin-bottom: 1rem; }
+hr { border: 1px dotted #ff916f; border-width: 1px 0 0; clear: both; margin-top: 0; margin-bottom: 1rem; }
 
-a { text-decoration: none; color: #ff682a; -webkit-transition: color .22s ease-in-out; transition: color .22s ease-in-out; }
-a:visited { color: #ff682a; }
-a:hover { text-decoration: none; color: #ff8c5d; }
-a:focus { outline: thin dotted; color: #ff8c5d; }
+a { text-decoration: none; color: #FF5722; -webkit-transition: color .22s ease-in-out; transition: color .22s ease-in-out; }
+a:visited { color: #FF5722; }
+a:hover { text-decoration: none; color: #ff7e55; }
+a:focus { outline: thin dotted; color: #ff7e55; }
 a:hover, a:active { outline: 0; }
 
 /* Elements: Images --- Default markup for images
@@ -299,8 +299,6 @@ caption { font-family: "Open Sans", sans-serif; font-weight: 700; text-align: ce
   .o-table-responsive > tbody > tr > td:before { display: none; } }
 
 /* Components */
-.c-journal-list__item + .c-journal-list__item { border-top: 1px solid #a2a2a2; }
-
 .c-holder__post-inner ul { margin-bottom: 1em; }
 
 .c-experience { padding-bottom: 1rem; }
@@ -321,7 +319,7 @@ caption { font-family: "Open Sans", sans-serif; font-weight: 700; text-align: ce
 
 .c-nav-main__link:visited, .c-nav-main__link { display: block; color: white; text-decoration: none; padding-top: 1rem; padding-bottom: 1rem; }
 
-.c-nav-main__link:hover { text-decoration: none; background-color: white; color: #ff682a; }
+.c-nav-main__link:hover { text-decoration: none; background-color: white; color: #FF5722; }
 
 /* Components: Brand --- Brand image/logo
 */
@@ -419,10 +417,10 @@ caption { font-family: "Open Sans", sans-serif; font-weight: 700; text-align: ce
 .c-button--alpha:hover, .c-button--alpha:focus { background-color: #676767; color: white; }
 .c-button--alpha:active { background-color: #4d4d4d; color: white; }
 
-.c-button--beta { background-color: #ff682a; border-color: #ff682a; }
+.c-button--beta { background-color: #FF5722; border-color: #FF5722; }
 .c-button--beta, .c-button--beta:visited { color: white; }
-.c-button--beta:hover, .c-button--beta:focus { background-color: #ff8c5d; color: white; }
-.c-button--beta:active { background-color: #ff682a; }
+.c-button--beta:hover, .c-button--beta:focus { background-color: #ff7e55; color: white; }
+.c-button--beta:active { background-color: #FF5722; }
 
 .c-button--postfix { border-radius: 0 5px 5px 0; }
 
@@ -430,7 +428,7 @@ caption { font-family: "Open Sans", sans-serif; font-weight: 700; text-align: ce
 .c-button-group:before, .c-button-group:after { display: table; content: ''; }
 .c-button-group:after { clear: both; }
 
-.c-header-main { background-color: #ff682a; color: white; text-align: center; position: fixed; left: -19em; width: 22em; height: 100%; -webkit-transition: left .5s; transition: left .5s; padding-top: 2rem; padding-bottom: 2rem; }
+.c-header-main { background-color: #FF5722; color: white; text-align: center; position: fixed; left: -19em; width: 22em; height: 100%; -webkit-transition: left .5s; transition: left .5s; padding-top: 2rem; padding-bottom: 2rem; }
 .c-header-main.is-active { left: 0; }
 @media (min-width: 42.5em) { .c-header-main { left: 0; } }
 
@@ -467,7 +465,7 @@ caption { font-family: "Open Sans", sans-serif; font-weight: 700; text-align: ce
 */
 /** 1. The appearance property defines how elements appear by default. By setting the value to none the default appearance can be entirely redefined using other CSS properties.  2. Controls the application of anti-aliasing when fonts are rendered. Both Webkit & Firefox implements. Works only on Mac OS X platform. */
 .c-input-text { -webkit-appearance: none; -moz-appearance: none; appearance: none; /* [1] */ -webkit-font-smoothing: antialiased; /* [2] */ -moz-osx-font-smoothing: grayscale; /* [2] */ background-color: #aeaeae; border-radius: 5px; border: 1px solid #888; color: #6f6f6f; font-family: "Open Sans", sans-serif; margin: 0; width: 100%; display: block; outline: none; line-height: normal; }
-.c-input-text:focus { color: #6f6f6f; border-color: #ff682a; box-shadow: 0 0 2px #ff9e77; }
+.c-input-text:focus { color: #6f6f6f; border-color: #FF5722; box-shadow: 0 0 2px #ff916f; }
 .c-input-text.has-error { border: 1px solid #FF4136; }
 .c-input-text.has-error:focus { border-color: #FF4136; box-shadow: 0 0 2px #ff8983; }
 
@@ -533,7 +531,7 @@ li > .c-list-number { margin: 0; padding-left: 1rem; padding-right: 0rem; }
 
 .c-scss { display: block; color: #6f6f6f; background-color: #a2a2a2; border: 1px solid #888; border-radius: 5px; margin-top: 0rem; margin-bottom: 1rem; padding-top: 0.5rem; padding-bottom: 0.5rem; padding-left: 1rem; padding-right: 1rem; }
 
-.c-toggle { background: white; border: 0; outline: 0; color: #ff682a; }
+.c-toggle { background: white; border: 0; outline: 0; color: #FF5722; }
 
 .c-swatch { width: 100%; height: 60px; box-shadow: 0 0 1px 3px #aeaeae, 0 0 2px 4px #a2a2a2; }
 
@@ -1234,13 +1232,13 @@ li > .c-list-number { margin: 0; padding-left: 1rem; padding-right: 0rem; }
 
 .u-color-neutral-x-dark { color: #626262; }
 
-.u-color-alpha-light { color: #ff8c5d; }
+.u-color-alpha-light { color: #ff7e55; }
 
-.u-color-alpha { color: #ff682a; }
+.u-color-alpha { color: #FF5722; }
 
-.u-color-alpha-dark { color: #f64800; }
+.u-color-alpha-dark { color: #ee3900; }
 
-.u-color-alpha-x-dark { color: #dd4000; }
+.u-color-alpha-x-dark { color: #d53300; }
 
 .u-color-beta-light { color: #676767; }
 
@@ -1260,13 +1258,13 @@ li > .c-list-number { margin: 0; padding-left: 1rem; padding-right: 0rem; }
 
 .u-bgcolor-neutral-x-dark { background-color: #626262; }
 
-.u-bgcolor-alpha-light { background-color: #ff8c5d; }
+.u-bgcolor-alpha-light { background-color: #ff7e55; }
 
-.u-bgcolor-alpha { background-color: #ff682a; }
+.u-bgcolor-alpha { background-color: #FF5722; }
 
-.u-bgcolor-alpha-dark { background-color: #f64800; }
+.u-bgcolor-alpha-dark { background-color: #ee3900; }
 
-.u-bgcolor-alpha-x-dark { background-color: #dd4000; }
+.u-bgcolor-alpha-x-dark { background-color: #d53300; }
 
 .u-bgcolor-beta-light { background-color: #676767; }
 
@@ -1297,10 +1295,10 @@ li > .c-list-number { margin: 0; padding-left: 1rem; padding-right: 0rem; }
 .u-bold { font-weight: 700; }
 
 .u-page-title { text-align: center; padding-bottom: 1rem; }
-.u-page-title > span { border-bottom: 1px solid #ff682a; font-size: 1.75rem; line-height: 1.28571em; }
+.u-page-title > span { border-bottom: 1px solid #FF5722; font-size: 1.75rem; line-height: 1.28571em; }
 @media (min-width: 60em) { .u-page-title { padding-bottom: 2rem; } }
 
-.u-color-alpha { color: #ff682a; }
+.u-color-alpha { color: #FF5722; }
 
 .u-float-right { float: right; }
 

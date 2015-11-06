@@ -1,10 +1,11 @@
 # Site settings
 title: Sophie de Brabander
-email: hi@sophiedebrabander.be
-description: ""
-baseurl: ""
-url: "http://sophiedebrabander.be"
-username: "Sophie de Brabander"
+email: hi@zofie.be
+phone: +32 479 90 48 39
+description: "Freelance front-end developer"
+url: "http://zofie.be"
+username: "Zofie"
+keywords: freelance, front-end developer, sophie de brabander, zofie, wordpress, fork cms, SCSS, javascript, Drupal, Symfony, gulp, git, Gent, Oost-vlaanderen
 
 # Build settings
 markdown: kramdown

@@ -1,0 +1,52 @@
+---
+layout: default
+title: Blog
+permalink: /blog.html
+weight: 2
+menu: main
+---
+
+<section class="c-holder">
+  <div class="c-holder__post-inner">
+  <h1 class="u-page-title"><span>{{ page.title }}</span></h1>
+
+  <ul class="u-pb-1 o-list c-journal-list">
+  {% for post in site.posts %}
+    <li class="c-journal-list__item">
+
+      <a href="{{ post.url | prepend: site.baseurl }}" class="u-no-border u-color-alpha">
+        <h3 class="u-nm">{{ post.title }}</h3>
+      </a>
+
+      <span class="u-meta-data">
+        {% assign m = post.date | date: "%-m" %}
+        {{ post.date | date: "%-d" }}
+        {% case m %}
+          {% when '1' %}januari
+          {% when '2' %}februari
+          {% when '3' %}maart
+          {% when '4' %}april
+          {% when '5' %}mei
+          {% when '6' %}juni
+          {% when '7' %}juli
+          {% when '8' %}augustus
+          {% when '9' %}september
+          {% when '10' %}oktober
+          {% when '11' %}november
+          {% when '12' %}december
+        {% endcase %}
+        {{ post.date | date: "%Y" }}
+      </span>
+
+      <p class="u-pt-0-5">
+        {{ post.intro }}
+        <br>
+        <a href="{{ post.url | prepend: site.baseurl }}" class="u-no-border u-color-alpha">
+          Lees meer
+        </a>
+      </p>
+    </li>
+  {% endfor %}
+  </ul>
+  </div>
+</section>

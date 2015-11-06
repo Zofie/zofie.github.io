@@ -8,30 +8,10 @@ intro-image: img/header.jpg
 
 <div class="c-holder">
   <div class="c-holder__inner">
-
-    <!-- BEGIN JOURNAL -->
-    <section>
-      <header>
-        <h1 class="u-page-title"><span>Journal</span></h1>
-      </header>
-
-      <ul class="u-pb-1 o-list c-journal-list">
-        {% for post in site.posts %}
-        <li class="u-pb-1 u-pt-1 c-journal-list__item">
-          <span class="u-meta-data">{{ post.date | date: "%b %-d, %Y" }}</span>
-          <a href="{{ post.url | prepend: site.baseurl }}" class="u-no-border u-color-alpha">
-            {{ post.title }}
-          </a>
-        </li>
-        {% endfor %}
-      </ul>
-    </section>
-    <!-- END JOURNAL -->
-
     <!-- BEGIN PROJECTS -->
     <section class="c-latest-project">
       <header>
-        <h1 class="u-page-title"><span>Recent projects</span></h1>
+        <h1 class="u-page-title"><span>Laatste projecten</span></h1>
       </header>
 
       <div class="o-grid o-grid--gutter u-pb-2">
@@ -63,19 +43,27 @@ intro-image: img/header.jpg
           </a>
         </div>
       </div>
-      <a href="/projects.html">View all projects</a>
+      <a href="/projects.html">Alle projecten</a>
     </section>
     <!-- END PROJECTS -->
 
     <!-- BEGIN MEDIA -->
     <div class="c-holder__inner-small">
-      <h1 class="u-page-title"><span>Media & Guest blog posts</span></h1>
+      <h1 class="u-page-title"><span>Media & Gast blogposts</span></h1>
 
       <ul class="o-list c-list-bullet">
-        <li>September 2015 - <a href="http://codepancake.com/spotlight-32-sophie-den-brabander/" target="_blank">CodePancake: Spotlight 32: Sophie de Brabander</a></li>
-        <li>April 2015 - <a href="https://wijs.be/nl/trends-inzichten/blog/detail/waarom-we-jong-leren-programmeren-belangrijk-vinden" target="_blank">[DUTCH] Waarom we jong leren programmeren belangrijk vinden - Wijs</a></li>
-        <li>August 2014 - <a href="https://wijs.be/nl/trends-inzichten/blog/detail/hackathon-2014-maak-kennis-met-fret" target="_blank">[DUTCH] Hackathon 2014: Maak kennis met Fret! - Wijs</a></li>
-        <li>March 2014 - <a href="http://datanews.knack.be/ict/nieuws/de-50-belangrijkste-tech-twitteraars/article-normal-296451.html" target="_blank">[DUTCH] De 50 belangrijkste tech-twitteraars - Knack</a></li>
+        <li>
+          September 2015 - <a href="http://codepancake.com/spotlight-32-sophie-den-brabander/" target="_blank">CodePancake: Spotlight 32: Sophie de Brabander</a>
+        </li>
+        <li>
+          April 2015 - <a href="https://wijs.be/nl/trends-inzichten/blog/detail/waarom-we-jong-leren-programmeren-belangrijk-vinden" target="_blank">Waarom we jong leren programmeren belangrijk vinden - Wijs</a>
+        </li>
+        <li>
+          Augustus 2014 - <a href="https://wijs.be/nl/trends-inzichten/blog/detail/hackathon-2014-maak-kennis-met-fret" target="_blank">Hackathon 2014: Maak kennis met Fret! - Wijs</a>
+        </li>
+        <li>
+          Maart 2014 - <a href="http://datanews.knack.be/ict/nieuws/de-50-belangrijkste-tech-twitteraars/article-normal-296451.html" target="_blank">De 50 belangrijkste tech-twitteraars - Knack</a>
+          </li>
       </ul>
     </div>
     <!-- END MEDIA -->
