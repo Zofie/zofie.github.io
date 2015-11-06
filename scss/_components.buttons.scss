@@ -79,7 +79,7 @@
 
 .c-button--sm {
     @include padding-lr(.75,.75);
-    @include input-dimensions($ms-2,1,0,.5,.5);
+    @include input-dimensions($ms-1,1,0,.5,.5);
 }
 
 .c-button--md {

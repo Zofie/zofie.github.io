@@ -406,7 +406,7 @@ caption { font-family: "Open Sans", sans-serif; font-weight: 700; text-align: ce
 .c-button--float-right { display: block; float: right; }
 .c-button-group > .c-button--float-right { margin-right: 1rem; }
 
-.c-button--sm { padding-left: 0.75rem; padding-right: 0.75rem; font-size: 0.75rem; padding-top: 0.5rem; padding-bottom: 0.5rem; }
+.c-button--sm { padding-left: 0.75rem; padding-right: 0.75rem; font-size: 0.875rem; padding-top: 0.5rem; padding-bottom: 0.5rem; }
 
 .c-button--md { padding-left: 1rem; padding-right: 1rem; font-size: 0.875rem; padding-top: 0.75rem; padding-bottom: 0.75rem; }
 
@@ -458,6 +458,8 @@ caption { font-family: "Open Sans", sans-serif; font-weight: 700; text-align: ce
 @media (min-width: 60em) { .c-holder__inner { max-width: 40em; margin: 0 auto; } }
 
 .c-holder--alpha { background-color: #ddd; padding-left: 2rem; padding-right: 2rem; padding-top: 2rem; padding-bottom: 2rem; }
+
+.c-holder__section { padding-bottom: 4rem; }
 
 /* Components: Input --- Input styles & sizes.
 */

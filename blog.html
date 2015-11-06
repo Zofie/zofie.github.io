@@ -6,12 +6,11 @@ weight: 2
 menu: main
 ---
 
-<section class="c-holder">
-  <div class="c-holder__inner">
+<section class="c-holder__inner">
   <h1 class="u-page-title"><span>{{ page.title }}</span></h1>
 
   <ul class="u-pb-1 o-list c-journal-list">
-  {% for post in site.posts %}
+    {% for post in site.posts %}
     <li class="c-journal-list__item">
 
       <a href="{{ post.url | prepend: site.baseurl }}" class="u-no-border u-color-alpha">
@@ -22,18 +21,18 @@ menu: main
         {% assign m = post.date | date: "%-m" %}
         {{ post.date | date: "%-d" }}
         {% case m %}
-          {% when '1' %}januari
-          {% when '2' %}februari
-          {% when '3' %}maart
-          {% when '4' %}april
-          {% when '5' %}mei
-          {% when '6' %}juni
-          {% when '7' %}juli
-          {% when '8' %}augustus
-          {% when '9' %}september
-          {% when '10' %}oktober
-          {% when '11' %}november
-          {% when '12' %}december
+        {% when '1' %}januari
+        {% when '2' %}februari
+        {% when '3' %}maart
+        {% when '4' %}april
+        {% when '5' %}mei
+        {% when '6' %}juni
+        {% when '7' %}juli
+        {% when '8' %}augustus
+        {% when '9' %}september
+        {% when '10' %}oktober
+        {% when '11' %}november
+        {% when '12' %}december
         {% endcase %}
         {{ post.date | date: "%Y" }}
       </span>
@@ -46,7 +45,28 @@ menu: main
         </a>
       </p>
     </li>
-  {% endfor %}
+    {% endfor %}
   </ul>
-  </div>
 </section>
+
+
+<!-- BEGIN MEDIA -->
+<section class="c-holder__inner">
+  <h1 class="u-page-title"><span>Media & Gast blogposts</span></h1>
+
+  <ul class="o-list c-list-bullet">
+    <li>
+      September 2015 - <a href="http://codepancake.com/spotlight-32-sophie-den-brabander/" target="_blank">CodePancake: Spotlight 32: Sophie de Brabander</a>
+    </li>
+    <li>
+      April 2015 - <a href="https://wijs.be/nl/trends-inzichten/blog/detail/waarom-we-jong-leren-programmeren-belangrijk-vinden" target="_blank">Waarom we jong leren programmeren belangrijk vinden - Wijs</a>
+    </li>
+    <li>
+      Augustus 2014 - <a href="https://wijs.be/nl/trends-inzichten/blog/detail/hackathon-2014-maak-kennis-met-fret" target="_blank">Hackathon 2014: Maak kennis met Fret! - Wijs</a>
+    </li>
+    <li>
+      Maart 2014 - <a href="http://datanews.knack.be/ict/nieuws/de-50-belangrijkste-tech-twitteraars/article-normal-296451.html" target="_blank">De 50 belangrijkste tech-twitteraars - Knack</a>
+    </li>
+  </ul>
+</section>
+<!-- END MEDIA -->

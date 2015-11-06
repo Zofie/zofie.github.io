@@ -24,3 +24,8 @@
   @include padding-lr(2,2);
   @include padding-tb(2,2);
 }
+
+
+.c-holder__section {
+  @include padding-bottom(4);
+}
