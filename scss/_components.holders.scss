@@ -11,21 +11,7 @@
   }
 }
 
-.c-holder--main  {
-
-
-}
-
-
 .c-holder__inner {
-  @include mq($bp4) {
-    max-width: 60em;
-    margin: 0 auto;
-  }
-}
-
-.c-holder__inner-small,
-.c-holder__post-inner {
   @include mq($bp4) {
     max-width: 40em;
     margin: 0 auto;
