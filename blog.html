@@ -13,11 +13,7 @@ menu: main
     {% for post in site.posts %}
     <li class="c-journal-list__item">
 
-      <a href="{{ post.url | prepend: site.baseurl }}" class="u-no-border u-color-alpha">
-        <h3 class="u-nm">{{ post.title }}</h3>
-      </a>
-
-      <span class="u-meta-data">
+    <span class="u-bold">
         {% assign m = post.date | date: "%-m" %}
         {{ post.date | date: "%-d" }}
         {% case m %}
@@ -34,16 +30,13 @@ menu: main
         {% when '11' %}november
         {% when '12' %}december
         {% endcase %}
-        {{ post.date | date: "%Y" }}
-      </span>
+        {{ post.date | date: "%Y" }}</span>:
 
-      <p class="u-pt-0-5">
-        {{ post.intro }}
-        <br>
-        <a href="{{ post.url | prepend: site.baseurl }}" class="u-no-border u-color-alpha">
-          Lees meer
-        </a>
-      </p>
+      <a href="{{ post.url | prepend: site.baseurl }}" class="u-no-border u-color-alpha">
+        {{ post.title }}
+      </a>
+
+
     </li>
     {% endfor %}
   </ul>
@@ -56,16 +49,16 @@ menu: main
 
   <ul class="o-list c-list-bullet">
     <li>
-      September 2015 - <a href="http://codepancake.com/spotlight-32-sophie-den-brabander/" target="_blank">CodePancake: Spotlight 32: Sophie de Brabander</a>
+      <span class="u-bold">September 2015</span>: <a href="http://codepancake.com/spotlight-32-sophie-den-brabander/" target="_blank">CodePancake: Spotlight 32: Sophie de Brabander</a>
     </li>
     <li>
-      April 2015 - <a href="https://wijs.be/nl/trends-inzichten/blog/detail/waarom-we-jong-leren-programmeren-belangrijk-vinden" target="_blank">Waarom we jong leren programmeren belangrijk vinden - Wijs</a>
+      <span class="u-bold">April 2015</span>: <a href="https://wijs.be/nl/trends-inzichten/blog/detail/waarom-we-jong-leren-programmeren-belangrijk-vinden" target="_blank">Waarom we jong leren programmeren belangrijk vinden - Wijs</a>
     </li>
     <li>
-      Augustus 2014 - <a href="https://wijs.be/nl/trends-inzichten/blog/detail/hackathon-2014-maak-kennis-met-fret" target="_blank">Hackathon 2014: Maak kennis met Fret! - Wijs</a>
+      <span class="u-bold">Augustus 2014</span>: <a href="https://wijs.be/nl/trends-inzichten/blog/detail/hackathon-2014-maak-kennis-met-fret" target="_blank">Hackathon 2014: Maak kennis met Fret! - Wijs</a>
     </li>
     <li>
-      Maart 2014 - <a href="http://datanews.knack.be/ict/nieuws/de-50-belangrijkste-tech-twitteraars/article-normal-296451.html" target="_blank">De 50 belangrijkste tech-twitteraars - Knack</a>
+      <span class="u-bold">Maart 2014</span>: <a href="http://datanews.knack.be/ict/nieuws/de-50-belangrijkste-tech-twitteraars/article-normal-296451.html" target="_blank">De 50 belangrijkste tech-twitteraars - Knack</a>
     </li>
   </ul>
 </section>
