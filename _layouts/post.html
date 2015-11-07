@@ -1,23 +1,36 @@
 <!DOCTYPE html>
 <html>
-  {% include head.html %}
+{% include head.html %}
 
-    <body>
+<body>
 
-        {% include browser-message.html %}
+  {% include browser-message.html %}
 
-        {% include header.html %}
-        <main class="c-holder">
-          <section class="c-holder__inner" itemType="http://schema.org/BlogPosting">
-              <h1 itemprop="headline" class="u-page-title"><span>{{ page.title }}</span></h1>
-              <div itemprop="articleBody">
-                {{ content }}
-              </div>
-            </div>
-          </section>
-        </main>
+  {% include header.html %}
+  <main class="c-holder">
+    <section class="c-holder__inner" itemType="http://schema.org/BlogPosting">
+      <h1 itemprop="headline" class="u-page-title"><span>{{ page.title }}</span></h1>
+      <div itemprop="articleBody">
+        {{ content }}
 
-        {% include footer.html %}
-        {% include scripts.html %}
-    </body>
+        <div id="disqus_thread"></div>
+
+      </div>
+    </section>
+  </main>
+
+{% include footer.html %}
+{% include scripts.html %}
+<script>
+  (function() { // DON'T EDIT BELOW THIS LINE
+    var d = document, s = d.createElement('script');
+
+    s.src = '//zofiebe.disqus.com/embed.js';
+
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+  })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+</body>
 </html>
