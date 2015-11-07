@@ -2,8 +2,7 @@
 layout: post
 title:  Leeslijst van oktober
 date:   2015-10-24 20:00:00
-categories: Reading list
-intro: Een maand vol interessante artikelen. Ik selecteerde mijn 5 favorieten.
+category: Leeslijst
 ---
 
 ### 1. Front-end Developer Handbook
