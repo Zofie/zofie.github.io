@@ -1,0 +1,49 @@
+---
+layout: post
+title:  4 redenen waarvoor ik Evernote gebruik
+date:   2015-11-10 13:16:00
+categories: Applicaties
+---
+
+Een tweetal weken terug las ik dat Evernote in slechte papieren zit. Het zou niet goed gaan met het bedrijf en er is ondertussen een nieuwe CEO aangesteld die het bedrijf nieuw leven moet inblazen. Toen ik dit las stond mijn hart even stil, want al mijn documenten zitten hoofdzakelijk in Evernote en als Evernote er mee zou ophouden dan ga ik wel even bezig zijn om de opgebouwde structuur over te zetten.
+
+Nu, dat is gelukkig nog niet aan de orde want Evernote bestaat nog altijd, maar houd nu wel mijn documenten op een andere plaats als back-up.
+
+**Waarvoor gebruik ik Evernote?**
+
+Alles. Alles wat te maken heeft met documenten dat ik moet bewaren tot het nemen van notitities
+
+### 1. Nieuwsbrieven
+
+Eén van de instellingen van Evernote is dat je je notities kan doormailen naar een e-mailadres dat specifiek gekoppeld is aan jou Evernote-account. Om jouw specifiek e-mailadres terug te vinden ga je naar
+
+&rarr; Accountinformatie... <br>
+&rarr; Meer Accountinstellingen<br>
+&rarr; Account Summary<br>
+&rarr; Email Notes to (net boven "Deactivate your Evernote account").<br>
+
+Ik gebruik dit e-mailadres op een andere manier. Ik gebruik dit om mij in te schrijven op nieuwsbrieven. Het adres is moeilijk te onthouden, dus ik heb via mijn domeinnaam een alias ingesteld dat iets gemakkelijker te onthouden is.
+
+Nieuwsbrieven komen op die manier niet in mijn inbox terecht, maar in een apart notitieboek in Evernote. Wanneer ik dan tijd heb/neem om door de nieuwsbrieven te gaan kan ik ook op een gemakkelijke manier zaken markeren. Zaken die van minder belang zijn verwijder ik uit de nieuwsbrief. Zo maak ik van een nieuwsbrief een notitie waar ik later nog informatie kan uithalen. Daarnaast voeg ik tags toe om sneller per onderwerp te kunnen zoeken.
+
+### 2. Documenten
+
+Als freelancer zocht ik een overzichtelijke manier om mijn documenten per klant bij te houden. Evernote is hiervoor ideaal. Per klant maak ik een stapel van notitieboeken. Daarin komen de contracten, facturen, communicatie en allerhande notities.
+
+Daarnaast maakte ik ook een stapel voor privégebruik. Documenten van belastingen gaan in de stapel “Belastingen” en per jaar maakte ik een notitieboek aan met alle nodige documenten die nodig zijn om de belastingen in te vullen. Eens het aanslagbiljet is ontvangen komt deze daar ook in. Geen gedoe meer met verloren documenten en alles bij elkaar.
+
+Vele van die notitieboeken worden ook gedeeld met mijn wederhelft, alleen jammer dat je notitieboek per notitieboek moet delen en geen stapel kan delen.
+
+Kortom, alles van documenten dat je moet bijhouden komen in Evernote. Belangrijke documenten worden uiteraard ook nog fysiek bijgehouden, maar dat is maar ±5% van wat er binnenkomt.
+
+### 3. Moodboard
+
+Als front-end developer is het nodig om voeling te hebben met design en UI. Als ik iets tegenkom op websites dat ik leuk of goed vind en misschien zelf in een project zou kunnen gebruiken, dan neem ik daar webclipping van. Deze krijgt dan de juiste tag en wordt opgeslagen.
+
+### 4. Notities
+
+Als ik in een meeting zit en ik heb mijn laptop bij, dan staat Evernote open. Aantekeningen en notities worden tijdens de meeting meteen in Evernote gemaakt. Nu, voor sommigen werkt papier beter, maar, als je net als mij, sneller kan typen dan schrijven werkt dit beter.
+
+Zo. Dit zijn zowat de 4 hoofdredenen waarvoor ik Evernote niet kan missen.
+
+Waarvoor gebruik jij Evernote vooral?
