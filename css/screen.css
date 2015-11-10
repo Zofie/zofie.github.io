@@ -161,15 +161,15 @@ body { -webkit-font-smoothing: antialiased; color: #6f6f6f; }
 
 /* Elements: Typography --- Default markup for typographic elements
 */
-.u-h1, h1, .u-h2, h2, .u-h3, h3, .u-h4, h4, .u-h5, h5, .u-h6, h6 { margin-bottom: 1rem; }
+.u-h1, h1, .u-h2, h2, .u-h3, h3, .u-h4, h4, .u-h5, h5, .u-h6, h6 { font-family: "Montserrat", serif; font-weight: 100; margin-bottom: 1rem; }
 
-.u-h1, h1 { font-weight: 400; font-size: 2.3125rem; line-height: 1.2973em; }
+.u-h1, h1 { font-size: 2.3125rem; line-height: 1.2973em; }
 
-.u-h2, h2 { font-weight: 700; font-size: 1.75rem; line-height: 1.28571em; }
+.u-h2, h2 { font-size: 1.75rem; line-height: 1.28571em; }
 
-.u-h3, h3 { font-weight: 700; font-size: 1.3125rem; line-height: 1.42857em; }
+.u-h3, h3 { font-size: 1.3125rem; line-height: 1.42857em; }
 
-.u-h4, h4, .u-h5, h5, .u-h6, h6 { font-weight: 700; font-size: 1rem; line-height: 1.5em; }
+.u-h4, h4, .u-h5, h5, .u-h6, h6 { font-size: 1rem; line-height: 1.5em; }
 
 p + h1, p + h2, p + h3, p + h4, p + h5, p + h6 { margin-top: 1em; }
 
