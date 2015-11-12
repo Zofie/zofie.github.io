@@ -301,6 +301,11 @@ caption { font-family: "Open Sans", sans-serif; font-weight: 700; text-align: ce
 /* Components */
 .c-holder__post-inner ul { margin-bottom: 1em; }
 
+.c-cta { padding-top: 1rem; padding-bottom: 1rem; padding-left: 1rem; padding-right: 1rem; }
+
+.c-cta--blog { background-color: #01579B; color: white; }
+.c-cta--blog a { color: white; font-weight: 700; border-bottom: 1px solid white; }
+
 .c-experience { padding-bottom: 1rem; }
 
 .c-experience__item { padding-top: 0rem; padding-bottom: 1rem; }
@@ -1328,6 +1333,10 @@ li > .c-list-number { margin: 0; padding-left: 1rem; padding-right: 0rem; }
 /* Utilities: Shame --- Hacks and quick fixes
 */
 code { background-color: #232323; display: block; color: white; padding: 0.5em 1em; margin-top: 1rem; margin-bottom: 1rem; border-radius: 5px; }
+
+#disqus_thread { margin-top: 4rem; }
+
+ul { padding-bottom: 2rem; }
 
 /* Utilities: Debug --- _debug.css is used from Inuit.css Framework https://github.com/csswizardry/inuit.css
 */

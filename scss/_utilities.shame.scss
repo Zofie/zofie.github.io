@@ -15,3 +15,12 @@ code {
 
   border-radius: $radius;
 }
+
+
+#disqus_thread {
+  @include margin-top(4);
+}
+
+ul {
+  @include padding-bottom(2);
+}
