@@ -406,10 +406,8 @@ caption { font-family: "Open Sans", sans-serif; font-weight: 700; text-align: ce
 .c-button--block { display: block; width: 100%; }
 
 .c-button--float-left { display: block; float: left; }
-.c-button-group > .c-button--float-left { margin-right: 1rem; }
 
 .c-button--float-right { display: block; float: right; }
-.c-button-group > .c-button--float-right { margin-right: 1rem; }
 
 .c-button--sm { padding-left: 0.75rem; padding-right: 0.75rem; font-size: 0.875rem; padding-top: 0.5rem; padding-bottom: 0.5rem; }
 
@@ -429,7 +427,7 @@ caption { font-family: "Open Sans", sans-serif; font-weight: 700; text-align: ce
 
 .c-button--postfix { border-radius: 0 5px 5px 0; }
 
-.c-button-group { position: relative; *zoom: 1; }
+.c-button-group { position: relative; *zoom: 1; padding-top: 2rem; padding-bottom: 2rem; }
 .c-button-group:before, .c-button-group:after { display: table; content: ''; }
 .c-button-group:after { clear: both; }
 
@@ -1334,7 +1332,7 @@ li > .c-list-number { margin: 0; padding-left: 1rem; padding-right: 0rem; }
 */
 code { background-color: #232323; display: block; color: white; padding: 0.5em 1em; margin-top: 1rem; margin-bottom: 1rem; border-radius: 5px; }
 
-#disqus_thread { margin-top: 4rem; }
+#disqus_thread { margin-top: 4rem; margin-bottom: 4rem; }
 
 ul { padding-bottom: 2rem; }
 

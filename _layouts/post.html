@@ -13,7 +13,19 @@
       <div itemprop="articleBody">
         {{ content }}
 
+        <!-- COMMENTS -->
         <div id="disqus_thread"></div>
+
+        <!-- BLOGPOST NAVIGATION -->
+        <div class="c-button-group">
+          {% if page.previous %}
+          <a href="{{ page.previous.url }}" class="c-button c-button--alpha c-button--lg c-button--float-left">&larr; Vorige blogpost</a>
+          {% endif %}
+
+          {% if page.next %}
+          <a href="{{ page.next.url }}" class="c-button c-button--alpha c-button--lg c-button--float-right">Volgende blogpost &rarr;</a>
+          {% endif %}
+        </div>
 
       </div>
     </section>

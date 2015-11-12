@@ -18,7 +18,7 @@ code {
 
 
 #disqus_thread {
-  @include margin-top(4);
+  @include margin-tb(4,4);
 }
 
 ul {
