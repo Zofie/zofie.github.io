@@ -11,14 +11,15 @@
  */
 
 .c-logo {
-    float: left;
-    display: block;
-    width: 157px; /* [1] */
-    margin-bottom: 0;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-image: url('../img/svg/logo.svg');
-    text-indent: -99999px; /* [2] */
+    float               : left;
+    display             : block;
+    width               : 157px; /* [1] */
+    margin-bottom       : 0;
+    background-repeat   : no-repeat;
+    background-position : center;
+    background-image    : url('../img/svg/logo.svg');
+    text-indent         : -99999px; /* [2] */
+
     @include text-dimensions($alpha-font-size,1,0,1.25,1.25);
 }
 

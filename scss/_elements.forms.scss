@@ -5,38 +5,38 @@
 */
 
 fieldset {
-    border: 0;
+    border  : 0;
     @include margin-bottom(1);
 }
 
 legend,
 label {
-    display: block;
-    width: 100%;
-    cursor: pointer;
+    display : block;
+    width   : 100%;
+    cursor  : pointer;
     @include text-dimensions($alpha-font-size,1,0,0,.25);
 }
 
 textarea {
-    height: auto;
-    resize: none;
+    height  : auto;
+    resize  : none;
 }
 
 // Placeholders
 
 ::-webkit-input-placeholder {
-    font-family: $beta-font-family;
-    font-style: italic;
+    font-family : $beta-font-family;
+    font-style  : italic;
 }
 
 ::-moz-placeholder {
-    font-family: $beta-font-family;
-    font-style: italic;
+    font-family : $beta-font-family;
+    font-style  : italic;
 }
 
 :-ms-input-placeholder {
-    font-family: $beta-font-family;
-    font-style: italic;
+    font-family : $beta-font-family;
+    font-style  : italic;
 }
 
 // Firefox inner border fix
@@ -44,6 +44,6 @@ textarea {
 button::-moz-focus-inner,
 input[type="button"]::-moz-focus-inner,
 input[type="submit"]::-moz-focus-inner {
-    border: 0;
-    padding: 0;
+    border  : 0;
+    padding : 0;
 }

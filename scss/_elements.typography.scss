@@ -10,8 +10,9 @@
 .u-h4, h4,
 .u-h5, h5,
 .u-h6, h6 {
-    font-family: $beta-font-family ;
-    font-weight: $gamma-font-weight;
+    font-family : $beta-font-family ;
+    font-weight : $gamma-font-weight;
+
     @include margin-bottom($alpha-leading);
 }
 
@@ -81,10 +82,11 @@ small {
 }
 
 hr {
-    border: 1px dotted palette(color-alpha,x-light);
-    border-width: 1px 0 0;
-    clear: both;
-    margin-top: 0;
+    border       : 1px dotted palette(color-alpha,x-light);
+    border-width : 1px 0 0;
+    clear        : both;
+    margin-top   : 0;
+
     @include margin-bottom(1);
 }
 

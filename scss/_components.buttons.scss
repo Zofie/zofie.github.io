@@ -18,35 +18,35 @@
  */
 
 .c-button {
-    display: inline-block;
-    margin: 0;
-    text-align: center;
-    vertical-align: middle;
-    touch-action: manipulation; /* [1] */
-    cursor: pointer;
-    background-image: none; /* [2] */
-    white-space: nowrap; /* [3] */
-    border-radius: $radius;
-    border-style: solid;
-    border-width: 1px;
-    transition-duration: .1s;
-    transition-timing-function: ease-in-out;
-    transition-property: background, color, border;
-    outline: none;
-    line-height: normal;
-    appearance: none;
-    box-shadow: none;
-    -webkit-font-smoothing: antialiased; /* [4] */
-    -moz-osx-font-smoothing: grayscale; /* [4] */
+    display                    : inline-block;
+    margin                     : 0;
+    text-align                 : center;
+    vertical-align             : middle;
+    touch-action               : manipulation; /* [1] */
+    cursor                     : pointer;
+    background-image           : none; /* [2] */
+    white-space                : nowrap; /* [3] */
+    border-radius              : $radius;
+    border-style               : solid;
+    border-width               : 1px;
+    transition-duration        : .1s;
+    transition-timing-function : ease-in-out;
+    transition-property        : background, color, border;
+    outline                    : none;
+    line-height                : normal;
+    appearance                 : none;
+    box-shadow                 : none;
+    -webkit-font-smoothing     : antialiased; /* [4] */
+    -moz-osx-font-smoothing    : grayscale; /* [4] */
 
     &:hover,
     &:focus {
-        text-decoration: none;
+        text-decoration        : none;
     }
 
     &:active {
-        outline: 0;
-        background-image: none;
+        outline                : 0;
+        background-image       : none;
     }
 }
 

@@ -3,17 +3,17 @@
 }
 
 .c-header-main {
-  background-color: $color-alpha;
-  color: white;
-  text-align: center;
+  background-color : $color-alpha;
+  color            : white;
+  text-align       : center;
 
-  position: fixed;
-  left: -19em;
+  position         : fixed;
+  left             : -19em;
 
-  width: 22em;
-  height: 100%;
+  width            : 22em;
+  height           : 100%;
 
-  transition: left .5s;
+  transition       : left .5s;
 
   &.is-active {
     left: 0;
@@ -81,26 +81,25 @@
     }
 
     &.is-open {
-      background: url('/img/svg/c-icon--closed.svg');
-      background-repeat: no-repeat;
-      background-size: 30px 30px;
-      background-position: center center;
-      transform: rotate(180deg);
+      background          : url('/img/svg/c-icon--closed.svg');
+      background-repeat   : no-repeat;
+      background-size     : 30px 30px;
+      background-position : center center;
+      transform           : rotate(180deg);
     }
 
     &.is-closed {
-      background: url('/img/svg/c-icon--closed.svg');
-      background-repeat: no-repeat;
-      background-size: 30px 30px;
-      background-position: center center;
+      background          : url('/img/svg/c-icon--closed.svg');
+      background-repeat   : no-repeat;
+      background-size     : 30px 30px;
+      background-position : center center;
     }
   }
 
   .c-header__contact {
-    position: absolute;
-    bottom: 0;
-
-    width: 100%;
+    position : absolute;
+    bottom   : 0;
+    width    : 100%;
 
     @include padding-tb(.5,.5);
 

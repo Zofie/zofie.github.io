@@ -5,13 +5,13 @@
 */
 
 .c-icon {
-    display: inline-block;
-    width: 16px;
-    height: 16px;
-    position: relative;
-    top: 1px;
-    background-repeat: no-repeat;
-    background-position: center top;
+    display             : inline-block;
+    width               : 16px;
+    height              : 16px;
+    position            : relative;
+    top                 : 1px;
+    background-repeat   : no-repeat;
+    background-position : center top;
 
     @include hide-text;
 }
@@ -35,10 +35,10 @@
 */
 
 @mixin icon {
-    display: inline-block;
-    position: relative;
-    background-repeat: no-repeat;
-    background-position: center top;
+    display             : inline-block;
+    position            : relative;
+    background-repeat   : no-repeat;
+    background-position : center top;
 
     @include hide-text;
 }
@@ -49,21 +49,21 @@
       opacity: 1;
     }
 
-    top: 5px;
-    width: 30px;
-    height: 30px;
-    background-image: url('../img/svg/c-icon--twitter.svg');
-    background-size: 20px auto;
+    top              : 5px;
+    width            : 30px;
+    height           : 30px;
+    background-image : url('../img/svg/c-icon--twitter.svg');
+    background-size  : 20px auto;
 
     @include icon;
 }
 
 .c-icon--twitter--dark {
-    top: 5px;
-    width: 30px;
-    height: 30px;
-    background-image: url('../img/svg/c-icon--twitter--dark.svg');
-    background-size: 30px auto;
+    top              : 5px;
+    width            : 30px;
+    height           : 30px;
+    background-image : url('../img/svg/c-icon--twitter--dark.svg');
+    background-size  : 30px auto;
 
     @include icon;
 }
@@ -74,11 +74,11 @@
       opacity: 1;
     }
 
-    top: 5px;
-    width: 30px;
-    height: 30px;
-    background-image: url('../img/svg/c-icon--facebook.svg');
-    background-size: 20px auto;
+    top              : 5px;
+    width            : 30px;
+    height           : 30px;
+    background-image : url('../img/svg/c-icon--facebook.svg');
+    background-size  : 20px auto;
 
     @include icon;
 }
@@ -89,11 +89,11 @@
       opacity: 1;
     }
 
-    top: 5px;
-    width: 30px;
-    height: 30px;
-    background-image: url('../img/svg/c-icon--github.svg');
-    background-size: 20px auto;
+    top              : 5px;
+    width            : 30px;
+    height           : 30px;
+    background-image : url('../img/svg/c-icon--github.svg');
+    background-size  : 20px auto;
 
     @include icon;
 }
@@ -104,11 +104,11 @@
       opacity: 1;
     }
 
-    top: 5px;
-    width: 30px;
-    height: 30px;
-    background-image: url('../img/svg/c-icon--instagram.svg');
-    background-size: 20px auto;
+    top              : 5px;
+    width            : 30px;
+    height           : 30px;
+    background-image : url('../img/svg/c-icon--instagram.svg');
+    background-size  : 20px auto;
 
     @include icon;
 }
@@ -119,11 +119,11 @@
       opacity: 1;
     }
 
-    top: 5px;
-    width: 30px;
-    height: 30px;
-    background-image: url('../img/svg/c-icon--linkedin.svg');
-    background-size: 20px auto;
+    top              : 5px;
+    width            : 30px;
+    height           : 30px;
+    background-image : url('../img/svg/c-icon--linkedin.svg');
+    background-size  : 20px auto;
 
     @include icon;
 }
@@ -134,11 +134,11 @@
       opacity: 1;
     }
 
-    top: 5px;
-    width: 30px;
-    height: 30px;
-    background-image: url('../img/svg/c-icon--goodreads.svg');
-    background-size: 20px auto;
+    top              : 5px;
+    width            : 30px;
+    height           : 30px;
+    background-image : url('../img/svg/c-icon--goodreads.svg');
+    background-size  : 20px auto;
 
     @include icon;
 }

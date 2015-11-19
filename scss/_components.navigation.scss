@@ -5,13 +5,13 @@
 */
 
 .c-nav-main {
-    width: 100%;
+    width             : 100%;
 
     @include margin-top(2);
 }
 
 .c-nav-main__list {
-    list-style: none;
+    list-style        : none;
 
     @include padding-lr(3,4);
 }
@@ -20,19 +20,19 @@
 }
 
 .c-nav-main__list-item + .c-nav-main__list-item {
-    border-top: 1px dotted white
+    border-top        : 1px dotted white
 }
 
-.c-nav-main__link:visited,
+.c-nav-main__link : visited,
 .c-nav-main__link {
-    display: block;
-    color: white;
-    text-decoration: none;
+    display           : block;
+    color             : white;
+    text-decoration   : none;
     @include padding-tb(1,1);
 }
 
-.c-nav-main__link:hover {
-    text-decoration: none;
-    background-color: white;
-    color: $color-alpha;
+.c-nav-main__link : hover {
+    text-decoration   : none;
+    background-color  : white;
+    color             : $color-alpha;
 }

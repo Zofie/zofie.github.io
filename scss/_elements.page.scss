@@ -5,17 +5,17 @@
 */
 
 html {
-    font: $alpha-font-weight $alpha-font-size/16*100%/#{$alpha-line-height} $alpha-font-family;
-    -webkit-overflow-scrolling: touch;
+    font                       : $alpha-font-weight $alpha-font-size/16*100%/#{$alpha-line-height} $alpha-font-family;
+    -webkit-overflow-scrolling : touch;
 
     @include mq($bp5) {
-        font-size: $alpha-font-size/16*112.5%;
+        font-size              : $alpha-font-size/16*112.5%;
     }
 }
 
 body {
-    -webkit-font-smoothing: antialiased;
-    color: palette(color-neutral,dark);
+    -webkit-font-smoothing     : antialiased;
+    color                      : palette(color-neutral,dark);
 }
 
 ::-moz-selection {
