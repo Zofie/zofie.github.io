@@ -23,7 +23,7 @@
     border-top        : 1px dotted white
 }
 
-.c-nav-main__link : visited,
+.c-nav-main__link:visited,
 .c-nav-main__link {
     display           : block;
     color             : white;
@@ -31,7 +31,7 @@
     @include padding-tb(1,1);
 }
 
-.c-nav-main__link : hover {
+.c-nav-main__link:hover {
     text-decoration   : none;
     background-color  : white;
     color             : $color-alpha;

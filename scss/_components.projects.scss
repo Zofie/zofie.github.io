@@ -6,10 +6,17 @@
       outline: 1px solid palette(color-neutral, dark);
     }
   }
+
+  min-height: 310px;
 }
 
 .c-project__title {
-  min-height: 55px;
+  margin-bottom: 0;
+}
+
+.c-project__info {
+  color: $color-neutral;
+  font-size: .8em;
 }
 
 
