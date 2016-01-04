@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Leeslijst van oktober
+title:  Leeslijst van oktober 2015
 date:   2015-10-24 20:00:00
 category: Leeslijst
 ---

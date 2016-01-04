@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Leeslijst van november
+title:  Leeslijst van november 2015
 date:   2015-11-30 20:00:00
 category: Leeslijst
 ---
