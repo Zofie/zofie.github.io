@@ -7,8 +7,6 @@ category: Events
 
 Afgelopen zaterdag was er in Gent een grote editie van <a href="http://coderdojobelgium.be/nl">CoderDojo</a> met honderd kinderen en de locatie voor deze editie was de <a href="http://www.kaagent.be/stadion/">Ghelamco Arena</a>. Een knap en indrukwekkend gebouw waar gemakkelijk honderd kinderen aan de slag konden om een voormiddag kennis te maken met programmeren. Uiteraard hadden de oefeningen deze keer een voetbal thema. De <a href="https://scratch.mit.edu/">scratchers</a> konden een spelletje maken waarbij de Buffalo indiaan zijn pluimen is verloren en uit de lucht kwamen vallen. Ze moesten ervoor zorgen dat de indiaan zijn pluimen kon opvangen en op die manier zijn indianentooi herstellen. Een leuk en gemakkelijk spelletje en de kinderen waren er toch een drietal uurtjes zoet mee.
 
-<img src="http://www.jomode.be/store-new/wp-content/uploads/2015/05/BUFFALO-e1432210311360-953x430.jpg" />
-
 Naast het maken van de oefening kregen we ook een rondleiding in het stadion en konden we onder andere eens piepen in de kleedkamers van <a href="http://www.kaagent.be/">KAA Gent</a>.
 
 ### Enkele weetjes
