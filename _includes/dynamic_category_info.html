@@ -1,0 +1,7 @@
+<!-- dynamically loading backgrounds for categories,  descriptions and page titles -->
+{% for category in site.data.categories %}
+    {% if page.url contains category[1].name %}
+        {% assign cover = category[1].cover %}
+        {% assign tag_description = category[1].description %}
+    {% endif %}
+{% endfor %}

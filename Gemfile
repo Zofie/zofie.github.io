@@ -1,11 +1,5 @@
-# ~/Gemfile
+source "https://rubygems.org"
 
-source "http://rubygems.org"
-
-group :development do
-    # CSS Preprocessing
-    gem 'sass'
-
-    # Jekyll
-    gem 'jekyll'
-end
+gem "jekyll", "~> 3.6.2"
+gem "github-pages"
+gem "rake", "~> 12.3.0"

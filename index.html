@@ -1,46 +1,35 @@
 ---
 layout: default
-title:
-menu-name: Home
-weight : 1
+current: home
+class: 'home-template'
+navigation: True
 ---
 
-<!-- BEGIN PROJECTS -->
-<section class="c-holder__inner c-holder__section">
-  <header>
-    <h1 class="u-page-title"><span>Laatste projecten</span></h1>
-  </header>
+<!-- < default -->
+<!-- The tag above means: insert everything in this file
+into the {body} of the default.hbs template -->
 
-  <div class="o-grid o-grid--gutter">
-
-    <div class="c-project__item o-grid__item u-1-of-3-bp5 u-mb-1">
-      <a href="http://trainworld.be" target="_blank">
-        <div class="c-project__image-holder">
-          <img src="/img/projecten/trainworld.jpg" alt="Trainworld">
+<!-- The big featured header, it uses blog cover image as a BG if available -->
+<header class="site-header outer {% if page.cover or site.cover %}" style="background-image:  url({{ site.baseurl }}{% if page.cover %}{{ page.cover }}{% elsif site.cover %}{{ site.cover }}{% endif %}) {% else %}no-cover{% endif %}">
+    <div class="inner">
+        <div class="site-header-content">
+            <h1 class="site-title">
+                {{ site.title }}
+            </h1>
+            <h2 class="site-description">{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}</h2>
         </div>
-        <h1 class="u-h4 u-color-alpha">Trainworld</h1>
-      </a>
+        {% include site-nav.html %}
     </div>
+</header>
 
-    <div class="c-project__item o-grid__item u-1-of-3-bp5 u-mb-1">
-      <a href="http://madamvelo.be" target="_blank">
-        <div class="c-project__image-holder">
-          <img src="/img/projecten/madamvelo.jpg" alt="Madam Vélo">
+<!-- The main content area -->
+<main id="site-main" class="site-main outer" role="main">
+    <div class="inner">
+
+        <div class="post-feed">
+            <!-- The tag below includes the markup for each post - partials/post-card.hbs -->
+            {%  include post-card.html %}
         </div>
-        <h1 class="u-h4 u-color-alpha">Madam Vélo</h1>
-      </a>
-    </div>
 
-    <div class="c-project__item o-grid__item u-1-of-3-bp5 u-mb-1">
-      <a href="http://fret.wijs.be" target="_blank">
-        <div class="c-project__image-holder">
-          <img src="/img/projecten/fret.jpg" alt="Fret">
-        </div>
-        <h1 class="u-h4 u-color-alpha">Wijs: Fret</h1>
-      </a>
     </div>
-  </div>
-  <a href="/projecten.html" class="c-button c-button--beta c-button--sm">Alle projecten</a>
-</section>
-<!-- END PROJECTS -->
-
+</main>

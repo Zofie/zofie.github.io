@@ -1,12 +1,47 @@
-# Site settings
-title: Sophie de Brabander
-email: hi@zofie.be
-phone: +32 479 90 48 39
-description: "Freelance front-end developer"
-url: "http://zofie.be"
-username: "Zofie"
-keywords: freelance, front-end developer, sophie de brabander, zofie, wordpress, fork cms, SCSS, javascript, Drupal, Symfony, gulp, git, Gent, Oost-vlaanderen, Mailchimp, Nieuwsbrieven, Campaign Monitor
-
-# Build settings
+# Jekyll configuration
 markdown: kramdown
-permalink: pretty
+highlighter: rouge
+paginate: 30 # it will paginate after this number
+language: 'nl-be'
+
+# edit baseurl to simply '/' if using as your personal page (instead of a project page)
+baseurl: /
+
+# Website info
+title: De wereld van Zofie
+# description: ...
+cover: assets/images/blog-cover.jpg
+favicon: favicon-96x96.png
+production_url: http://zofie.be
+source_url: http://zofie.be
+
+# Social info
+navigation: True # show the navbar links
+subscribers: false # you need to connect an external service for this to work,
+# if 'True' the submit button is disabled for now, but you can change that
+# by editing `_includes/subscribe-form.html`
+twitter: zofie
+instagram: zofie
+facebook: sophiedebrabander
+
+# Disqus
+disqus: False
+disqus_shortname: zofie
+
+# Google Analytics
+google_analytics: UA-31248406-1
+
+# Permalinks
+permalink: /:title
+# permalink: /author/:author
+# permalink: /tag/:tag
+
+# Authors' info in `_data/authors.yml`
+# Tags' info in `_data/tags_info.yml`
+
+# gems and other configs
+plugins: [jekyll-paginate, jekyll-feed]
+exclude: [vendor]
+
+feed:
+  path: feed.xml
