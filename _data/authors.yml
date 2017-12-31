@@ -4,8 +4,8 @@ sophie:
   firstname: Sophie
   location: Gent, België
   bio: Sophie is een front-end developer en fotograaf. Daarnaast is Sophie ook een fervente fietser met een diploma fietsenmaker op zak.
-  picture: assets/images/sophie.jpg
+  picture: /assets/images/sophie.jpg
   facebook: sophiedebrabander
   twitter: zofie
   instagram: zofie
-  cover: assets/images/cover.jpg
+  cover: /assets/images/cover.jpg
