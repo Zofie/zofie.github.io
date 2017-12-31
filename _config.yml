@@ -29,7 +29,7 @@ disqus: False
 disqus_shortname: zofie
 
 # Google Analytics
-google_analytics: UA-31248406-1
+google_analytics: UA-31248406-4
 
 # Permalinks
 permalink: /:title
