@@ -12,8 +12,8 @@ title: De wereld van Zofie
 # description: ...
 cover: assets/images/blog-cover.jpg
 favicon: favicon-96x96.png
-production_url: http://zofie.be
-source_url: http://zofie.be
+production_url: http://zofie.be/
+source_url: http://zofie.be/
 
 # Social info
 navigation: True # show the navbar links
