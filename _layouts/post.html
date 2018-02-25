@@ -26,6 +26,7 @@ into the {body} of the default.hbs template -->
             <header class="post-full-header">
                 <section class="post-full-meta">
                     <time class="post-full-meta-date" datetime="{{ page.date | date:'%e %B %Y' }}">{{ page.date | date:'%e %B %Y' }}</time>
+                    &nbsp;|&nbsp;{{ page.content | number_of_words }} woorden
                     <!-- {% if page.category.size > 0 %}
                         <span class="date-divider">/</span>
                         {% for category in page.categories %}
