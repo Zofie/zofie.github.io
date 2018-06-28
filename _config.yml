@@ -8,8 +8,8 @@ language: 'nl-be'
 baseurl: /
 
 # Website info
-title: De wereld van Zofie
-description: De wereld van Zofie - persoonlijke blog
+title: Zofie
+description: Freelance Front-end Developer
 cover: assets/images/cover.jpg
 favicon: favicon-96x96.png
 production_url: http://zofie.be/

@@ -5,30 +5,25 @@ class: 'home-template'
 navigation: True
 ---
 
-<!-- < default -->
-<!-- The tag above means: insert everything in this file
-into the {body} of the default.hbs template -->
-
-<!-- The big featured header, it uses blog cover image as a BG if available -->
 <header class="site-header outer {% if page.cover or site.cover %}" style="background-image:  url({{ site.baseurl }}{% if page.cover %}{{ page.cover }}{% elsif site.cover %}{{ site.cover }}{% endif %}) {% else %}no-cover{% endif %}">
     <div class="inner">
         <div class="site-header-content">
             <h1 class="site-title">
                 {{ site.title }}
             </h1>
+            <h2>{{ site.description }}</h2>
         </div>
-        {% include site-nav.html %}
     </div>
 </header>
 
-<!-- The main content area -->
 <main id="site-main" class="site-main outer" role="main">
     <div class="inner">
+        <h2>Contact</h2>
 
-        <div class="post-feed">
-            <!-- The tag below includes the markup for each post - partials/post-card.hbs -->
-            {%  include post-card.html %}
-        </div>
-
+        <p>
+            Sophie de Brabander <br />
+            <a href="mailto:hallo@zofie.be">hallo@zofie.be</a><br />
+            <a href="tel:+32479904839">+32 479 90 48 39</a>
+        </p>
     </div>
 </main>
