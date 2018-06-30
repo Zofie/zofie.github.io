@@ -1,29 +1,20 @@
 ---
 layout: default
-current: home
-class: 'home-template'
-navigation: True
 ---
 
-<header class="site-header outer {% if page.cover or site.cover %}" style="background-image:  url({{ site.baseurl }}{% if page.cover %}{{ page.cover }}{% elsif site.cover %}{{ site.cover }}{% endif %}) {% else %}no-cover{% endif %}">
-    <div class="inner">
-        <div class="site-header-content">
-            <h1 class="site-title">
-                {{ site.title }}
-            </h1>
-            <h2>{{ site.description }}</h2>
-        </div>
-    </div>
-</header>
+<div class="home">
 
-<main id="site-main" class="site-main outer" role="main">
-    <div class="inner">
-        <h2>Contact</h2>
+  <h1>Posts</h1>
 
-        <p>
-            Sophie de Brabander <br />
-            <a href="mailto:hallo@zofie.be">hallo@zofie.be</a><br />
-            <a href="tel:+32479904839">+32 479 90 48 39</a>
-        </p>
-    </div>
-</main>
+  <ul class="posts">
+    {% for post in site.posts %}
+      <li>
+        <span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span>
+        <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+      </li>
+    {% endfor %}
+  </ul>
+
+  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+
+</div>

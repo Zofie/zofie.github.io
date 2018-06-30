@@ -1,44 +1,65 @@
-# Jekyll configuration
-markdown: kramdown
-highlighter: rouge
-paginate: 30 # it will paginate after this number
-language: 'nl-be'
+url: https://zofie.github.io
+baseurl:
 
-# edit baseurl to simply '/' if using as your personal page (instead of a project page)
-baseurl: /
-
-# Website info
+# Site settings
 title: Zofie
+email: hallo@zofie.be
 description: Freelance Front-end Developer
-cover: assets/images/cover.jpg
-favicon: favicon-96x96.png
-production_url: http://zofie.be/
-source_url: http://zofie.be/
 
-# Social info
-navigation: True # show the navbar links
-subscribers: false # you need to connect an external service for this to work,
-# if 'True' the submit button is disabled for now, but you can change that
-# by editing `_includes/subscribe-form.html`
-twitter: zofie
-instagram: zofie
-facebook: sophiedebrabander
 
-# Disqus
-disqus: False
-disqus_shortname: zofie
+# Team names, titles and social links
+# people:
+# - name: Kay Garland
+#   pic: 1
+#   position: Lead Designer
+#   social:
+#     - title: twitter
+#       url: #
+#     - title: facebook
+#       url: #
+#     - title: stack-overflow
+#       url: #
+#
+# - name: Larry Parker
+#   pic: 2
+#   position: Lead Marketer
+#   social:
+#     - title: twitter
+#       url: #
+#     - title: facebook
+#       url: #
+#     - title: linkedin
+#       url: #
+#
+# - name: Diana Petersen
+#   pic: 3
+#   position: Lead Developer
+#   social:
+#     - title: twitter
+#       url: #
+#     - title: facebook
+#       url: #
+#     - title: google-plus
+#       url: #
 
-# Google Analytics
-google_analytics: UA-31248406-4
+# Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
+social:
+  - title: twitter
+    url: http://twitter.com/zofie
+  - title: facebook
+    url: https://www.facebook.com/sophiedebrabander
+  - title: instagram
+    url: http://instagram.org/zofie
+  - title: bitbucket
+    url: http://bitbucket.org/Zofie
+  - title: github
+    url: http://github.com/Zofie
 
-# Permalinks
-permalink: /:title
-# permalink: /author/:author
-# permalink: /tag/:tag
+# Postal address (add as many lines as necessary)
+address:
+  - line: Ghent
+  - line: Belgium
 
-# Authors' info in `_data/authors.yml`
-# Tags' info in `_data/tags_info.yml`
-
-# gems and other configs
-plugins: [jekyll-paginate, jekyll-feed]
-exclude: [vendor]
+# Build settings
+markdown: kramdown
+permalink: pretty
