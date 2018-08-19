@@ -1,0 +1,16 @@
+---
+language: nl
+title: Fret
+subtitle: Webshop
+layout: default
+modal-id: 1
+date: 2014-08-01
+img: fret.png
+thumbnail: fret-thumbnail.png
+alt: Fret
+project-date: Augustus 2014
+subcontract: Wijs
+category: Twig, PHP, HTML, CSS, JavaScript en SVG
+description: Fret is een tool die ontwikkelt werd tijdens de jaarlijkse Hackaton van Wijs. Fret maakt het mogelijk voor de mede-werkers om een lunch te bestellen tegen de middag.
+
+---
