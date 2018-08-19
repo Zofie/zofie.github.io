@@ -697,9 +697,12 @@ section#contact .text-danger {
     color: #e74c3c;
 }
 
+section#companies {
+    background-color: #fff;
+}
+
 footer {
     padding: 25px 0;
-    text-align: center;
 }
 
 footer span.copyright {
@@ -707,6 +710,7 @@ footer span.copyright {
     text-transform: none;
     font-family: {{ site.data.template.font.primary }};
     line-height: 40px;
+    text-align: left;
 }
 
 footer ul.quicklinks {
@@ -719,6 +723,8 @@ footer ul.quicklinks {
 
 ul.social-buttons {
     margin-bottom: 0;
+    float: right;
+    text-align: center;
 }
 
 ul.social-buttons li a {
@@ -840,4 +846,23 @@ img::-moz-selection {
 
 body {
     webkit-tap-highlight-color: #{{ site.data.template.color.primary }};
+}
+
+.language-switch {
+    float: right;
+    display: inline-block;
+}
+
+.language-switch li {
+    display: inline-block;
+    padding: 19.5px 0;
+    text-transform: uppercase;
+}
+
+.language-switch li a {
+    padding: 3px 7px 3px 10px;
+}
+
+.language-switch li + li>a {
+    border-left: 1px solid #{{site.data.template.color.primary}};
 }

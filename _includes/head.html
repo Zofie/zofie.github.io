@@ -6,6 +6,15 @@
     <meta name="description" content="{{ site.description }}">
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
 
+    {% assign posts=site.posts | where:"ref", page.ref | sort: 'lang' %}
+    {% for post in posts %}
+        <link rel="alternate" hreflang="{{ post.lang }}" href="{{ post.url }}" />
+    {% endfor %}
+    {% assign pages=site.pages | where:"ref", page.ref | sort: 'lang' %}
+    {% for page in pages %}
+        <link rel="alternate" hreflang="{{ page.lang }}" href="{{ page.url }}" />
+    {% endfor %}
+
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
 
     <!-- Custom CSS & Bootstrap Core CSS - Uses Bootswatch Flatly Theme: http://bootswatch.com/flatly/ -->

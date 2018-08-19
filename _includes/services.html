@@ -3,8 +3,8 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">Services</h2>
-                    <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+                    <h2 class="section-heading">{{ site.t[page.lang].services.title }}</h2>
+                    <h3 class="section-subheading text-muted">{{ site.t[page.lang].services.services_subtext }}</h3>
                 </div>
             </div>
             <div class="row text-center">
@@ -13,24 +13,30 @@
                         <i class="fa fa-circle fa-stack-2x text-primary"></i>
                         <i class="fab fa-wordpress fa-stack-1x fa-inverse"></i>
                     </span>
-                    <h4 class="service-heading">Wordpress</h4>
-                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+                    <h4 class="service-heading">{{ site.t[page.lang].services.wordpress }}</h4>
+                    <p class="text-muted">
+                        {{ site.t[page.lang].services.wordpress_description }}
+                    </p>
                 </div>
                 <div class="col-md-4">
                     <span class="fa-stack fa-4x">
                         <i class="fa fa-circle fa-stack-2x text-primary"></i>
                         <i class="fas fa-code fa-stack-1x fa-inverse"></i>
                     </span>
-                    <h4 class="service-heading">HTML & CSS</h4>
-                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+                    <h4 class="service-heading">{{ site.t[page.lang].services.staticwebsites }}</h4>
+                    <p class="text-muted">
+                        {{ site.t[page.lang].services.staticwebsites_description }}
+                    </p>
                 </div>
                 <div class="col-md-4">
                     <span class="fa-stack fa-4x">
                         <i class="fa fa-circle fa-stack-2x text-primary"></i>
                         <i class="fab fa-js fa-stack-1x fa-inverse"></i>
                     </span>
-                    <h4 class="service-heading">JavaScript</h4>
-                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+                    <h4 class="service-heading">{{ site.t[page.lang].services.javascript }}</h4>
+                    <p class="text-muted">
+                        {{ site.t[page.lang].services.javascript_description }}
+                    </p>
                 </div>
             </div>
         </div>
