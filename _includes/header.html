@@ -15,37 +15,18 @@
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 
-                <ul class="language-switch">
-                    {% assign posts=site.posts | where:"ref", page.ref | sort: 'lang' %}
-                    {% for post in posts %}
-                    <li>
-                        <a href="{{ post.url }}" class="{{ post.lang }}">{{ post.lang }}</a>
-                    </li>
-                    {% endfor %}
-
-                    {% assign pages=site.pages | where:"ref", page.ref | sort: 'lang' %}
-                    {% for page in pages %}
-                    <li>
-                        <a href="{{ page.url }}" class="{{ page.lang }}">{{ page.lang }}</a>
-                    </li>
-                    {% endfor %}
-                </ul>
-
                 <ul class="nav navbar-nav navbar-right">
                     <li class="hidden">
                         <a href="#page-top"></a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#services">{{ site.t[page.lang].services.title }}</a>
-                    </li>
-                    <li>
                         <a class="page-scroll" href="#portfolio">{{ site.t[page.lang].portfolio.title }}</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#about">{{ site.t[page.lang].about }}</a>
+                        <a class="page-scroll" href="#contact">{{ site.t[page.lang].contact }}</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#contact">{{ site.t[page.lang].contact }}</a>
+                        <a class="page-scroll" href="#companies">{{ site.t[page.lang].companies }}</a>
                     </li>
                 </ul>
             </div>

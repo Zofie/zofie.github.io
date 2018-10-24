@@ -57,6 +57,10 @@ h6 {
     font-weight: 700;
 }
 
+img {
+    max-width: 100%;
+}
+
 .img-centered {
     margin: 0 auto;
 }
@@ -330,7 +334,7 @@ section {
 
 section h2.section-heading {
     margin-top: 0;
-    margin-bottom: 15px;
+    margin-bottom: 45px;
     font-size: 40px;
 }
 
@@ -634,7 +638,6 @@ section h3.section-subheading {
 
 section#contact {
     background-color: #222;
-    background-image: url('{{ site.baseurl }}/img/map-image.png');
     background-position: center;
     background-repeat: no-repeat;
 }
@@ -702,7 +705,9 @@ section#companies {
 }
 
 footer {
+    background-color: #222;
     padding: 25px 0;
+    color: white;
 }
 
 footer span.copyright {
@@ -865,4 +870,33 @@ body {
 
 .language-switch li + li>a {
     border-left: 1px solid #{{site.data.template.color.primary}};
+}
+
+.company-logo {
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+    margin-bottom: 1em;
+    margin-right: 1em;
+}
+
+.company-logo:hover {
+    -webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(0%);
+}
+
+.logo-holder {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.logo-item {
+    width: 250px;
+}
+
+.logo-item img {
+    max-width: 150px;
+    max-height: 150px;
 }

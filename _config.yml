@@ -31,16 +31,8 @@ permalink: pretty
 # Translations
 t:
   en:
-    services:
-      title: "Services"
-      services_subtext: ""
-      wordpress: "Wordpress"
-      wordpress_description: "Door gebruik te maken van Wordpress wordt je website dynamischer. Je kan op een gemakkelijke manier zelf je content invullen en aanpassingen maken"
-      staticwebsites: "Statische websites"
-      staticwebsites_description: "A static website contains Web pages with fixed content. Static sites are the most basic type of website and are the easiest to create."
-      javascript: "JavaScript developer"
-      javascript_description: ""
     portfolio:
+      companies: "Companies"
       title: "Portfolio"
       portfolio_subtext: "Portfolio"
       date: "Date"
@@ -50,15 +42,7 @@ t:
     about: "About"
     contact: "contact"
   nl:
-    services:
-      title: "Diensten"
-      services_subtext: ""
-      wordpress: "Wordpress"
-      wordpress_description: "Door gebruik te maken van Wordpress wordt je website dynamischer. Je kan op een gemakkelijke manier zelf je content invullen en aanpassingen maken"
-      staticwebsites: "Statische websites"
-      staticwebsites_description: "Je website bestaat uit enkele pagina's met door jou gedefinieerde teksten."
-      javascript: "JavaScript developer"
-      javascript_description: ""
+    companies: "Bedrijven"
     portfolio:
       title: "Portfolio"
       portfolio_subtext: "Portfolio"

@@ -12,5 +12,6 @@ project-date: Februari 2015
 subcontract: Wijs
 category: Fork CMS, Chopstick, HTML, CSS en JavaScript
 description: Nieuwe website voor Delta Light.
+project-url: http://deltalight.be
 
 ---
