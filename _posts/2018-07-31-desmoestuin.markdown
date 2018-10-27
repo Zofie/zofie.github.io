@@ -1,0 +1,17 @@
+---
+language: nl
+title: De Smoestuin
+subtitle: Website
+layout: default
+modal-id: 4
+date: 2018-07-31
+img: desmoestuin.png
+thumbnail: desmoestuin-thumbnail.png
+alt: De Smoestuin
+project-date: Juli 2018
+subcontract: Vulpo
+category: Laravel, October CMS, Front-end
+description: Campagne site voor Groen van bij ons
+project-url: https://www.desmoestuin.be/
+
+---

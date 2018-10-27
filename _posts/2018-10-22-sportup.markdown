@@ -1,0 +1,17 @@
+---
+language: nl
+title: SportUp
+subtitle: Website
+layout: default
+modal-id: 3
+date: 2018-10-22
+img: sportup.png
+thumbnail: sportup-thumbnail.png
+alt: SportUp
+project-date: Oktober 2018
+subcontract: Dreams & Creation
+category: Grav CMS en Twig
+description: SportUp helpt sport tech entrepreneurs van idee naar een succesvolle en internationale zaak.
+project-url: http://sportup.be
+
+---
