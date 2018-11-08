@@ -5,8 +5,8 @@ subtitle: Webshop
 layout: default
 modal-id: 1
 date: 2014-08-01
-img: fret.png
-thumbnail: fret-thumbnail.png
+img: fret.jpg
+thumbnail: fret-thumbnail.jpg
 alt: Fret
 project-date: Augustus 2014
 subcontract: Wijs

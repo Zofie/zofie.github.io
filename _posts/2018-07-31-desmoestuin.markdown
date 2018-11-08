@@ -5,8 +5,8 @@ subtitle: Website
 layout: default
 modal-id: 4
 date: 2018-07-31
-img: desmoestuin.png
-thumbnail: desmoestuin-thumbnail.png
+img: desmoestuin.jpg
+thumbnail: desmoestuin-thumbnail.jpg
 alt: De Smoestuin
 project-date: Juli 2018
 subcontract: Vulpo

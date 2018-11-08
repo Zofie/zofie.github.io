@@ -5,8 +5,8 @@ subtitle: Website
 layout: default
 modal-id: 2
 date: 2015-02-01
-img: deltalight.png
-thumbnail: deltalight-thumbnail.png
+img: deltalight.jpg
+thumbnail: deltalight-thumbnail.jpg
 alt: Delta Light
 project-date: Februari 2015
 subcontract: Wijs
