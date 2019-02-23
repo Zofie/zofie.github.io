@@ -1,0 +1,16 @@
+---
+language: nl
+title: Dorevo
+subtitle: Website
+layout: default
+modal-id: 5
+date: 2019-02-22
+img: dorevo.jpg
+thumbnail: dorevo-thumbnail.jpg
+alt: Dorevo
+project-date: februari 2019
+category: Wordpress, Wordpress theming
+description: Een dynamische website voor Dorevo gebouwd op Wordpress.
+project-url: http://doreve.be
+
+---
