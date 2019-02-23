@@ -1,7 +1,7 @@
 ---
 language: nl
 title: De Smoestuin
-subtitle: Website
+subtitle: October CMS Website
 layout: default
 modal-id: 4
 date: 2018-07-31

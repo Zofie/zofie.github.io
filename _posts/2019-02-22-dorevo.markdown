@@ -1,7 +1,7 @@
 ---
 language: nl
 title: Dorevo
-subtitle: Website
+subtitle: Wordpress Website
 layout: default
 modal-id: 5
 date: 2019-02-22

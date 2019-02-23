@@ -1,7 +1,7 @@
 ---
 language: nl
 title: Delta Light
-subtitle: Website
+subtitle: Fork CMS Website
 layout: default
 modal-id: 2
 date: 2015-02-01
