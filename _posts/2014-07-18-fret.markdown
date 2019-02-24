@@ -13,5 +13,4 @@ subcontract: Wijs
 category: Twig, PHP, HTML, CSS, JavaScript en SVG
 description: Fret is een tool die ontwikkelt werd tijdens de jaarlijkse Hackaton van Wijs. Fret maakt het mogelijk voor de mede-werkers om een lunch te bestellen tegen de middag.
 project-url: http://fret.wijs.be
-
 ---
