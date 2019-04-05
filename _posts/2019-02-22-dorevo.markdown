@@ -11,6 +11,6 @@ alt: Dorevo
 project-date: februari 2019
 category: Wordpress, Wordpress theming
 description: Een dynamische website voor Dorevo gebouwd op Wordpress.
-project-url: http://doreve.be
+project-url: http://dorevo.be
 
 ---
