@@ -20,15 +20,14 @@
     <meta property="og:image" content="{{ site.url }}/img/header-bg.jpg"/>
     <meta property="og:site_name" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}"/>
 
-    <!-- Hotjar Tracking Code for zofie.be -->
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-31248406-4"></script>
     <script>
-        (function(h,o,t,j,a,r){
-            h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
-            h._hjSettings={hjid:81315,hjsv:6};
-            a=o.getElementsByTagName('head')[0];
-            r=o.createElement('script');r.async=1;
-            r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
-            a.appendChild(r);
-        })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+    window.dataLayer = window.dataLayer || [];
+        function gtag(){
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+        gtag('config', 'UA-31248406-4');
     </script>
 </head>
