@@ -1,0 +1,16 @@
+---
+language: nl
+title: Podlab
+subtitle: Wordpress Website
+layout: default
+modal-id: 6
+date: 2019-04-04
+img: podlab.jpg
+thumbnail: podlab-thumbnail.jpg
+alt: Podlab
+project-date: april 2019
+category: Wordpress, Wordpress theming, Astra
+description: Een dynamische website voor Podlab gebouwd op Wordpress. Er werd gebruik gemaakt van een kant en klare lay-out met het thema Astra.
+project-url: http://podlab.be
+
+---
