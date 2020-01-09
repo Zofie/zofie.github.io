@@ -1,0 +1,16 @@
+---
+language: nl
+title: Novalis
+subtitle: Wordpress Website
+layout: default
+modal-id: 9
+date: 2019-09-01
+img: novalis.jpg
+thumbnail: novalis-thumbnail.jpg
+alt: novalis
+project-date: april 2019
+category: Wordpress, Wordpress theming
+description: Een dynamische website voor osteo-sana gebouwd op Wordpress. Het thema werd volledig op maat van de klant gemaakt.
+project-url: http://noval.is
+
+---
