@@ -40,9 +40,11 @@ t:
       subcontract: "In opdracht van"
       services: "Skills"
     about: "About"
-    contact: "contact"
+    contact: "Contact"
+    cv: "CV"
   nl:
     companies: "Bedrijven"
+    cv: "CV"
     portfolio:
       title: "Portfolio"
       portfolio_subtext: "Portfolio"
