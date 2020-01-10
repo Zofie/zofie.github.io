@@ -15,18 +15,21 @@
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 
             <ul class="nav navbar-nav navbar-right">
-                <li class="hidden">
-                    <a href="#page-top">Page top</a>
-                </li>
-                <li>
-                    <a href="/portfolio">{{ site.t[page.lang].portfolio.title }}</a>
-                </li>
-                <li>
-                    <a href="/cv">{{ site.t[page.lang].cv }}</a>
-                </li>
-                <li>
-                    <a href="/contact">{{ site.t[page.lang].contact }}</a>
-                </li>
+
+
+              <li class="hidden">
+                  <a href="#page-top">Page top</a>
+              </li>
+
+              {% for page in site.pages %}
+                {% if page.title %}
+                  <li>
+                  <!-- <a href="{{ page.url }}">{{ site.t[page.lang].portfolio.title }}</a> -->
+                  <a href="{{ page.url }}">{{ page.title }}</a>
+                  </li>
+                {% endif %}
+              {% endfor %}
+
             </ul>
         </div>
         <!-- /.navbar-collapse -->
