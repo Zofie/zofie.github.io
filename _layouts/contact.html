@@ -1,41 +1,72 @@
 <!DOCTYPE html>
 <html lang="nl">
-    {% include head.html %}
+{% include head.html %}
 
-    <body id="page-top" class="index">
-        {% include header-page.html %}
+<body id="page-top" class="index">
+  {% include header-page.html %}
 
-        <section>
-            <div class="container">
-                <div class="row">
+  <section>
+    <div class="container">
+      <div class="row">
 
-                    <div class="col-sm-4">&nbsp;</div>
-                    <div class="col-sm-4">
-                    <div class="team-member text-center">
-                        <img src="/img/sophie.jpg" class="img-responsive img-circle" alt="">
-                        <h4>Sophie de Brabander</h4>
-                        <div class="text-muted">
-                          <p>
-                            <a href="mailto:hallo@zofie.be">hallo@zofie.be</a>
-                          </p>
-                          <p>
-                            <a href="tel:+32479904839">+32 479 90 48 39</a>
-                          </p>
-
-                        </div>
-
-                    </div>
-                </div>
-                <div class="col-sm-4">&nbsp;</div>
-                </div>
-
+        <div class="col-sm-6">
+          <div class="team-member text-center">
+            <img src="/img/sophie.jpg" class="img-responsive img-circle" alt="">
+            <h4>Sophie de Brabander</h4>
+            <div class="text-muted">
+              <p>
+                <a href="mailto:hallo@zofie.be?SUBJECT=Contact%20via%20zofie.be">hallo@zofie.be</a>
+              </p>
+              <p>
+                <a href="tel:+32479904839">+32 479 90 48 39</a>
+              </p>
 
             </div>
-        </section>
 
-        {% include footer.html %}
+          </div>
+        </div>
 
-        {% include js.html %}
+        <div class="col-sm-6">
+          <h5>Liever gewoon een berichtje sturen?</h5>
+          <p>
+            Dat kan! <br>Via onderstaand formulier kan je je bericht achterlaten en dan krijg je van mij zo snel mogelijk een antwoord.
+          </p>
+          <form action="https://formspree.io/mzbebkan" method="POST">
+          <div class="control-group form-group">
+            <input type="text"
+            name="Name"
+            class="form-control"
+            placeholder="Naam *"
+            id="name"
+            required
+            >
+          </div>
+            <div class="control-group form-group">
+              <input type="text"
+              name="_replyto"
+              class="form-control"
+              placeholder="E-mailadres *"
+              id="email"
+              required
+              >
+            </div>
+            <div class="control-group form-group">
+              <textarea name="message" class="form-control" placeholder="Bericht *" id="message" required></textarea>
+            </div>
+          </label>
 
-    </body>
+          <div class="text-center">
+            <button type="submit" class="btn btn-xl">Versturen</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% include footer.html %}
+
+{% include js.html %}
+
+</body>
 </html>
