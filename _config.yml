@@ -3,8 +3,9 @@ baseurl:
 
 # Site settings
 title: Zofie
+subtitle: Freelance Wordpress Developer
 email: hallo@zofie.be
-description: Freelance Web Developer | Wordpress, Grav CMS, Craft CMS, Slicing & Dicing
+description: Freelance Wordpress Developer | Wordpress, WooCommerce & MailChimp
 
 # Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
 social:
@@ -13,7 +14,7 @@ social:
   - title: facebook
     url: https://www.facebook.com/sophiedebrabander
   - title: instagram
-    url: http://instagram.org/zofie
+    url: http://instagram.com/zofie
   - title: linkedin
     url: https://www.linkedin.com/in/sophiedebrabander/
   - title: github
@@ -21,7 +22,7 @@ social:
 
 # Postal address (add as many lines as necessary)
 address:
-  - line: Ghent
+  - line: Gentbrugge
   - line: Belgium
 
 # Build settings
@@ -42,6 +43,18 @@ t:
     about: "About"
     contact: "Contact"
     cv: "CV"
+    seeMore: "See more"
+    latestProjects: "Latest projects"
+    services:
+        wordpress:
+          title:  "WordPress"
+          description: "Op maat gemaakte WordPress websites volledig in lijn met jouw huisstijl."
+        woocommerce:
+          title: "WooCommerce"
+          description: "Voor jouw webwinkel maken we gebruik van WordPress en WooCommerce."
+        mailchimp:
+          description: "Heb je een design en moet deze worden omgezet naar een template voor MailChimp, dan ben je aan het juiste adres."
+          title: "MailChimp"
   nl:
     companies: "Bedrijven"
     cv: "CV"
@@ -54,3 +67,15 @@ t:
       services: "Skills"
     about: "Over"
     contact: "Contact"
+    seeMore: "Bekijk alle"
+    latestProjects: "Laatste projecten"
+    services:
+        wordpress:
+          title:  "WordPress"
+          description: "Op maat gemaakte WordPress websites volledig in lijn met jouw huisstijl."
+        woocommerce:
+          title: "WooCommerce"
+          description: "Voor jouw webwinkel maken we gebruik van WordPress en WooCommerce."
+        mailchimp:
+          description: "Heb je een design en moet deze worden omgezet naar een template voor MailChimp, dan ben je aan het juiste adres."
+          title: "MailChimp"
