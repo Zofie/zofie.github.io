@@ -1,5 +1,7 @@
 url: https://zofie.be
 baseurl:
+plugins:
+  - jekyll-sitemap
 
 # Site settings
 title: Zofie
@@ -28,6 +30,13 @@ address:
 # Build settings
 markdown: kramdown
 permalink: pretty
+
+defaults:
+  -
+    scope:
+      path:            "googleffcfe3befe6cd9d9.html"
+    values:
+      sitemap:         false
 
 # Translations
 t:
