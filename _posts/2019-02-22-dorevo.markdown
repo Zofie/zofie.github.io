@@ -3,7 +3,7 @@ language: nl
 title: Dorevo
 subtitle: Wordpress Website
 layout: default
-modal-id: 6
+modal-id: 7
 date: 2019-02-22
 img: dorevo.jpg
 thumbnail: dorevo-thumbnail.jpg

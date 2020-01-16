@@ -3,7 +3,7 @@ language: nl
 title: Osteo-Sana
 subtitle: Wordpress Website
 layout: default
-modal-id: 8
+modal-id: 6
 date: 2019-02-15
 img: osteo-sana.jpg
 thumbnail: osteo-sana-thumbnail.jpg

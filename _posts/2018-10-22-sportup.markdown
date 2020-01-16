@@ -3,7 +3,7 @@ language: nl
 title: SportUp
 subtitle: Grav CMS Website
 layout: default
-modal-id: 3
+modal-id: 4
 date: 2018-10-22
 img: sportup.jpg
 thumbnail: sportup-thumbnail.jpg

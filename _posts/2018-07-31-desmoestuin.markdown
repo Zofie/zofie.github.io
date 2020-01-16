@@ -3,7 +3,7 @@ language: nl
 title: De Smoestuin
 subtitle: October CMS Website
 layout: default
-modal-id: 4
+modal-id: 3
 date: 2018-07-31
 img: desmoestuin.jpg
 thumbnail: desmoestuin-thumbnail.jpg
